@@ -1,0 +1,13 @@
+.competitor-swot {
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &-analysis {
+            .viewAll {
+                width: 700px;
+            }
+        }
+    }
+}

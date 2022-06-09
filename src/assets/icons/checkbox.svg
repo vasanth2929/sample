@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>1695AE00-B883-4316-B12F-AFD02B90457D</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tribyl-icons" transform="translate(-25.000000, -349.000000)">
+            <g id="icon/search/24px-copy-2" transform="translate(25.000000, 349.000000)">
+                <g id="check_box-24px">
+                    <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                </g>
+                <g id="on" transform="translate(3.000000, 3.000000)" fill-rule="nonzero">
+                    <rect id="Rectangle" fill="#FFFFFF" x="1.125" y="1.125" width="15.75" height="15.75"></rect>
+                    <path d="M15.999975,0 L2,0 C0.88999875,0 0,0.9 0,2 L0,15.999975 C0,17.1 0.88999875,18 2,18 L15.999975,18 C17.1100125,18 18,17.1 18,15.999975 L18,2 C18,0.9 17.1100125,0 15.999975,0 Z M6.999975,13.99995 L2.0000025,9 L3.40999875,7.5900375 L6.999975,11.1700125 L14.5900125,3.5799975 L15.999975,4.999995 L6.999975,13.99995 Z" id="Shape" fill="#27AE60"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,38 @@
+@import '../../../../../../../styles/base/variables';
+@import '../../../../../../../styles/base/variablesV2';
+
+.card-analytics-tab {
+    .dropdown-filter-container {
+        width: 20%;
+        font-family: Roboto-Regular;
+        margin-bottom: 1em;
+        label {
+            font-size: 12px;
+            margin-bottom: 0;
+        }
+        .Select {
+            font-family: Roboto-Regular;
+            .Select-control {
+                height: 30px;
+                font-size: 14px;
+                .Select-value-label {
+                    line-height: 32px;
+                }
+                .Select-input {
+                    height: 30px;
+                }
+            }
+        }
+    }
+    .chart-container {
+        border: 1px solid #B0BEC5;
+        border-radius: 5px;
+        padding: 1em;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+    }
+    .sum-label {
+        font-family: Roboto-Bold;
+        margin-top: 1em;
+        color: #5F6C72;
+    }
+}

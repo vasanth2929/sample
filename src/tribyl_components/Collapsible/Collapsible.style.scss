@@ -1,0 +1,27 @@
+.collapsibleV2 {
+    border: 1px solid #E1E6E8;
+    border-radius: 12px;
+    box-shadow: 0 3px 4px 3px #f7f3f3;
+    &-header {
+        height: 56px;
+        padding: 16px;
+        border-bottom: 1px solid #e4e2e2;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+
+        &-title {
+            font-family: Roboto-Medium;
+            color: #091F42;
+            font-size: 18px;
+        }
+
+        &-options {
+            display: flex;
+            width: fit-content;
+            align-items: center;
+            padding: 0 10px;
+        }
+    }
+
+}

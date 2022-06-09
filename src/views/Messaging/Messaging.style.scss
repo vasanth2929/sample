@@ -1,0 +1,126 @@
+@import '../../styles/base/variables';
+@import '../../styles/base/variablesV2';
+
+.messaging {
+    &-v2-screen {
+        padding: 2em 0;
+
+        #main-wrapper {
+            width: 100%;
+            float: right;
+            overflow-x: hidden;
+            clear: both;
+            margin-top: 30px;
+            padding: 40px 0px;
+            background: #ffffff;
+            display: flex;
+
+            #main-content-section {
+                width: 100%;
+
+                .playbooks-v2-section {
+                    width: 100%;
+                }
+            }
+        }
+
+        .playbooks-v2-section {
+            background: #ffffff;
+            
+            h1.heading {
+                color: #091E42;
+                font-family: Roboto-Bold;
+                font-size: 24px;
+            }
+
+            .add-pb-card-btn-container {
+                position: fixed;
+                right: 40px;
+                bottom: 20px;
+                cursor: pointer;
+                width: 250px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .container {
+                min-width: 1280px;
+            }
+        }
+
+        .playbook-container {
+            width: 1440px;
+            background: $white;
+            border-radius: 5px;
+            min-height: 800px;
+            overflow-y: auto;
+
+            .playbook-screen-title {
+                font-size: 32px;
+                line-height: 37px;
+                font-family: Roboto-Bold;
+
+                i {
+                    color: $white;
+                    background: $use-cases;
+                    padding: 8px;
+                    border-radius: 50%;
+                    font-size: 26px;
+                    margin-right: 1em;
+                }
+            }
+
+            .shimmer-card {
+                .card {
+                    height: 85%;
+                }
+
+                .shimmer-section,
+                .shimmer-card-info-area {
+                    height: auto;
+                }
+
+                .shimmer-card-content-section {
+                    padding: 3% 0;
+                }
+            }
+
+            .filter {
+                display: flex;
+                justify-content: center;
+            }
+                                
+            .heading{
+                color: #091E42;
+                font-family: Roboto-Bold;
+                font-size: 24px;
+            }
+        }
+    }
+
+    .add-playbook-form-modal-v2 {
+        .modal-body {
+            max-width: 30vw;
+        }
+
+        #modal-content {
+            max-height: 52vh !important;
+
+            .header-section {
+                p {
+                    color: $grey-dark;
+                    font-size: 18px;
+                    line-height: 21px;
+                    font-family: Roboto-Bold;
+                    margin-bottom: 0;
+                }
+            }
+
+            .content-section {
+                overflow: hidden !important;
+                padding: 1em 0;
+            }
+        }
+    }
+}

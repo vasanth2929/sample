@@ -1,0 +1,117 @@
+.card {
+  padding: 24px;
+  background-color: white;
+  border-radius: 10px;
+  flex: 1;
+  &-title {
+    font-size: 18px;
+    margin: 0px;
+    margin-left: 20px;
+    font-family: 'Roboto-Regular';
+    color: #203944;
+  }
+  &-icon-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f9fa;
+    &.top {
+      background-color: #ebf9f0;
+      span {
+        font-size: 20px;
+        color: #37c360;
+      }
+    }
+    &.bottom {
+      background-color: #ffe9ea;
+      span {
+        font-size: 20px;
+        color: #ff4547;
+      }
+    }
+    &.trending {
+      background-color: #e6f3ff;
+      svg {
+        fill: #0080ff;
+      }
+    }
+  }
+  &-stat {
+    margin-bottom: 16px;
+    &.last {
+      margin-bottom: 0px !important;
+    }
+    p {
+      font-family: 'Roboto-Regular';
+      margin: 0px;
+      &:first-child {
+        font-size: 16px;
+        color: #0080ff;
+      }
+      &:last-child {
+        color: #748194;
+        font-size: 14px;
+        margin-top: 4px;
+        display: flex;
+        align-items: center;
+        .sep {
+          width: 4px;
+          height: 4px;
+          background-color: #d8d8d8;
+          display: block;
+          margin: 0px 10px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+.sub-topic-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-family: 'Roboto-bold';
+}
+
+.sub-wrapper {
+  transition: background-color 1300ms linear;
+  &.active-container {
+    // background-color: #bcccd0;
+  }
+}
+
+.all-subtopic-wrapper {
+  background-color: #f5f9fa;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  padding: 12px 0px;
+}
+
+.flx-container {
+  display: flex;
+  justify-content: space-between;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+  .percentage-container {
+    width: max-content;
+    height: 32px;
+    padding: 0px 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebf9f0;
+    display: none;
+    &.trending {
+      display: flex;
+      margin-top: 10px;
+      border-radius: 16px;
+      font-size: 12px;
+      color: #37c360;
+      font-family: 'Roboto-Medium';
+    }
+  }
+}

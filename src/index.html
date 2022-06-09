@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1920, initial-scale=1" />
+    <title>Tribyl</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="slick.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://storage.googleapis.com/non-spec-apps/mio-icons/latest/outline.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="https://kjur.github.io/jsrsasign/jsrsasign-latest-all-min.js"
+    ></script>
+    <!--
+		 <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'; font-src *; img-src 'self';   child-src 'self'; object-src 'https:'; script-src 'self' 'unsafe-inline'">
+-->
+  </head>
+  <body>
+    <section id="loader-anim" class="outer d-block">
+      <div class="loader loader1">
+        <div>
+          <div>
+            <div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content container-fluid" id="root">
+      <!-- Placeholder to Render the Main Body Content Component. -->
+    </section>
+    <div id="modal-root"></div>
+    <div id="modal-root-2"></div>
+    <div id="popup-root"></div>
+    <div id="portal-root-1"></div>
+    <div id="modal-root-interactive"></div>
+  </body>
+  <script type="text/javascript">
+    const root = document.getElementById('root');
+    const loader = document.getElementById('loader-anim');
+    if (root.innerHTML !== '') {
+      loader.classList.remove('d-block');
+      loader.className += ' d-none';
+    }
+  </script>
+</html>

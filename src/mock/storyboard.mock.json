@@ -1,0 +1,202 @@
+{
+    "storyboardTitle": "Vodafone Customer Service $ 561,000 Won Q4'16",
+    "storyboardSharable": false,
+    "storyboardReviewStatus": "blue",
+    "whyChangeCards": [
+        {
+            "title": "Economic Driver",
+            "markerClass": "economic-drivers",
+            "content": "Reduce Service Cost",
+            "navigateTo": "#",
+            "machineGenerated": false
+        },
+        {
+            "title": "Use Case",
+            "markerClass": "use-cases",
+            "content": "Customer Self-Service",
+            "navigateTo": "#",
+            "machineGenerated": false
+        },
+        {
+            "title": "Pain Point",
+            "markerClass": "pain-points",
+            "content": "High Call Volume",
+            "navigateTo": "/painpoints",
+            "machineGenerated": true
+        }
+    ],
+    "whoDecidesCards": [
+        {
+            "title": "Economic Buyer",
+            "markerClass": "personas",
+            "content": "Glen Thomas",
+            "subcontent": "SVP - Customer Care",
+            "navigateTo": "/personas",
+            "machineGenerated": false
+        },
+        {
+            "title": "Champion",
+            "markerClass": "personas",
+            "content": "Ben Rhodes",
+            "subcontent": "VP - Loyalty",
+            "navigateTo": "#",
+            "machineGenerated": false
+        },
+        {
+            "title": "Influencer",
+            "markerClass": "personas",
+            "content": "Kristina Dixon",
+            "subcontent": "VP - IT",
+            "navigateTo": "#",
+            "machineGenerated": false
+        }
+    ],
+    "whyUsCards": [
+        {
+            "title":"Value Proposition",
+            "markerClass": "value-proposition",
+            "content": "Agent Console",
+            "navigateTo": "#",
+            "machineGenerated": false
+        },
+        {
+            "title":"Objection",
+            "markerClass": "objections",
+            "content": "Cloud Security",
+            "navigateTo": "#",
+            "machineGenerated": false
+        },
+        {
+            "title":"Content",
+            "markerClass": "content",
+            "content": "Telco Whitepaper",
+            "navigateTo": "#",
+            "machineGenerated": false
+        }
+    ],
+    "categories": [
+        {
+            "title": "Economic Drivers",
+            "markerClass": "economic-drivers",
+            "slug": "economic_drivers",
+            "choices": [
+                {
+                    "title": "Reduce Service Cost",
+                    "slug": "reduce_service_cost",
+                    "navigateTo": "#"
+                },
+                {
+                    "title": "Drive Customer Loyalty",
+                    "slug": "drive_customer_loyalty",
+                    "navigateTo": "#"
+                },
+                {
+                    "title": "Improve CLTV",
+                    "slug": "improve_cltv",
+                    "navigateTo": "#"
+                },
+                {
+                    "title": "Reduce Churn",
+                    "slug": "reduce_churn",
+                    "navigateTo": "#"
+                }
+            ]
+        },
+        {
+            "title": "Use Cases",
+            "markerClass": "use-cases",
+            "slug": "use_cases",
+            "choices": [
+                {
+                    "title": "Customer Self-Service",
+                    "slug": "customer_self_service"
+                }
+            ]
+        },
+        {
+            "title": "Pain Points",
+            "markerClass": "pain-points",
+            "slug": "pain_points",
+            "choices": [
+                {
+                    "title": "High Call Volume",
+                    "slug": "high_call_volume"
+                }
+            ]
+        },
+        {
+            "title": "Personas",
+            "markerClass": "personas",
+            "slug": "personas",
+            "choices": [
+                {
+                    "title": "Economic Buyer",
+                    "slug": "economic_buyer"
+                },
+                {
+                    "title": "Champion",
+                    "slug": "champion"
+                },
+                {
+                    "title": "Influencer",
+                    "slug": "influencer"
+                }
+            ]
+        },
+        {
+            "title": "Value Proposition",
+            "markerClass": "value-proposition",
+            "slug": "value_proposition",
+            "choices": [
+                {
+                    "title": "Agent Console",
+                    "slug": "agent_console"
+                }
+            ]
+        },
+        {
+            "title": "Objections",
+            "markerClass": "objections",
+            "slug": "objections",
+            "choices": [
+                {
+                    "title": "Cloud Security",
+                    "slug": "cloud_security"
+                }
+            ]
+        },
+        {
+            "title": "Content",
+            "markerClass": "content",
+            "slug": "content",
+            "choices": [
+                {
+                    "title": "Telco Whitepaper",
+                    "slug": "telco_whitepaper"
+                }
+            ]
+        },
+        {
+            "title": "Competition",
+            "markerClass": "competition",
+            "slug": "competition",
+            "choices": [
+                {
+                    "title": "IBM",
+                    "slug": "ibm"
+                }
+            ]
+        },
+        {
+            "title": "Partners",
+            "markerClass": "partners",
+            "slug": "partners",
+            "choices": [
+                {
+                    "title": "Accenture",
+                    "slug": "accenture"
+                }
+            ]
+        }
+    ]
+}

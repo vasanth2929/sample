@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>82EFD7E3-9769-4CD7-82E8-DC970C66D8C0</title>
+    <g id="Login-flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="icons-and-component" transform="translate(-102.000000, -636.000000)" stroke="#788597" stroke-width="2">
+            <g id="icon/24px/password-copy-2" transform="translate(102.000000, 636.000000)">
+                <g id="linkedin" transform="translate(2.000000, 3.000000)">
+                    <path d="M14,6 C17.3137085,6 20,8.6862915 20,12 L20,19 L16,19 L16,12 C16,10.8954305 15.1045695,10 14,10 C12.8954305,10 12,10.8954305 12,12 L12,19 L8,19 L8,12 C8,8.6862915 10.6862915,6 14,6 Z" id="Path"></path>
+                    <rect id="Rectangle" x="0" y="7" width="4" height="12"></rect>
+                    <circle id="Oval" cx="2" cy="2" r="2"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

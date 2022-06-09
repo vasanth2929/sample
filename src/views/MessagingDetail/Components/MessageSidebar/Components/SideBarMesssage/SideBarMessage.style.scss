@@ -1,0 +1,39 @@
+.sidebarmessage {
+  // padding: 16px;
+  background-color: #f7f8fa;
+
+  .summary-card-modal-body-text {
+    height: inherit;
+    .container-message {
+      position: relative;
+      // width: 272px;
+      height: 397px;
+
+      textarea#sidebarmessage {
+        width: 100%;
+        resize: none;
+        height: 397px;
+        border: none;
+        font-size: 14px;
+        font-family: 'Roboto-Regular';
+        color: #505f79;
+        background-color: white;
+
+        &.active {
+          outline: 1px solid lightgrey;
+        }
+      }
+
+      button#sidebarmessagebtn {
+        cursor: pointer;
+        position: absolute;
+        bottom: -15px;
+        right: 0px;
+        width: 49px;
+        height: 48px;
+        background-color: #f7f8fa;
+        border: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+@mixin barStyle($bgcolor, $textcolor) {
+    background: $bgcolor;
+    border: 1px solid $textcolor;
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: 17px;
+    color: $textcolor;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 10000000;
+    height: 2em;
+    padding: 0.25em 1em 0.25em;
+    position: fixed;
+    top: 14px;
+    left: 16%;
+    width: 72%;
+    margin: 0 auto;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: notification_animation;
+    animation-name: notification_animation;
+}
+
+@-webkit-keyframes notification_animation {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -20px, 0);
+        transform: translate3d(0, -20px, 0);
+    }
+  
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes notification_animation {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -20px, 0);
+        transform: translate3d(0, -20px, 0);
+    }
+  
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.tb-notification-bar {
+    &-message {
+        flex: 1;
+        justify-content: center;
+        display: flex;
+    }
+    &-close-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        &-btn.material-icons {
+            cursor: pointer;
+        }
+    }
+
+    &-Warning {
+        @include barStyle(#F3C14F, black)
+    }
+    &-Information {
+        @include barStyle(#F3C14F,black)
+    }
+    // &-warning {
+
+    // }
+    &-Alert {
+        @include barStyle(#F3C14F, black)
+    }
+}

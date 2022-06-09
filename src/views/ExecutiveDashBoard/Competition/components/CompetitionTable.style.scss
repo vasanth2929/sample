@@ -1,0 +1,105 @@
+.competition-table{
+    .table{
+        border: 1px solid #e6e6e6;
+        width: 100%;
+
+        .heading{
+            background-color: #F7F8FA;
+        }
+
+        th {
+            height: 14px;
+            color: #091F42;
+            font-family: Roboto-Medium;
+            font-size: 12px;
+            letter-spacing: 0;
+            line-height: 14px;
+        }
+
+        td{
+            padding: 15px;
+        }
+
+        .content{
+            .stats{
+                height: 32px;
+                background-color: #0080FF;
+            }
+            .title{
+                color: #293940;
+                font-family: Roboto-Regular;
+                font-size: 20px;
+                letter-spacing: 0;
+                line-height: 25px;
+            }
+            .winrate-wrapper{
+                .winrate{
+                    height: 25px;
+                    color: #4F5366;
+                    font-family: Roboto-Medium;
+                    font-size: 20px;
+                    letter-spacing: 0;
+                    line-height: 25px
+                }
+                .quarter{
+                    display: flex;
+                    margin-top:26px;
+
+                    &-negative{
+                        background: #FFECE9;
+                        width: 76px;
+                        color: #FF5520;
+                        border-radius: 12px;
+                        font-size: 12px;
+                        font-family: Roboto-Medium;
+                        align-items: center;
+                        justify-content: center;
+                        display: flex;
+                    }
+
+                    &-positive{
+                        background: #E9F8F0;
+                        width: 76px;
+                        color: #00B257;
+                        border-radius: 12px;
+                        font-size: 12px;
+                        font-family: Roboto-Medium;
+                        align-items: center;
+                        justify-content: center;
+                        display: flex;
+                        margin-left:8px;
+                    }
+                }
+            }
+            .strength{
+                margin-bottom:24px;
+                &-text{
+                    height: 20px;
+                    color: #293940;
+                    font-family: Roboto-Regular;
+                    font-size: 16px;
+                    letter-spacing: 0;
+                    line-height: 20px;
+                    text-decoration: underline;
+                }
+                &-rating{
+                    height: 20px;
+                    color: #293940;
+                    font-family: Roboto-Medium;
+                    font-size: 16px;
+                    letter-spacing: 0;
+                    line-height: 20px;
+                    margin-left:10px;
+
+                    .rate{
+                        color: #FF9946;
+                        font-size: 16px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

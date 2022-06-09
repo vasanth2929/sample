@@ -1,0 +1,70 @@
+@import '../../styles/base/variables';
+@import '../../styles/base/variablesV2';
+
+
+.add-feedback-form-v2 {
+    .import-pb-btn {
+        box-shadow: none;
+        background: $white;
+        font-family: Roboto-Bold;
+        font-size: 14px;
+        line-height: 16px;
+        padding-top: 2px;
+        margin-bottom: 2em;
+        i {
+            position: relative;
+            top: 4px;
+        }
+    }
+    .form-control:disabled{
+        background-color: white;
+    }
+    label {
+        margin-bottom: 10px;
+        font-family: Roboto-Bold;
+        font-size: 14px;
+        line-height: 16px;
+        color: $grey-dark;
+        margin-top:10px;
+    }
+    textarea {
+        border-color: $dark-grey-text;
+        font-size: 14px;
+        font-family: Roboto-Regular;
+    }
+    textarea {
+        margin-bottom: 24px;
+    }
+
+    .ql-container{
+       
+        .ql-editor{
+            height: 350px;
+            min-height: 50vh;
+            border: 1px solid #5F6C72;
+            font-size: 14px;
+            font-family: Roboto-Regular;
+        }
+    }
+
+    .form-footer-actions {
+        button {
+            box-shadow: none;
+            font-family: Roboto-Bold;
+            font-size: 14px;
+            text-transform: uppercase;
+            min-width: 135px;
+            margin: 1em 0;
+            margin-left: 1em;
+            &.cancel-btn {
+                background: $white;
+                color: $dark-grey-text;
+            }
+            &.save-btn {
+                background: $blue-default;
+                color: $white;
+                border-color: $blue-default;
+            }
+        }
+    }
+}

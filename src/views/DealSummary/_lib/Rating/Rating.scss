@@ -1,0 +1,16 @@
+
+.rating-wrapper {
+    display: inline-flex;
+    align-items: center;
+    i {
+        font-size: 16px;
+        margin: 0px !important;
+        padding-right: 2px;
+        &.star {
+            color: #F3C14F;
+        }
+        &.star_border {
+            color: #B0BEC5;
+        }
+    }
+}

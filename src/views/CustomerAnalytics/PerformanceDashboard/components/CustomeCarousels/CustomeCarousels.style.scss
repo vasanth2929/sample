@@ -1,0 +1,57 @@
+.custome_carousels {
+    width: inherit;
+    height: inherit;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &-content {
+        width: 80%;
+    }
+
+    &-next {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10%;
+        &>span {
+            font-size: 50px;
+            cursor: pointer;
+            color: #6B778C;
+        }
+    }
+
+    &-prev {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10%;
+
+        &>span {
+            font-size: 50px;
+            cursor: pointer;
+            color: #6B778C;
+        }
+    }
+
+    &-indicator {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        display: flex;
+
+        &>div {
+            width: 20px;
+            height: 5px;
+            border-radius: 12px;
+            background-color: rgb(185, 180, 180);
+            margin: 0 5px;
+
+            &.active {
+                background-color: rgb(21, 116, 224);
+
+            }
+        }
+    }
+}

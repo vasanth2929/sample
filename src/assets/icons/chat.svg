@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>DC71C7FC-916A-4FCD-B153-B0F5EC7AF3B3</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tribyl-icons" transform="translate(-379.000000, -473.000000)">
+            <g id="Group-5" transform="translate(379.000000, 345.000000)">
+                <g id="Chat" transform="translate(0.000000, 128.000000)">
+                    <g id="duo-24px" fill="#00B257" fill-rule="nonzero">
+                        <path d="M43.2,0 L24,0 C10.512,0 0,11.184 0,24.672 C0,37.2 10.776,48 23.328,48 C36.936,48 48,37.488 48,24 L48,4.8 C48,2.16 45.84,0 43.2,0 Z" id="Shape"></path>
+                    </g>
+                    <g id="chat_bubble-24px" transform="translate(12.000000, 12.000000)">
+                        <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                        <path d="M20,2 L4,2 C2.9,2 2,2.9 2,4 L2,22 L6,18 L20,18 C21.1,18 22,17.1 22,16 L22,4 C22,2.9 21.1,2 20,2 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

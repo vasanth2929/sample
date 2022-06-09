@@ -1,0 +1,48 @@
+.expert-buyerStudies-cards {
+    width: 350px;
+    background-color: #FFFFFF;
+    border: 1px solid #E1E6E8;
+    padding: 16px;
+    border-radius: 12px;
+
+    &-cover {
+        width: 318px;
+        height: 200px;
+        background-color: rgb(243, 243, 243);
+        margin-bottom: 16px;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 70%;
+        }
+    }
+
+    &-button {
+        background-color: #0076DE;
+        color: #FFFFFF;
+        font-size: 12px;
+        font-family: Roboto-medium;
+        height: 35px;
+        padding: 4px 24px;
+        letter-spacing: 0.7px;
+        margin-top: 20px;
+    }
+
+    &-metrics {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        img{
+            width: 16px;
+            height: 16px;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import '../../../../../styles/base/variables';
+@import '../../../../../styles/base/variablesV2';
+
+.messaging-cards {
+    margin-bottom: 16px;
+    flex: 1;
+    box-shadow: 0 2px 4px 1px #f7f3f3;
+    cursor: pointer;
+
+    &--title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        color: $black;
+        font-size: 20px;
+        font-family: Roboto-Medium;
+        span.badge {
+            display: flex;
+            align-items: center;
+            margin: 0px 10px;
+            font-size: 12px;
+            padding: 5px 13px;
+            font-family: SFUI-Regular;
+            height: fit-content;
+        }
+        div {
+            display: flex;
+            align-items: center;
+            white-space: nowrap
+        }
+    }
+
+    .btn {
+        box-shadow: none;
+        border: none;
+        background-color: #ECF9F2;
+        color: $black;
+        margin-right: 10px;
+        font-size: 12px;
+        font-family: Roboto-Medium;
+        font-weight: 400;
+        pointer-events: none;
+    }
+}
+
+.test-c-b {
+    background-color:  $test-bg !important;
+}

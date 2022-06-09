@@ -1,0 +1,253 @@
+// @import '../../../../../../../styles/base/variables';
+@import '../../../../../../../styles/base/variablesV2';
+
+.detail-view-modal {
+    .modal-body {
+        min-width: 950px;
+        max-width: 950px;
+        min-height: 768px;
+        max-height: 768px;
+        border-radius: 5px;
+        overflow: hidden;
+        @media screen and (max-width: 1600px) {
+            min-height: 640px;
+            max-height: 640px;
+        }
+        header.header {
+            margin-bottom: 0px;
+            &.eco-driver {
+                color: $economic-drivers;
+            }
+            &.use-cases {
+                color: $use-cases;
+            }
+            &.pain-points {
+                color: $pain-points;
+            }
+            &.personas {
+                color: $personas;
+            }
+            &.value-proposition {
+                color: $value-proposition;
+            }
+            &.objections {
+                color: $objections;
+            }
+            &.content {
+                color: $content;
+            }
+            &.competition {
+                color: $partners;
+            }
+            &.partners {
+                color: $partners;
+            }
+            &.activities {
+                color: $activities;
+            }
+            .card-type {
+                font-family: Roboto-Bold;
+                font-size: 14px;
+                
+                .status {
+                    color: #27AE60;
+                    margin-left: 1em;
+                    i {
+                        position: relative;
+                        top: 3px;
+                    }
+                    .verifyCountContainer {
+                        display: flex;
+                        height: 17px;
+                        width: 17px;
+                        position: absolute;
+                        right: 48px;
+                        top: 48px;
+                        background-color: #DE5E56;
+                        border: #FFF solid 1.1px;
+                        border-radius: 50%;
+                        p {
+                            margin: auto;
+                            font-size: 10px;
+                            color: #FFF;
+                        }
+                    }
+                }
+            }
+            .edit-title-section {
+                input {
+                    border: 0;
+                    border-bottom: thin solid gray;
+                    padding: 0 0.5em;
+                    margin-right: 1em;
+                    margin-bottom: 3px;
+                    font-family: SFUI-Bold;
+                    width: 25%;
+                }
+                i {
+                    margin-right: 0.8em;
+                    position: relative;
+                    top: 2px;
+                    cursor: pointer;
+                }
+            }
+            .card-title {
+                color: #000000;
+                font-weight: bold;
+                font-size: 18px;    
+                margin-bottom: 0;
+                i {
+                    margin-right: 0;
+                    margin-left: 0.5em;
+                    position: relative;
+                    top: 2px;
+                    cursor: pointer;
+                }
+                .personas {
+                    color: $personas;
+                }
+            }
+            &.eco-driver {
+                color: $economic-drivers;
+            }
+            &.use-cases {
+                color: $use-cases;
+            }
+            &.pain-points {
+                color: $pain-points;
+            }
+            &.personas {
+                color: $personas;
+            }
+            &.value-proposition {
+                color: $value-proposition;
+            }
+            &.objections {
+                color: $objections;
+            }
+            &.content {
+                color: $content;
+            }
+            &.competition {
+                color: $partners;
+            }
+            &.partners {
+                color: $partners;
+            }
+            &.activities {
+                color: $activities;
+            }
+            .contact-name {
+                font-family: Roboto-Bold;
+                color: #B0BEC5;
+                line-height: 21px;
+
+                font-size: 18px;  
+                margin-bottom: 0;
+            }
+            .modal-header-job-title {
+                font-family: Roboto-Bold;
+                color: #B0BEC5;
+                line-height: 21px;
+
+                font-size: 18px;  
+                margin-bottom: 0;
+            }
+            .created-by {
+                font-family: Roboto-Regular;
+                font-size: 10px;
+                color: #5F6C72;
+            }
+            .counters {
+                display: flex;
+                margin-top: 8px;
+                height: 23px;
+                p {
+                    font-family: Roboto-Bold;
+                    font-size: 14px;
+                    line-height: 16px;
+                    border-radius: 100px;
+                    margin-right: 4px;
+                    padding: 4px 10px;
+                    margin-bottom: 0px;
+                }
+                .win {
+                    cursor: default;
+                    color: #27AE60;
+                    background: #E4FFE6;
+                }
+                .loss {
+                    cursor: default;
+                    color: #DE5E56;
+                    background: #FFECEB;
+                }
+                .no-decision {
+                    cursor: default;
+                    background: #E3F2FD;
+                    color: #0066CC;
+                }
+            }
+            .bottom-row-wrapper {
+                display: flex;
+                justify-content: space-between;
+                .sentiment-wrapper {
+                    //    width: 280%;
+                        width: 15%;
+                        float: right;
+                }       
+            }
+            .personaCard-bottom-wrapper {
+                display: flex;
+                justify-content: flex-end;
+                 
+            }
+            .bottom-job-sentiment-wrapper {
+                display: flex;
+                justify-content: space-between;
+                //    width: 280%;
+                .contact-persona-sentiment-wrapper {
+                    display: flex;
+                    width: 530px;
+                    .sentiment-container {
+                        width: 35%;
+                    }
+                    .tribyl-persona-container,
+                    .sentiment-container {
+                        width: 62%;
+                        margin-right: 17px;
+                        margin-bottom: 4px;
+                        .sentiment-label {
+                            font-family: Roboto-Bold;
+                        }
+                        .Select-control {
+                            height: 32px !important;
+                            border: 1px solid #5F6C72;
+                            box-sizing: border-box;
+                            border-radius: 5px;
+                            font-family: Roboto-Regular;
+                            font-size: 14px;
+                            line-height: 19px;
+                            color: #5F6C72;
+                            .Select-multi-value-wrapper {
+                                height: 32px !important;
+                            }
+                        }
+                    }
+                    .sentiment-label {
+                        font-family: Roboto-Regular;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 12px;
+                        color: #2C393F;
+                        margin-bottom: 4px;
+                    }
+                }
+            } 
+            .thermometer {
+                width: 20px;
+                height: 40px;
+            }
+        }
+    }
+}

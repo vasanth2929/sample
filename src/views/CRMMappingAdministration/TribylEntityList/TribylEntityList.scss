@@ -1,0 +1,45 @@
+.tribyl-industries-list-wrapper {
+    .tribyl-object-select-header-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        border-bottom: 1px solid #c3c3c3;
+        background: rgba(128, 128, 128, 0.07);
+
+        .tribyl-object-select-wrapper {
+            width: 100%;
+            padding-left: 10px;
+            border-bottom: 1px solid #e1e1e1;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            label {
+                font-size: 14px;
+                font-family: Roboto-Bold;
+            }
+            .tribyl-object-select {
+                width: 350px;
+                margin-right: 20px;
+            }
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+            padding-left: 10px;
+            padding-top: 10px;
+            line-height: 28px;
+            color: #464646;
+            display: block;
+            border-bottom: none !important;
+            height: 48px;
+            padding-bottom: 0px;
+            background: none !important;
+            margin: 0px;
+
+            span {
+                font-family: Roboto-Regular;
+            }
+        }
+    }
+}

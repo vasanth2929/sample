@@ -1,0 +1,37 @@
+.messaging-detail {
+    display: flex;
+    justify-content: center;
+
+    &-container {
+        width: 1440px;
+        display: flex;
+        padding: 0 60px;
+
+        &-panel {
+            //width:1053px;
+            width: inherit;
+
+            &-header {}
+
+            &-body {
+                padding-top: 24px;
+                display: flex;
+                //justify-content: space-between;
+            }
+        }
+
+        &-sidebar {
+            width: 387px;
+            height: 844px;
+            border-left: 1px solid #D9E1E4;
+            //margin-left:16px;
+        }
+    }
+
+    .add-pb-card-btn-container {
+        position: fixed;
+        right: 40px;
+        bottom: 20px;
+        cursor: pointer;
+    }
+}

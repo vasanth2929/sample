@@ -1,0 +1,43 @@
+@import '../../../../styles/base/variables';
+
+.shimmer-form {
+    margin-bottom: 16px;
+    margin-top: 16px;
+    margin-left: 10px;
+    padding: 16px;
+    color: $text-color;
+    background: $white;
+    .shimmer-header {
+        color: $text-color;
+        border-bottom: 1px solid $light-grey;
+        padding-bottom: 10px;
+        .shimmer-div {
+            margin: 15px auto 10px;
+            height: 30px;
+        }
+    }
+    .shimmer-card-content-section {
+        color: $text-color;
+        padding-top: 20px;
+        padding-left: 10px;
+        .row {
+            text-align: left;
+            .col-2 {
+                .shimmer-div {
+                    margin: 15px auto 10px;
+                    height: 30px;
+                }
+            }
+            .col-10 {
+                .shimmer-div {
+                    margin: 15px auto 10px;
+                    height: 30px;
+                }
+            }
+        }
+        .button {
+            margin-left: 36px;
+        }
+    }
+}
+

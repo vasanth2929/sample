@@ -1,0 +1,12 @@
+@import '../../../styles/base/variables';
+
+.heading-panel {
+    @include box();
+    .head-section {
+        padding: 0.7em 1em;
+        background: $background-grey;
+    }
+    .body-section {
+        padding: 1em;
+    }
+}

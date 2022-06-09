@@ -1,0 +1,64 @@
+.swot-header {
+
+    .filter-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 32px 0;
+
+        .metrics {
+            display: flex;
+            align-items: center;
+
+            > div {
+                margin-right: 1rem;
+            }
+
+            .comp-metrics {
+                display: flex;
+                align-items: center;
+                width: 440px;
+                border-radius: 5px;
+                border: 1px solid #EBEFF1;
+                padding: 16px;
+                height: 68px;
+                background-color: white;
+                line-height: 20px;
+                justify-content: space-evenly;
+
+                p {
+                    margin-bottom: 0;
+                }
+
+                &>div {
+                    margin-right: 20px;
+                }
+
+                &>div:last-child {
+                    margin-right: 0px;
+                }
+
+                .small-text {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .filter {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .account-filter {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .metrics-box {
+            width: 444px;
+            margin-left: 20px;
+        }
+
+    }
+}

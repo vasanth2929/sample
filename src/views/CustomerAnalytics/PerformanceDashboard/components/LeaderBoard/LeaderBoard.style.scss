@@ -1,0 +1,166 @@
+.performance-dashboard-leaderBoard {
+    width: 360px;
+    height: 624px;
+    background-color: #F6F8F9;
+    padding: 6px 8px;
+
+    &-container {
+        background-color: #FFFFFF;
+        border: 1px solid #E1E6E8;
+
+
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 13px;
+            height: 75px;
+            background-color: #F3FCF9;
+            position: relative;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+            .amount {
+                .basic-single{
+
+                    .select__control {
+                        width: 168px;
+                        height: 25px;
+                    }
+                    
+                    .select__indicator {
+                        color: #505F79;
+                    }
+                    
+                    margin:0 10px 0 6px;
+                }
+            }
+
+            .card-type {
+                position: absolute;
+                top: 16px;
+                left: 13px;
+                color: #52627A;
+                font-family: Roboto-regular;
+                font-size: 12px;
+                text-transform: capitalize;
+            }
+        }
+
+        &-body {
+            padding: 16px;
+            height: 525px;
+            overflow-y: auto;
+
+            .solution-cards {
+                border: 1px solid #E1E8EB;
+                background-color: #FFFFFF;
+                padding: 16px;
+                border-radius: 5px;
+                margin-bottom: 16px;
+                position: relative;
+
+                .rating {
+                    position: absolute;
+                    top: 12px;
+                    right: 8px;
+                }
+
+                .metrics2 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 10px;
+
+                    &>div {
+                        border-right: 1px solid #E4E4E4;
+                        padding-right: 5px;
+                        width: fit-content;
+
+                        span {
+                            margin: 0 3px;
+                        }
+
+                        &:nth-last-child(2) {
+                            border: none;
+                            padding-right: 0px;
+                            display: block;
+                        }
+
+                        &:nth-last-child(1) {
+                            border: none;
+                            padding-right: 0px;
+                            display: block;
+                        }
+                    }
+
+                    .value {
+                        color: #0080FF;
+                    }
+
+                    .small-text {
+                        &.pinned {
+                            color: #00C752;
+                            border: none;
+                        }
+                    }
+
+                    .card-options {
+                        .dropbtn {
+                            display: flex;
+                            flex-direction: column;
+                            border: none;
+                            cursor: pointer;
+                            font-size: 22px;
+                            font-weight: bold;
+                            line-height: 0;
+                            height: 23px;
+                        }
+
+                        .dropdown-content {
+                            right: -10px;
+                            top: 20px;
+                            background-color: #FFFFFF;
+
+                            img {
+                                width: 16px;
+                                margin-right: 5px;
+                            }
+
+                            &>div {
+                                padding: 10px;
+
+                                &:hover {
+                                    background-color: rgb(202, 218, 235);
+                                    color: #FFFFFF;
+                                }
+                            }
+
+                            a {
+                                padding: 0;
+
+                                &:hover {
+                                    outline: none;
+                                    background-color: rgb(202, 218, 235);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.pinned {
+                    border: 1px solid #00C752;
+                    background-color: #F3FCF8;
+                }
+            }
+        }
+
+        .status {
+            position: absolute;
+            top: -12px;
+            right: 0;
+            font-size: 12px;
+            padding: 4px 14px;
+            font-family: Roboto-regular;
+        }
+    }
+}

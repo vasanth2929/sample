@@ -1,0 +1,32 @@
+.goal-dropdown-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  .basic-single {
+    .select__control {
+      border: 1px solid #6b778c;
+      border-radius: 4px;
+      width: 170px;
+      margin-left: 10px;
+    }
+
+    .select__indicator-separator {
+      display: none;
+    }
+
+    .select__placeholder {
+      font-family: Roboto-Medium;
+      font-size: 14px;
+      color: #091e42;
+    }
+
+    .select_dropdownIndicator {
+      color: #505f79;
+    }
+
+    .select__indicator {
+      color: #505f79;
+    }
+  }
+}

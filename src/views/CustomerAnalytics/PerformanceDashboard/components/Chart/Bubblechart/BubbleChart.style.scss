@@ -1,0 +1,78 @@
+@import "../../../../../../styles/base/variables";
+.performance-bubble-chart {
+    height: 100%;
+    width: 100%;
+
+    .highcharts-container {
+        height: 600px;
+    }
+
+}
+
+.market-insight-modal {
+
+    .modal-body {
+        padding: 0 !important;
+        max-width: 720px;
+        
+        .header-section {
+            height: 75px;
+            // background-color: #F3FCF9;
+            padding: 10px 16px !important;
+            display: flex;
+            align-items: center;
+            border: none !important;
+            border-bottom: 1px solid lightgray !important;
+
+            .insight-modal-header {
+                .heading {
+                    font-family: Roboto-Bold;
+                    color: #091F42;
+                    position: relative;
+                    font-size: 24px;
+                }
+
+                .status {
+                    position: absolute;
+                    top: 25px;
+                    right: 60px;
+                    font-family: Roboto-bold;
+                    font-size: 14px;
+                    color: #FFFFFF;
+                    background-color: #00B257;
+                    width: fit-content;
+                    padding: 4px 16px;
+                    border-radius: 20px;
+                    &.test {
+                        background-color: $test-bg !important;
+                        color: black !important;
+                    }
+                }
+            }
+            
+        }
+        .insight-modal-body{
+            height: 600px;
+            overflow-y: auto;
+        }
+
+        #modal-content {
+            overflow: auto;
+        }
+
+        .content-section {
+            padding: 16px !important;
+            overflow-y: auto;
+            margin: 0 !important;
+
+            .insight-modal-body{
+                height: 600px;
+                overflow-y: auto;
+            }
+        }
+    }
+}
+
+.testing-card-header {
+    // background-color: #fff3d7 !important;
+}

@@ -1,0 +1,98 @@
+{
+    "storyboardTitle": "Vodafone Customer Service $ 561,000 Won Q4'16",
+    "storyboardSharable": false,
+    "storyboardReviewStatus": "blue",
+    "painpointName": "High Call Volumes",
+    "conversations": 5,
+    "context": "High Percentage of inbound calls are status inquiries",
+    "confidence": "10%",
+    "tabs": [
+        {
+            "name": "Call Plan",
+            "slug": "call_plan"
+        },
+        {
+            "name": "Key Moments",
+            "slug": "key_moments"
+        },
+        {
+            "name": "Key Content",
+            "slug": "key_content"
+        },
+        {
+            "name": "Discussion",
+            "slug": "discussion"
+        }
+    ],
+    "keyMoments": [
+        {
+            "name": "Stage 1",
+            "data": "We are definitely interested in lowering call volumes, and want to discuss more",
+            "icon": "mail"
+        },
+        {
+            "name": "Stage 3",
+            "data": "Management is concerned about our high call volume, as part of a margin improvement initiative",
+            "icon": "mail"
+        },
+        {
+            "name": "Stage 4",
+            "data": "Our Pareto analysis shows that the biggest opportunity to reduce call volumes may be < 2 minute calls",
+            "icon": "assessment"
+        }
+    ],
+    "keyContent": [
+        {
+            "name": "Stage 1",
+            "data": "Process Flow.jpg",
+            "icon": "image"
+        },
+        {
+            "name": "Stage 2",
+            "data": "ROI_vFinal.doc",
+            "icon": "content_paste"
+        },
+        {
+            "name": "Stage 3",
+            "data": "Telco_Whitepaper.pdf",
+            "icon": "content_paste"
+        }
+    ],
+    "comments": [
+        {
+            "name": "Jerome Mason",
+            "date": "Yesterday",
+            "comment": "<p class=\"comment\">Hi <span class=\"tag-name\">@Dylan Sullivan<\/span>, How did you collect the data for the Pareto Analysis?<\/p>"
+        },
+        {
+            "name": "Stanley Banks",
+            "date": "2nd August, 2017",
+            "comment": "<p class=\"comment\">Great Story. <span class=\"tag-name\">@TeamATT<\/span>, Lets look at replicating this deal.<\/p>"
+        },
+        {
+            "name": "Jerome Mason",
+            "date": "Yesterday",
+            "comment": "<p class=\"comment\">Hi <span class=\"tag-name\">@Dylan Sullivan<\/span>, How did you collect the data for the Pareto Analysis?<\/p>"
+        },
+        {
+            "name": "Stanley Banks",
+            "date": "2nd August, 2017",
+            "comment": "<p class=\"comment\">Great Story. <span class=\"tag-name\">@TeamATT<\/span>, Lets look at replicating this deal.<\/p>"
+        }
+    ],
+    "cardMenus": [
+        {
+            "name": "High Wait Time",
+            "conversations": 4
+        },
+        {
+            "name": "Poor Customer Experience",
+            "conversations": 3
+        },
+        {
+            "name": "High Call Volumes",
+            "conversations": 5
+        }
+    ],
+    "proTipText": "Ask for Pareto data on % of inbound calls that were resolved in 2 minutes or less. Those calls can be eliminated via our self-service solution and can help reduce costs."
+}

@@ -1,0 +1,88 @@
+@import '../../../../../styles/base/variables';
+@import '../../../../../styles/base/variablesV2';
+
+.story-note-section {
+    .story-notes-header {
+        margin-bottom: 1em;
+        p {
+            margin-bottom: 0;
+            font-family: Roboto-Bold;
+            margin-left: 1em;
+            color: $dark-grey-text;
+        }
+        .note-metadata {
+            font-size: 12px;
+            margin-left: 1.3em;
+            .author-details {
+                font-family: Roboto-Medium;
+            }
+            .timestamp-details {
+                font-family: Roboto-Regular;
+                color: $grey-disabled;
+            }
+        }
+    }
+    .story-notes-editor {
+        .react-tabs {
+            border: 1px solid $grey-disabled;
+            border-radius: 5px;
+            ul.react-tabs__tab-list {
+                li {
+                    width: 100%;
+                    text-align: center;
+                    font-family: Roboto-Bold;
+                    color: $blue-default;
+                    border: none;
+                    border-bottom: 2px solid $blue-default;
+                    text-transform: uppercase;
+                    font-size: 15px;
+                }
+            }
+        }
+        .quill {
+            .ql-container {
+                border-radius: 5px;
+                font-size: 15px;
+                min-height: 58vh;
+                max-height: 58vh;
+                overflow-y: auto;
+            }
+        }
+    }
+    .story-note-footer-actions {
+        button {
+            border: 1px solid $dark-grey-text;
+            box-shadow: none;
+            font-size: 14px;
+            font-family: Roboto-Medium;
+            background: $white;
+            margin-top: 0.5em;
+            width: 48%;
+            margin-bottom: 1em;
+            text-transform: uppercase;
+            &.save-btn {
+                background: $blue-default;
+                border-color: $blue-default;
+                color: $white;
+            }
+        }
+    }
+}
+.story-notes-modal {
+    .modal-body {
+        max-width: 40vw;
+        .header-section {
+            display: none;
+        }
+        .content-section {
+            padding-top: 1.5em;
+            height: 570px !important;
+            overflow-y: hidden !important;
+            .story-note-section .story-notes-editor .quill .ql-container {
+                min-height: 40vh;
+                max-height: 40vh;
+                overflow-y: auto;
+            }
+        }
+    }
+}

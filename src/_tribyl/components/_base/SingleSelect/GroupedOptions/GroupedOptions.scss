@@ -1,0 +1,22 @@
+.single-select-options.grouped-options {
+    .single-select-option-group-wrapper {
+        &[data-grouped="true"] {
+            background: rgba(224, 224, 224, 0.23);
+            li {
+                padding-left: 20px !important;
+            }
+        }
+        .single-select-option-group-header {
+            color: #9a9a9a;
+            font-family: Roboto-Bold;
+            pointer-events: none;
+            padding-left: 1px;
+            margin: 0px 5px;
+            font-size: 11px;
+            border-bottom: 1px solid #bbbbbb;
+            height: 23px;
+            line-height: 24px;
+        }
+        
+    }
+}

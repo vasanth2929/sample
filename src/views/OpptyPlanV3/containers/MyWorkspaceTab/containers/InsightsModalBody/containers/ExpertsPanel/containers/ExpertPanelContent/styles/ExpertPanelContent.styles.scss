@@ -1,0 +1,70 @@
+.experts-data-grid {
+    .react-grid-Container {
+        .react-grid-Main {
+            outline: none;
+            .react-grid-Grid {
+                border: 0 !important;
+                min-height: calc( 100vh - 25em ) !important;
+                .react-grid-Cell {
+                    border: 0 !important;
+                }
+            }
+            .react-grid-Header {
+                .react-grid-HeaderCell {
+                    background: white;
+                    padding-left: 1em;
+                    padding-top: 1em;
+                    &:nth-child(3),
+                    &:nth-child(4),
+                    &:nth-child(5) {
+                        text-align: right;
+                        padding-right: 16px;
+                    }
+                    .react-grid-HeaderCell-sortable {
+                        p {
+                            color: #4D4D4D;
+                            margin-bottom: 0;
+                        }
+                    }
+                    .react-grid-HeaderCell-sortable--descending, .react-grid-HeaderCell-sortable--ascending {
+                        .pull-right {
+                            margin-right: 0px;
+                            color: #0080FF
+                        }
+                        p {
+                            color: #0080FF;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            .react-grid-Canvas {
+                height: 100%;
+            }
+        }
+    }
+    .card-list-error {
+        font-family: SFUI-Medium;
+        color: grey;
+        padding: 75px 30px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+}
+.experts-grid-loader {
+    width: 98%;
+    .text-block {
+        border-radius: 5px;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+        background: white;
+        margin-bottom: 1em;
+        padding: 1em;
+        .text-row {
+            margin-bottom: 1em;
+            &.text-line {
+                height: 0.7em;
+            }
+        }
+    }
+}

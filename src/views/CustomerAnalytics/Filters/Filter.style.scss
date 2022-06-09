@@ -1,0 +1,151 @@
+.market-filter-containter {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  .select-filters {
+    display: flex;
+    align-items: center;
+    height: 64px;
+
+    .material-icons {
+      margin: 0;
+    }
+
+    .basic-single {
+      .select__control {
+        border: 1px solid #6b778c;
+        border-radius: 4px;
+        width: 165px;
+      }
+
+      .select__control--is-disabled {
+        background-color: transparent;
+        color: black;
+        .select__single-value--is-disabled{
+          color: inherit;
+        }
+      }
+
+      .select__indicator-separator {
+        display: none;
+      }
+
+      .select_dropdownIndicator {
+        color: #505f79;
+      }
+
+      .select__indicator {
+        color: #505f79;
+      }
+
+      margin: 0 10px 0 6px;
+    }
+
+    .basic-single-blue {
+      .select__control {
+        border: 1px solid #0080ff;
+        background-color: #f2f9ff;
+        width: 165px;
+      }
+
+      .select__single-value {
+        color: #0080ff;
+      }
+
+      .select__indicator-separator {
+        display: none;
+      }
+
+      .select__placeholder {
+        color: #0080ff;
+      }
+
+      .select__indicator {
+        color: #0080ff;
+      }
+
+      margin: 0 10px 0 6px;
+    }
+
+    .button {
+      width: 60px;
+      height: 40px;
+      font-family: Roboto-Bold;
+      font-size: 14px;
+      border: 1px solid #6b778c;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: #35B47E;
+      border: none;
+      color: white;
+      height: 35px;
+      &.disabled {
+        opacity: 0.3;
+        cursor: none;
+      }
+    }
+  }
+
+  .search-filter {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .search-box {
+      height: 40px;
+      padding: 15px;
+      width: 263px;
+      border-radius: 5px;
+      border: 1px solid #5c6c73;
+      margin-right: 16px;
+    }
+
+    .material-icons {
+      margin-right: 5px;
+      font-size: 16px;
+    }
+
+    .save {
+      display: flex;
+      align-items: center;
+      color: #0080ff;
+      margin-right: 16px;
+      font-size: 14px;
+      font-family: Roboto-bold;
+    }
+
+    .upload {
+      display: flex;
+      align-items: center;
+      color: #0080ff;
+      margin-right: 16px;
+      font-size: 14px;
+      font-family: Roboto-bold;
+    }
+
+    .customer-analytics-filter {
+      height: 38px;
+      font-size: 16px;
+    }
+  }
+
+  .more-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 10px;
+    color: #0080ff;
+  }
+  .disabled {
+    opacity: 0.4;
+    cursor: none;
+  }
+}
+.hide{
+  display: none !important;
+}

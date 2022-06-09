@@ -1,0 +1,115 @@
+.card-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .solution-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    border: 1px solid #e1e8eb;
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    position: relative;
+    width: 320px;
+    .rating {
+      position: absolute;
+      top: 12px;
+      right: 8px;
+    }
+
+    .heading{
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .metrics2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+
+      & > div {
+        border-right: 1px solid #e4e4e4;
+        padding-right: 5px;
+        width: fit-content;
+
+        span {
+          margin: 0 3px;
+        }
+
+        &:nth-last-child(2) {
+          border: none;
+          padding-right: 0px;
+          display: block;
+        }
+
+        &:nth-last-child(1) {
+          border: none;
+          padding-right: 0px;
+          display: block;
+        }
+      }
+
+      .value {
+        color: #0080ff;
+      }
+
+      .small-text {
+        &.pinned {
+          color: #00c752;
+          border: none;
+        }
+      }
+
+      .card-options {
+        .dropbtn {
+          display: flex;
+          flex-direction: column;
+          border: none;
+          cursor: pointer;
+          font-size: 22px;
+          font-weight: bold;
+          line-height: 0;
+          height: 23px;
+        }
+
+        .dropdown-content {
+          right: -10px;
+          top: 20px;
+          background-color: #ffffff;
+
+          img {
+            width: 16px;
+            margin-right: 5px;
+          }
+
+          & > div {
+            padding: 10px;
+
+            &:hover {
+              background-color: rgb(202, 218, 235);
+              color: #ffffff;
+            }
+          }
+
+          a {
+            padding: 0;
+
+            &:hover {
+              outline: none;
+              background-color: rgb(202, 218, 235);
+            }
+          }
+        }
+      }
+    }
+
+    &.pinned {
+      border: 1px solid #00c752;
+      background-color: #f3fcf8;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@import '../../../../../../../../../styles/base/variables';
+@import '../../../../../../../../../styles/base/variablesV2';
+
+.insights-panel {
+    .insights-top-wrapper {
+        .compelling-decision-check i {
+            margin-right: 0;
+            font-size: 22px;
+            position: relative;
+            top: 5px;
+            &.active-check {
+                color: $green-dark;
+            }
+            &.clickable {
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .card-notes-section,
+    .update-dq-section {
+        textarea {
+            background: #FFFFFF;
+            border: 1px solid #969FA8;
+            box-sizing: border-box;
+            box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+            font-size: 14px;
+            &.dq-textarea {
+                margin-bottom: 1em;
+            }
+        }
+        .btn-controls {
+            margin-top: 0.5em;
+            button {
+                background: $white;
+                box-shadow: none;
+                font-size: 14px;
+                margin-left: 0.5em;
+                margin-bottom: 0;
+                width: 20%;
+                height: 32px;
+                padding-top: 5px;
+                &.save-btn {
+                    background: $blue-default;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .expand-button {
+        border-top: 1px solid $grey-disabled;
+        padding: 0.8em 0;
+        position: fixed;
+        bottom: 0;
+        width: 24.5%;
+        background: $white;
+        p {
+            margin-bottom: 0;
+            color: $blue-default;
+            font-family: Roboto-Bold;
+            cursor: pointer;
+            i {
+                position: relative;
+                top: 5px;
+                margin-right: 0;
+                cursor: pointer;
+            }
+        }
+    }
+}

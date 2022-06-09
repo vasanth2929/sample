@@ -1,0 +1,121 @@
+@import '../../../../styles/base/variables';
+
+.keyword-management-admin-section {
+    #main-content-section {
+        margin-top: 102px;
+    }
+    .title-label {
+        padding: 16px 0;
+        p {
+            font-family: SFUI-Medium;
+            font-size: 24px;
+            margin-top: 4px;
+            margin-bottom: 0px;
+            margin-left: -15px;
+            color: $text-color;
+        }
+        .add-user-btn {
+            width: 175px;
+            margin-left: 16px;
+            box-shadow: $shadow;
+            border: 1px solid transparent;
+            height: 45px;
+            font-family: SFUI-Medium;
+            margin-right: -15px;
+        }
+    }
+    ul.react-tabs__tab-list {
+        list-style-type: none;
+        padding-left: 0px;
+        & > li {
+            width: 50%;
+            display: inline-block;
+            text-align: center;
+            border-bottom: 2px solid #aaa;
+            font-size: 1.25em;
+            font-family: Proxima-Nova-SemiBold;
+            &.react-tabs__tab--selected {
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+                border-radius: 0;
+                color: $btn-blue;
+                border-bottom-color: $btn-blue;
+            }
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+    .keyword-panel {
+        margin-bottom: 1em;
+        border: $common-border;
+        border-radius: 4px;
+        padding: 1em 2em;
+        box-shadow: $shadow;
+        .shimmer-div {
+            .text-line {
+                margin-bottom: 1.5em;
+                &:last-child {
+                    margin-bottom: 0.5em;
+                }
+            }
+        }
+        .object-title {
+            border: $common-border;
+            border-radius: 4px;
+            margin-bottom: 1em;
+            padding: 0.5em;
+            p {
+                margin-bottom: 0;
+                font-family: SFUI-SemiBold;
+            }
+        }
+        .react-tagsinput {
+            min-height: 8em;
+            border-radius: 4px;
+            &.react-tagsinput-disabled {
+                background: #ebebeb;
+                .react-tagsinput-tag {
+                    background: #dee5d0;
+                }
+            }
+        }
+        .action-col {
+            padding-right: 0;
+        }
+        .edit-keyword {
+            cursor: pointer;
+            margin-bottom: 1em;
+            padding-top: 0.5em;
+            i {
+                margin-right: 0;
+                cursor: pointer;
+                position: relative;
+                top: 2px;
+            }
+        }
+        .save-keyword-btn {
+            cursor: pointer;
+            margin-top: 0.5em;
+            box-shadow: $shadow;
+            background: $btn-blue;
+            color: $white;
+            position: absolute;
+            bottom: 0;
+            i {
+                margin-right: 0;
+                cursor: pointer;
+                position: relative;
+                top: 4px;
+            }
+        }
+        textarea {
+            border: $common-border;
+            border-radius: 4px;
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 0;
+        }
+    }
+}

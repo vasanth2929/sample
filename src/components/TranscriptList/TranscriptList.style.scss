@@ -1,0 +1,26 @@
+.keymomentList {
+  height: 600px;
+  .MuiDataGrid-row {
+    cursor: pointer;
+    .link {
+      color: rgb(113, 176, 235);
+      border-bottom: 1px solid rgb(113, 176, 235);
+      line-height: 1;
+    }
+    &.Mui-selected {
+      background-color: #e2eaed !important;
+    }
+    
+  }
+  .conv-keyword-modal {
+    height: 300px;
+  }
+ 
+}
+.legends {
+  display: flex;
+  margin-top: 20px;
+  .legend {
+    margin-right: 20px;
+  }
+}

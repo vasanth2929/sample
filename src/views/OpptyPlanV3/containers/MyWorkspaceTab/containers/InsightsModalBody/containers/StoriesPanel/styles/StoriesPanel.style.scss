@@ -1,0 +1,32 @@
+@import '../../../../../../../../../styles/base/variables';
+@import '../../../../../../../../../styles/base/variablesV2';
+
+.stories-panel {
+    height: 100%;
+    overflow-x: hidden;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    .sidebar {
+        max-height: 54vh;
+    }
+
+    .storyTileContainer {
+        padding-left: 7px;
+        padding-right: 7px;
+        margin-bottom: 15px;
+    }
+
+    .grid-loader {
+        @include box();
+        padding: 1em 0;
+        height: 520px !important;
+        .text-row {
+            margin-bottom: 1em;
+            height: 8px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

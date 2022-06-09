@@ -1,0 +1,14 @@
+
+.video-card-wrapper{
+    margin:10px;
+    font-family: Roboto-regular;
+    .card{
+        box-shadow: 1px 2px 1px grey;
+    }
+    .card-header{
+        .card-text{
+            font-size:20px;
+            font-family: Roboto-bold;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.tribyl-deals {
+  .tribyl-deals-card {
+    border-bottom: 1px solid #d9e1e4;
+
+    .tribyl-deals-card-body {
+      padding: 10px 16px;
+
+      .sub-heading {
+        &.large {
+          font-size: 16px;
+        }
+
+        &.bold {
+          font-family: Roboto-Bold;
+          color: #293940;
+        }
+      }
+
+      .value {
+        color: #00b257;
+        font-family: Roboto-bold;
+        font-size: 16px;
+      }
+
+      p.MuiTypography-root {
+        font-size: 16px;
+        font-family: Roboto-regular;
+        color: #5c6c73;
+      }
+
+      button {
+        color: #293940;
+        font-family: 'Roboto-Bold';
+        font-size: 14px;
+      }
+
+      .metrics {
+        height: 30px;
+        .status {
+          &.lost {
+            background-color: red !important;
+          }
+        }
+      }
+    }
+  }
+}

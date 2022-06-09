@@ -1,0 +1,124 @@
+@import "../../../styles/base/variables";
+
+@mixin transition($transition...) {
+	-moz-transition: $transition;
+	-o-transition: $transition;
+	-webkit-transition: $transition;
+	transition: $transition;
+}
+@mixin transform($translatex...) {
+	-webkit-transform: translateX($translatex);
+	-ms-transform: translateX($translatex);
+	transform: translateX($translatex);
+}
+.react-toggle-switch.reverse-toggle {
+	.switch {
+		.slider {
+			background-color: $active-blue;
+			&::before {
+				background-color: $white;
+			}
+		}
+		input {
+			&[value="on"] + .slider {
+				background-color: $grey;
+			}
+			&:focus + .slider {
+				box-shadow: 0 0 1px $active-blue;
+			}
+		}
+	}
+}
+.react-toggle-switch.small {
+    align-items: center;
+    padding-bottom: 2px;
+	.switch {
+		width: 40px;
+		height: 15px;
+		margin-left: 5px;
+		margin-right: 8px;
+
+		.slider {
+
+			right: -3.5px;
+
+
+			&::before {
+
+				width: 12px;
+				height: 12px;
+				left: 2px;
+				bottom: 1.5px;
+			}
+		}
+
+		input[value="on"] + .slider:before {
+			@include transform(28px);
+		}
+		.slider.round {
+			border-radius: 17px;
+		}
+		.slider.round:before {
+			border-radius: 50%;
+		}
+	}
+	.switch-label {
+		bottom: 11px;
+	}
+}
+
+.react-toggle-switch {
+	.switch {
+		position: relative;
+		display: inline-block;
+		width: 80px;
+		height: 30px;
+		margin-left: 10px;
+		margin-right: 16px;
+		input {
+			display: none;
+		}
+		.slider {
+			position: absolute;
+			cursor: pointer;
+			top: 0;
+			left: 0;
+			right: -7px;
+			bottom: 0;
+			color: $white;
+			background-color: $grey;
+			@include transition(0.4s);
+			&::before {
+				position: absolute;
+				content: "";
+				width: 24px;
+				height: 24px;
+				left: 4px;
+				bottom: 3px;
+				background-color: $white;
+				@include transition(0.4s);
+			}
+		}
+		input {
+			&[value="on"] + .slider {
+				background-color: $active-blue;
+			}
+			&:focus + .slider {
+				box-shadow: 0 0 1px $active-blue;
+			}
+		}
+		input[value="on"] + .slider:before {
+			@include transform(56px);
+		}
+		.slider.round {
+			border-radius: 34px;
+		}
+		.slider.round:before {
+			border-radius: 50%;
+		}
+	}
+	.switch-label {
+		position: relative;
+		bottom: 18px;
+	}
+}

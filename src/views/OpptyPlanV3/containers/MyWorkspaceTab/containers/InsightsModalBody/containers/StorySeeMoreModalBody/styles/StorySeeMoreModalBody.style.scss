@@ -1,0 +1,147 @@
+@import '../../../../../../../../../styles/base/variables';
+@import '../../../../../../../../../styles/base/variablesV2';
+
+.stories-seemore-view-modal {
+    .storyTileContainer{
+        overflow-y: auto;
+        height: 603px;
+        width: 572px;
+        display: flex;
+        flex-direction: column;
+        border-radius: $border-radius;
+        .titleLabel {
+            font-family: Roboto-Bold;
+            font-style: normal;
+            font-size: 14px;
+            line-height: 16px;
+            margin-top: 12px;
+            margin-bottom: 8px;
+        }
+        .headerContainer {
+            display: flex;
+            height: 100px;
+            .dummyIcon {
+                display: flex;
+                margin: auto;
+                margin-right: 12px;
+                width: 65px;
+                height: 65px;
+                p {
+                    font-family: Roboto-Bold;
+                    margin: auto;
+                    font-size: 35px;
+                }
+                img {
+                    height: 65px;
+                    width: 65px;
+                    border-radius: 50%;
+                    margin: auto;
+                }
+            }
+            .oppStatusContainer {
+                height: 13px;
+                display: flex;
+                width: fit-content;
+                .oppStatusLabel {
+                    color: $white;
+                    margin: auto 8px;
+                    font-family: Roboto-Bold;
+                    font-style: normal;
+                    font-size: 10px;
+                    line-height: 11px;
+                }
+                &.green {
+                    background-color: $green-dark;
+                }
+                &.orange {
+                    background-color: $active-orange;
+                }
+                &.red {
+                    background-color: $red;
+                }
+            }
+            .leftColLable {
+                margin-bottom: 4px;
+            }
+            .closeQtrLabel {
+                font-family: Roboto-Regular;
+                font-style: normal;
+                font-size: 10px;
+                line-height: 12px;
+                color: $dark-grey-text;
+            }
+            .oppAmountLabel{
+                color: $blue-default;
+                font-family: Roboto-Bold;
+                font-style: normal;
+                font-size: 10px;
+                line-height: 12px;
+            }
+            img {
+                height: 15px;
+                width: 15px;
+                margin: auto 8px auto 2px;
+            }
+            .shareStatusContainer {
+                margin-bottom: 8px;
+            }
+            .greyLabel {
+                color: $dark-grey-text;
+                font-family: Roboto-regular;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 10px;
+                line-height: 12px;
+                margin: auto 0;
+            }
+            .decisionCheckbox {
+                color: $dark-grey-text;
+                font-size: 19px;
+            }
+        }
+        .bodyContainer {
+            display: flex;
+            flex-direction: column;
+            .contextBody {
+                color: $dark-grey-text; 
+                font-family: Roboto-Regular;
+                font-style: normal;
+                font-size: 14px;
+                line-height: 16px;
+            }
+            .linkLabel {
+                font-family: Roboto-Regular;
+                font-style: normal;
+                font-size: 14px;
+                line-height: 16px;
+                color: $blue-default;
+                cursor: pointer;
+            }
+            .seeMoreLink {
+                text-decoration: underline;
+                color: $blue-default;
+                cursor: pointer;
+                font-family: Roboto-Regular;
+                font-size: 14px;
+                line-height: 16px;
+            }
+            .productList {
+                padding: 0;
+                li {
+                    margin: 1em;
+                    width: 125px;
+                    height: 32px;
+                    border-radius: 100px;
+                    background-color: $grey-disabled;
+                    font-family: Roboto-Bold;
+                    font-style: normal;
+                    font-size: 14px;
+                    line-height: 16px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

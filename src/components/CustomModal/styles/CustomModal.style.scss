@@ -1,0 +1,118 @@
+@import '../../../styles/base/variables';
+@import '../../../styles/base/variablesV2';
+
+.custom-modal {
+  display: none;
+  background: $overlay-black;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+
+  .modal-body.popup {
+    #modal-content,
+    .scrollbar-wrapper {
+      max-height: 660px !important;
+      min-height: 660px !important;
+    }
+  }
+  .modal-body {
+    background: $white;
+    max-width: 35vw;
+    border-radius: 5px;
+    box-shadow: $shadow;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    word-wrap: break-word;
+    padding: 0 2em 2em 2em;
+    .scrollbar-wrapper {
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-left: -30px;
+      margin-right: -30px;
+      overflow-y: scroll !important;
+    }
+    #modal-content.resizable {
+      height: 100% !important;
+      max-height: 95vh;
+    }
+    #modal-content {
+      max-height: 85vh;
+      font-family: SFUI-Regular;
+      font-size: 16px;
+      color: $text-color;
+      .header-section {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        border-bottom: thin solid #b0bec5;
+        padding-top: 2em;
+        padding-bottom: 10px;
+        cursor: grab;
+        &.hold {
+          cursor: grabbing;
+        }
+        i.close-modal {
+          font-size: 24px;
+          position: absolute;
+          top: 1.2em;
+          right: 1em;
+          margin-right: 0;
+          cursor: pointer;
+          color: #607d8b;
+        }
+        &.no-header-border {
+          border-bottom: none;
+        }
+      }
+      .header-section.header-section-close {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 0px;
+        padding: 0 !important;
+
+        .custom-modal-close-button {
+          // background: none;
+          margin-top: 28px;
+          z-index: 100000;
+          border: 0px;
+          background-color: #999;
+          color: #333;
+          border-radius: 100%;
+          height: 2em;
+          width: 2em;
+          cursor: pointer;
+          margin-right: 0.5em;
+        }
+      }
+      .content-section {
+        height: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin-left: -30px;
+        padding-left: 30px;
+        margin-right: -30px;
+        padding-right: 30px;
+      }
+      .content-section.resizable {
+        height: 100% !important;
+      }
+      .body-wrapper {
+        max-height: 60vh;
+      }
+    }
+  }
+  &.show {
+    display: block;
+    z-index: 9999;
+
+    &.transcript-window-modal,
+    &.pb-card-modal {
+      z-index: 10000;
+    }
+  }
+}

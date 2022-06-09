@@ -1,0 +1,71 @@
+.conversations-card {
+	padding: 16px;
+	margin: 1px;
+	margin-bottom: 8px;
+
+	&-row {
+		display: flex;
+		flex-direction: row;
+		.conversations-card-icon {
+			&-wrapper {
+				// display: flex;
+				flex-direction: column;
+				// justify-content: center;
+				margin-right: 16px;
+				// margin-left: 1em;
+			}
+		}
+	}
+
+	&-text {
+		font-size: 14px;
+		max-height: 97px;
+		overflow-y: hidden;
+		letter-spacing: 0;
+		line-height: 21px;
+		white-space: pre-line;
+
+		.match-text {
+			background-color: #fff3d5;
+		}
+	}
+
+	&-name {
+		// padding-bottom: 0.5em;
+		color: #293940;
+		// font-family: Roboto;
+		font-size: 14px;
+		font-weight: bold;
+		letter-spacing: 0;
+		line-height: 16px;
+		margin-bottom: 8px;
+
+		&-wrapper {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+
+	&-time {
+		color: #5c6c73;
+		// font-family: Roboto;
+		font-size: 12px;
+		font-weight: 600;
+		letter-spacing: 0;
+		line-height: 15px;
+		text-align: center;
+		padding-top: 2px;
+		padding-left: 8px;
+	}
+
+	&-content-wrapper {
+		width: 100%;
+	}
+}
+
+.conversations-card.selected {
+	// border: 1px solid black;
+	border-radius: 3px;
+	background-color: #f0f8ff;
+}

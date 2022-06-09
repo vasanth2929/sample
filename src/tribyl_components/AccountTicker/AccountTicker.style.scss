@@ -1,0 +1,101 @@
+@import '../../styles/base/variablesV2';
+
+.account-ticker {
+  align-items: left;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: flex-start;
+  & > div {
+    margin-right: 40px;
+  }
+
+  padding: 0 16px;
+  padding-left: 50px;
+  overflow-x: auto;
+
+  &-button {
+    align-items: center;
+    box-shadow: 0 3px 4px 2px rgba(41, 57, 64, 0.1);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    justify-content: center;
+    width: 40px;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+
+    i {
+      margin-right: 0;
+      font-size: 24px;
+      cursor: pointer;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    &.account-ticker-left-button {
+      align-items: center;
+      border-radius: 0 50px 50px 0;
+      position: absolute;
+      left: 0;
+      background-color: white;
+    }
+
+    &.account-ticker-right-button {
+      border-radius: 50px 0 0 50px;
+      position: absolute;
+      right: 0;
+      background-color: white;
+    }
+  }
+
+  &-wrapper {
+    width: 100%;
+    border: 1px solid #e1e8eb;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  &-account-entry {
+    padding: 16px 0;
+    height: 100%;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+
+    &-label {
+      color: #293940;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 21px;
+      margin-bottom: 8px;
+    }
+
+    &-value {
+      color: #5c6c73;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 16px;
+    }
+  }
+
+  .active {
+    .account-ticker-account-entry-label {
+      color: $active-orange;
+    }
+
+    border-bottom: 3px solid $active-orange;
+  }
+}

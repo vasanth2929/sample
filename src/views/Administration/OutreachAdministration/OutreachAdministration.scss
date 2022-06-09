@@ -1,0 +1,17 @@
+
+
+.sequence.grid-group {
+    .propset-properties-data-grid {
+        &.outreach-propset-properties-data-grid {
+            .react-grid-Container {
+                height: 180px !important;
+                .react-grid-Main {
+                    .react-grid-Grid {
+                        height: 180px !important;
+                        min-height: 180px !important;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,320 @@
+.ten-user-profile {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    max-height: 100%;
+    background-color: #f7f8fa;
+
+    &-content {
+        width: 840px;
+        position: relative;
+        height: inherit;
+
+        hr {
+            width: 100%;
+        }
+
+        .page-title {
+            font-size: 32px;
+            color: #091F42;
+            font-family: Roboto-regular;
+        }
+
+        .logo {
+            margin: 30px 0;
+        }
+
+        &-profile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-grow: 1;
+
+            &>div {
+                margin-bottom: 24px;
+            }
+
+            .profile-info {
+                display: flex;
+                align-items: center;
+                box-sizing: border-box;
+                height: 112px;
+                width: 404px;
+                border: 1px solid #E1E6E8;
+                border-radius: 12px;
+                background-color: #FFFFFF;
+                padding: 16px;
+
+                .user-picture {
+                    width: 83px;
+                    height: 83px;
+                    border-radius: 50%;
+                    background-color: rgb(228, 224, 224);
+                    margin-right: 20px;
+                }
+
+                .username {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                }
+
+                .link {
+                    color: #017AFF;
+                    font-family: Roboto-regular;
+                    font-size: 14px;
+                    border-bottom: 1px solid #017AFF;
+                }
+
+            }
+
+            .avatar-select {
+                box-sizing: border-box;
+                height: 112px;
+                width: 412px;
+                border: 1px solid #E1E6E8;
+                border-radius: 12px;
+                background-color: #FFFFFF;
+                padding: 16px;
+
+                .avatar-container {
+                    display: flex;
+
+                    img {
+                        margin-right: 10px;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+
+            &-form {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-grow: 1;
+                flex-wrap: wrap;
+                width: 100%;
+
+                &>div {
+                    margin-bottom: 24px;
+                }
+
+                .field-group {
+                    position: relative;
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 56px;
+                    width: 404px;
+                    border: 1px solid #E1E6E8;
+                    border-radius: 12px;
+                    background-color: #FFFFFF;
+                    font-size: 16px;
+                    color: #091F42;
+                    font-family: Roboto-medium;
+                    padding: 0 10px;
+
+                    .field {
+                        outline: none;
+                        border: none;
+                        width: inherit;
+
+                        :focus {
+                            border: none;
+                            outline: none;
+                        }
+
+                        ::placeholder {
+                            color: #97A6B9;
+                            opacity: 1;
+                        }
+
+                        :-ms-input-placeholder {
+                            color: #97A6B9;
+                        }
+
+                        ::-ms-input-placeholder {
+                            color: #97A6B9;
+                        }
+                    }
+
+                    .post-fix {
+                        background-color: #FFFFFF;
+                    }
+                }
+
+                .divider {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    hr {
+                        width: 80%;
+                    }
+                }
+
+                .select-field {
+                    width: 404px;
+                    height: fit-content;
+
+
+                    &.fluid {
+                        width: 100%;
+                    }
+
+                    .single-select {
+                        width: 100%;
+                        height: inherit;
+
+                        .single-select__control {
+                            width: 100%;
+                            min-height: 56px;
+                            height: inherit;
+                            border: 1px solid #E1E6E8;
+                            border-radius: 12px;
+                            box-sizing: border-box;
+                            font-family: Roboto-medium;
+                        }
+
+                        .single-select__indicator-separator {
+                            display: none;
+                        }
+
+                    }
+                }
+
+                .weekly-mail {
+                    width: 100%;
+                    height: 56px;
+                }
+
+            }
+        }
+
+        &-footer {
+            display: flex;
+            justify-content: flex-end;
+            width: inherit;
+            height: fit-content;
+
+            .submit {
+                width: fit-content;
+                padding: 8px 24px;
+                border-radius: 20px;
+                background-color: #017AFF;
+                color: #FFFFFF;
+                border: none;
+                align-self: flex-end;
+
+                &:focus {
+                    outline: none;
+                    border: none;
+                }
+            }
+        }
+
+        &-metrics {
+            width: 100%;
+
+            .metric1 {
+                display: flex;
+
+                &>div {
+                    margin-right: 24px;
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+
+
+            &>div {
+                margin-top: 20px;
+            }
+
+            .box {
+                height: 75px;
+                width: 190px;
+                border-radius: 5px;
+                padding: 16px;
+                text-transform: uppercase;
+                border: 1px solid #dedbdb;
+
+                input,
+                input:focus,
+                textarea:focus,
+                select:focus {
+                    outline: none;
+                    border: none;
+                    font-size: 16px;
+                    color: #0B102B;
+                    font-family: Roboto-bold;
+                    width: -webkit-fill-available;
+                }
+            }
+
+            // .panel-collapse {
+            //     max-height: fit-content;
+            // }
+        }
+    }
+
+    .sub-heading {
+        font-size: 16px;
+        color: #5C6C73;
+        font-family: Roboto-regular;
+
+        &-medium {
+            font-family: Roboto-medium;
+        }
+
+        &-bold {
+            font-family: Roboto-bold;
+        }
+
+        &-large {
+            font-size: 18px;
+        }
+    }
+
+    .text {
+        font-size: 12px;
+        color: #5C6C73;
+        font-family: Roboto-regular;
+
+        &-medium {
+            font-family: Roboto-medium;
+        }
+
+        &-bold {
+            font-family: Roboto-bold;
+        }
+
+        &-large {
+            font-size: 14px;
+        }
+    }
+
+    .heading {
+        font-size: 20px;
+        color: #5C6C73;
+        font-family: Roboto-regular;
+
+        &-medium {
+            font-family: Roboto-medium;
+        }
+
+        &-bold {
+            font-family: Roboto-bold;
+        }
+
+        &-large {
+            font-size: 24px;
+        }
+    }
+}

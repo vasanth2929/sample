@@ -1,0 +1,170 @@
+.context {
+    width: 725px;
+
+    .page-title {
+        color: #091F42;
+        font-family: Roboto-medium;
+        font-size: 32px;
+    }
+
+    .sub-title {
+        color: #52627A;
+        font-family: Roboto-Regular;
+        font-size: 16px;
+    }
+
+    &-footer {
+        height: 72px;
+        background-color: #FFFFFF;
+        box-shadow: 0 -2px 4px 0 rgba(108, 72, 91, 0.11);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        &>button {
+            margin-right: 16px;
+        }
+
+        .previous {
+            box-sizing: border-box;
+            height: 40px;
+            width: 112px;
+            border: 1px solid #E1E6E8;
+            border-radius: 20px;
+            background-color: #F7F8FA;
+            color: #017AFF;
+            font-size: 16px;
+            font-family: Roboto-bold;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .save {
+            height: 40px;
+            width: 177px;
+            border-radius: 20px;
+            background-color: #017AFF;
+            font-size: 16px;
+            font-family: Roboto-bold;
+            color: #FFFFFF;
+            border: none;
+
+            &.disabled {
+                opacity: 0.3;
+                pointer-events: none;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    &-fields {
+        margin: 32px 0;
+        color: #091F42;
+        font-size: 16px;
+        font-family: Roboto-Medium;
+
+        .invite_add{
+            font-size:16px;
+            font-family: Roboto-bold;
+            background-color: white;
+            border:none;
+        
+            &:focus{
+                outline:none
+            }
+        
+            .add{
+                color: #017AFF;
+                font-weight: 900;
+                display:inline-block;
+                vertical-align: sub;
+            }
+        }
+        textarea {
+            width: 100%;
+            overflow: auto;
+            outline: none;
+    
+            padding: 10px;
+            border: 1px solid #E1E6E8;
+            border-radius: 12px;
+            background-color: #FFFFFF;
+    
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+    
+            resize: none;
+        }
+        .dealTape_textbox{
+            border: 1px solid #E1E6E8;
+            border-radius: 12px;
+            background-color: #FFFFFF;
+            height: 150px;
+    
+            .quill{
+                height:120px;
+    
+                .ql-editor{
+                    font-size: 14px;
+                    font-family: Roboto-Regular;
+                }
+            }
+    
+            .show-more{
+                font-size: 12px;
+                font-family: Roboto-Medium;
+                text-decoration: underline;
+                cursor: pointer;
+                color: purple;
+                padding:15px;
+    
+            }
+        }
+     
+    }
+
+    .card-select {
+        .multi-select__control {
+            padding: 5px;
+            border-radius: 12px;
+        }
+
+        .multi-select__indicator-separator {
+            display: none;
+        }
+
+        .multi-select__single-value{
+            color: #0080FF;
+            font-family: Roboto-bold; 
+            font-size: 14px;
+        }
+
+        .multi-select__multi-value {
+            height: 32px;
+            border: 1px solid #017AFF;
+            border-radius: 16px;
+            background-color: #F2FAFF;
+            padding: 2px 7px;
+
+            .multi-select__multi-value__label {
+                color: #52627A;
+                font-family: Roboto-Regular;
+                font-size: 14px;
+            }
+        }
+    }
+    .domains{
+        height: 48px;
+        border-radius: 9px;
+        font-family: Roboto-Medium;
+        &.error{
+            border: 1px solid red;
+        }
+    }
+   
+}

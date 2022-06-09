@@ -1,0 +1,47 @@
+.expert-network-button {
+    background-color: transparent;
+    padding: 10px 16px;
+    width: fit-content;
+    height: 40px;
+    color: #35B47E;
+    font-family: Roboto-Bold;
+    font-size: 16px;
+    border: 1px solid #E1E6E8;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+    &:focus{
+        outline: none;
+    }
+
+    &-outlined {
+        &-blue {
+            color: #35B47E;
+        }
+
+        &-green {
+            color: #0076DE;
+        }
+    }
+
+    &-filled {
+        color: white;
+
+        &-blue {
+            background-color: #35B47E;
+        }
+
+        &-green {
+            background-color: #0076DE;
+        }
+
+        color: #35B47E;
+    }
+
+}

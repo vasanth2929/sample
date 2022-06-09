@@ -1,0 +1,47 @@
+.share-section {
+    &>div {
+        border-radius: 50%;
+        width: 55px;
+        height: 55px;
+        box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        margin-top: 10px;
+
+        img {
+            height: 30px;
+        }
+
+        &.chat {
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &.floater {
+        position: fixed;
+
+        &.top {
+            top: 40px;
+        }
+
+        &.bottom {
+            bottom: 40px;
+        }
+
+        &.left {
+            left: 40px;
+        }
+
+        &.right {
+            right: 240px;
+        }
+    }
+}

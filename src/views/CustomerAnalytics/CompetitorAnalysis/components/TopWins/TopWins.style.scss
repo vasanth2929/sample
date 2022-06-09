@@ -1,0 +1,54 @@
+.top-wins {
+   
+
+    &-card {
+        border: 1px solid #E1E8EB;
+        border-radius: 5px;
+        width: inherit;
+        width: 304px;
+        &-header {
+            height: 64px;
+            background-color: #EDF6FF;
+            padding: 22px 16px;
+        }
+
+        &-body {
+            padding: 16px;
+
+            &-content {
+                border: 1px solid #E1E8EB;
+                border-radius: 5px;
+                padding: 16px;
+
+                &-accounts {
+                    margin: 16px 0;
+                    display: flex;
+                    align-items: center;
+
+                    .account-avatar {
+                        padding: 0px 8px 0 0;
+                    }
+
+                    .account-link {
+                        color: #293940 !important;
+                        line-height: 16px;
+                        border-bottom: 1px solid #293940;
+                        max-width: 150px;
+                        width: fit-content;
+                        cursor: pointer;
+                        font-size: 14px;
+                        color: #293940;
+                        font-family: Roboto-regular;
+                    }
+
+                    .info {
+                        color: #293940;
+                        font-size: 14px;
+                        font-family: Roboto-Regular;
+                    }
+                }
+            }
+        }
+    }
+
+}

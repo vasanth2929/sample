@@ -1,0 +1,53 @@
+.display-container {
+  padding: 16px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.display-wrap {
+  display: flex;
+  align-items: flex-start;
+  color:#259B69;
+}
+.display-title {
+  color: black;
+  font-family: Roboto-Medium;
+}
+#done{
+  margin-left: 10px;
+  margin-top: 4px;
+  height: 8.38px;
+  width: 11.19px;
+  font-size: 15px;
+
+}
+
+.display-title-click {
+  color: #259B69;
+  font-family: Roboto-Medium;
+}
+
+.display-btn {
+  font-family: Roboto-Medium;
+  font-size:16px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  height: 19px;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+
+.display-b-out {
+  color: #017aff;
+}
+
+.display-b-click {
+  color: black;
+  text-decoration: underline;
+}
+button:focus{
+  outline: none !important;
+}

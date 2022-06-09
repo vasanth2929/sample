@@ -1,0 +1,32 @@
+.timline {
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    &-switch-button {
+      width: fit-content;
+      font-size: 18px;
+      font-weight: bold;
+     
+    }
+    &-filters {
+      display: flex;
+      justify-self: flex-start;
+      align-items: center;
+
+      .basic-single {
+        .select__control {
+          width: 160px;
+        }
+        .select__indicator {
+          color: #505f79;
+        }
+
+        margin: 0 10px 0 6px;
+      }
+    }
+  }
+}

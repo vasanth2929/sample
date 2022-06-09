@@ -1,0 +1,100 @@
+@import '../../../../../../../../../styles/base/variables';
+@import '../../../../../../../../../styles/base/variablesV2';
+
+.overview-form {
+    .form-body {
+        padding-right: 20%;
+        border-bottom: thin solid $grey-light;
+    }
+    form {
+        .checkbox-container {
+            margin-left: -0.5em;
+            font-family: Roboto-Regular;
+            font-size: 14px;
+            color: $color-text;
+            input:checked ~ .checkmark {
+                background-color: #27AE60;
+                top: -2px;
+                border-radius: 0;
+            }
+        }
+        label {
+            font-family: Roboto-Regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: normal;
+            color: $grey-disabled;
+        }
+        textarea,
+        input[type="text"] {
+            @include inputBox();
+            &:disabled {
+                opacity: 0.5;
+            }
+        }
+        label.add-file-btn {
+            border: 1px solid #5F6C72;
+            border-radius: 5px;
+            font-family: OpenSans-Bold;
+            font-size: 14px;
+            color: #344B62;
+            padding: 0.5em 2em;
+            cursor: pointer;
+            &.disabled {
+                opacity: 0.5;
+                cursor: auto;
+            }
+        }
+        input[type="file"] {
+            display: none
+        }
+        .file-capsules {
+            p.capsule {
+                margin-right: 0;
+            }
+        }
+        .capsule-input {
+            margin-bottom: 1em;
+            input {
+                width: 75%;
+            }
+            button {
+                @include buttonStyle($blue-default, $white);
+                width: 25%;
+                display: flex;
+                justify-content: center;
+                margin-left: 1em;
+                &:disabled {
+                    opacity: 0.5;
+                }
+            }
+        }
+        .capsule-list {
+            flex-wrap: wrap;
+            .capsule {
+                @include capsule();
+            }
+        }
+        .form-actions {
+            button {
+                @include buttonStyle($white, $color-text);
+                width: 20%;
+                margin: 2em 0 0em 1em;
+            }
+            input[type="submit"] {
+                @include buttonStyle($blue-default, $white);
+                width: 20%;
+                margin: 2em 0 0em 1em;
+            }
+        }
+    }
+}
+
+.compelling-kpi {
+    display: flex;
+    .description {
+        margin-left: 10px;
+    }
+}
+

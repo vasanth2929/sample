@@ -1,0 +1,132 @@
+@import '../../../../../../../styles/base/variables';
+@import '../../../../../../../styles/base/variablesV2';
+
+.note-section {
+    .header-bar {
+        border-bottom: thin solid $grey-light;
+        margin: 0 1em;
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+        i {
+            color: $dark-grey-text !important;
+            border: thin solid $dark-grey-text;
+            border-radius: 5px !important;
+            cursor: pointer;
+            background: transparent !important;
+            margin-right: 0.8em !important;
+            height: 32px;
+            width: 32px;
+            position: relative;
+            bottom: 4px;
+        }
+        p {
+            font-family: Roboto-Bold;
+            color: $black;
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+    }
+    .note-bar {
+        border: 0;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 1em;
+        cursor: default;
+        padding-top: 0;
+    }
+    .note-textarea {
+        font-size: 14px;
+        color: $black;
+        min-height: 18em;
+        max-height: 18em;
+        padding: 0 1em;
+        white-space: pre-line;
+        a {
+            pointer-events: none;
+            margin-left: 0 !important;
+        }
+        span.user-tag {
+            color: $blue-default;
+        }
+    }
+    .note-comment-section {
+        margin: 0 1em;
+        padding-top: 1em;
+        border-top: thin solid $grey-light;
+        p.section-title {
+            font-size: 18px;
+            font-family: Roboto-Bold;
+            color: $black;
+            margin-bottom: 0;
+        }
+        .comment-input {
+            input {
+                font-size: 14px;
+            }
+            button {
+                border-radius: 5px;
+                width: 20%;
+                box-shadow: none;
+                font-size: 14px;
+                text-transform: uppercase;
+                margin-left: 5px;
+                color: $white;
+                background: $blue-default;
+                border: thin solid $blue-default;
+                cursor: pointer;
+            }
+        }
+        .comments-list {
+            min-height: 13em;
+            max-height: 13em;
+            p.no-comments-found {
+                font-size: 1.2em;
+                font-family: Roboto-Bold;
+                padding-top: 1em;
+            }
+        }
+    }
+    .note-activity-action {
+        border-top: thin solid $grey-light;
+        padding: 1em 1em 0 1em;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        font-size: 14px;
+        button.create-activity-btn {
+            background: transparent;
+            border: 1px solid $dark-grey-text;
+            color: $dark-grey-text;
+            border-radius: 5px;
+            text-transform: uppercase;
+            box-shadow: none;
+            font-family: Roboto-Bold;
+            padding: 4px 8px;
+            margin-top: 5px;
+        }
+        i {
+            background: transparent !important;
+        }
+        .like-unlike-label {
+            font-weight: bold;
+            margin-bottom: 0;
+            &.liked {
+                color: $blue-default;
+                .liker-unliker {
+                    color: $blue-default;
+                    cursor: pointer;
+                }
+            }
+            i {
+                position: relative;
+                cursor: pointer;
+                top: 4px;
+                color: $grey;
+            }
+        }
+        .floater-btn {
+            position: relative;
+            bottom: 6px;
+        }
+    }
+}

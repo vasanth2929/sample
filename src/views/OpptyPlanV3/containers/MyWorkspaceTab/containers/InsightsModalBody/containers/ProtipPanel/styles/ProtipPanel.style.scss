@@ -1,0 +1,111 @@
+@import '../../../../../../../../../styles/base/variables';
+@import '../../../../../../../../../styles/base/variablesV2';
+
+.see-more-protips {
+    width: 100%;
+    margin-top: 30px;
+    border: none;
+    border-top: 1px solid #b0bec5;
+    background: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 15px;
+    font-family: Roboto-Bold;
+    color: #0080ff;
+    cursor: pointer;
+    outline: 0;
+    text-align: right;
+    i {
+        position: relative;
+        top: 5px;
+        margin-right: 0;
+    }
+}
+
+.add-protip {
+    textarea {
+        background: #FFFFFF;
+        border: 1px solid #969FA8;
+        box-sizing: border-box;
+        box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        font-size: 14px;
+    }
+    .btn-controls {
+        margin-top: 0.5em;
+        button {
+            background: $white;
+            box-shadow: none;
+            font-size: 14px;
+            margin-left: 0.5em;
+            margin-bottom: 0;
+            width: 20%;
+            height: 32px;
+            padding-top: 5px;
+            &.save-btn {
+                background: $blue-default;
+                color: $white;
+            }
+        }
+    }
+//     width: 100%;
+//     padding: 0px;
+//     min-height: 94px;
+//     display: flex;
+//     justify-content: space-between;
+//     flex-direction: column;
+//     margin-bottom: 25px;
+//     border: none;
+//     border-radius: 5px;
+
+//     .protip-input {
+//         flex-grow: 1;
+//         border: 1px solid #b0bec5;
+//         border-radius: 5px;
+//         padding-left: 10px;
+//         line-height: 10px;
+//         margin-top: 0px;
+//         margin-bottom: 0px;
+//         min-height: 100px;
+//         padding-top: 14px;
+//         outline: none;
+//     }
+
+//     .form-options {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: flex-end;
+//         margin-top: 5px;
+
+//         button {
+//             width: 80px;
+//             margin-left: 6px;
+//             max-height: 37px;
+//             color: white;
+//             background: #0080FF;
+//             border: 1px solid #0080FF;
+//             border-radius: 5px;
+//             cursor: pointer;
+//             line-height: 37px;
+//         }
+    
+//         button.disabled {
+//             background: rgba(0, 128, 255, 0.5);
+//             border-color: rgba(0, 128, 255, 0.5);
+//             pointer-events: none;
+//             cursor: default;
+//         }
+
+//         button.cancel {
+//             color: #686868;
+//             background: #f0f0f0;
+//             border: 1px solid #c9d2d7;
+//         }
+
+//         button.cancel.disabled {
+//             color: #aeaeae;
+//             background: #ececec;
+//             border: 1px solid #ececec;
+//         }
+//     }
+}

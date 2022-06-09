@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/pin/16px 2</title>
+    <defs>
+        <rect id="path-1" x="-1.8189894e-12" y="-2.27373675e-12" width="16" height="16"></rect>
+    </defs>
+    <g id="icon/pin/16px-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="push_pin-24px">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Rectangle"></g>
+            <path d="M10.6666667,6 L10.6666667,2.66666667 L11.3333333,2.66666667 C11.7,2.66666667 12,2.36666667 12,2 L12,2 C12,1.63333333 11.7,1.33333333 11.3333333,1.33333333 L4.66666667,1.33333333 C4.3,1.33333333 4,1.63333333 4,2 L4,2 C4,2.36666667 4.3,2.66666667 4.66666667,2.66666667 L5.33333333,2.66666667 L5.33333333,6 C5.33333333,7.10666667 4.44,8 3.33333333,8 L3.33333333,8 L3.33333333,9.33333333 L7.31333333,9.33333333 L7.31333333,14 L7.98,14.6666667 L8.64666667,14 L8.64666667,9.33333333 L12.6666667,9.33333333 L12.6666667,8 L12.6666667,8 C11.56,8 10.6666667,7.10666667 10.6666667,6 Z" id="Path" fill="#00B257" fill-rule="nonzero" mask="url(#mask-2)" transform="translate(8.000000, 8.000000) rotate(-45.000000) translate(-8.000000, -8.000000) "></path>
+        </g>
+    </g>
+</svg>

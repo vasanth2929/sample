@@ -1,0 +1,160 @@
+@import '../../../../styles/base/variables';
+@import '../../../../styles/base/variablesV2';
+
+.evaluation-question-admin-screen {
+    #main-content-section {
+        margin-top: 102px;
+    }
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+    }
+    .title-label {
+        padding: 16px 0;
+        p {
+            font-family: SFUI-Medium;
+            font-size: 24px;
+            margin-top: 4px;
+            margin-bottom: 0px;
+            margin-left: -15px;
+            color: $text-color;
+        }
+        .add-user-btn {
+            width: 175px;
+            margin-left: 16px;
+            box-shadow: $shadow;
+            border: 1px solid transparent;
+            height: 45px;
+            font-family: SFUI-Medium;
+            margin-right: -15px;
+        }
+    }
+    .evaluation-question-form-section {
+        .stage-section {
+            margin-bottom: 1em;
+            p {
+                margin-bottom: 0;
+                font-family: Roboto-Bold;
+            }
+            .Select {
+                width: 30%;
+            }
+        }
+        .rating-question-section {
+            table {
+                width: 50%;
+                thead {
+                    font-size: 18px;
+                    font-family: Roboto-Bold;
+                }
+                tbody {
+                    tr {
+                        td:first-child {
+                            width: 20%;
+                            font-family: Roboto-Bold;
+                        }
+                    }
+                }
+                .react-rater {
+                    .react-rater-star {
+                        color: #bf900061;
+                        font-size: 22px;
+                        &.is-active,
+                        &.will-be-active {
+                            color: #BF9000;
+                        }
+                    }
+                }
+            }
+        }
+        .edit-label {
+            cursor: pointer;
+            font-family: Roboto-Bold;
+            border: 1px solid $grey-disabled;
+            display: inline;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            background: transparent;
+            font-size: 16px;
+            min-width: 10%;
+            i {
+                color: $blue-default;
+                position: relative;
+                top: 5px;
+                font-size: 22px;
+                margin-right: 8px;
+            }
+        }
+        .edit-actions {
+            width: 50%;
+            button {
+                margin-left: 0.8em;
+                box-shadow: none;
+                min-width: 20%;
+                background: transparent;
+                &.save-btn {
+                    background: $blue-default;
+                    color: $white;
+                }
+            }
+        }
+        .add-new-rating-question-section {
+            .add-new-label {
+                cursor: pointer;
+                font-family: Roboto-Bold;
+                border: 1px solid $grey-disabled;
+                display: inline;
+                padding: 0.5em 1em;
+                border-radius: 5px;
+                background: transparent;
+                font-size: 16px;
+                min-width: 10%;
+                i {
+                    color: $blue-default;
+                    position: relative;
+                    top: 5px;
+                    font-size: 22px;
+                    margin-right: 8px;
+                }
+            }
+            table.add-new-rating-question-table {
+                width: 50%;
+                thead {
+                    font-size: 18px;
+                    font-family: Roboto-Bold;
+                }
+                tbody {
+                    tr {
+                        td.action-column {
+                            i {
+                                font-size: 22px;
+                                position: relative;
+                                top: 5px;
+                                cursor: pointer;
+                                color: #DD3B3B;
+                                &:first-child {
+                                    color: $green-dark;
+                                }
+                            }
+                        }
+                        td:first-child {
+                            width: 20%;
+                            font-family: Roboto-Bold;
+                        }
+                    }
+                }
+                .react-rater {
+                    .react-rater-star {
+                        color: #bf900061;
+                        font-size: 22px;
+                        &.is-active,
+                        &.will-be-active {
+                            color: #BF9000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

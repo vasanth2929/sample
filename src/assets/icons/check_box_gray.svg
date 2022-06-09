@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons/check box</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Card/stories-v2" transform="translate(-306.000000, -20.000000)">
+            <g id="icons/check-box" transform="translate(302.000000, 16.000000)">
+                <g id="button/secondary/icon" fill="#FFFFFF" fill-opacity="0">
+                    <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                </g>
+                <path d="M17.8333125,4.5 L6.16666667,4.5 C5.24166562,4.5 4.5,5.25 4.5,6.16666667 L4.5,17.8333125 C4.5,18.75 5.24166562,19.5 6.16666667,19.5 L17.8333125,19.5 C18.7583438,19.5 19.5,18.75 19.5,17.8333125 L19.5,6.16666667 C19.5,5.25 18.7583438,4.5 17.8333125,4.5 Z M10.3333125,16.166625 L6.16666875,12 L7.34166562,10.8250313 L10.3333125,13.8083437 L16.6583437,7.48333125 L17.8333125,8.6666625 L10.3333125,16.166625 Z" id="Shape" fill="#B0BEC5" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

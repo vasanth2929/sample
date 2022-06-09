@@ -1,0 +1,153 @@
+.expert-network {
+    height: 100vh;
+
+    &-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &-content {
+        margin-top: 10px;
+        width: 1260px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+
+        &-data {
+            width: 725px;
+            .tabBarHeader{
+                display: none;
+            }
+            .tab-content {
+                .tabRowContainer {
+                    margin: 16px 0 24px 0;
+                    box-shadow: none;
+
+                    .tab {
+                        text-transform: none;
+
+                        &.active {
+                            border-bottom: 4px solid #0076DE !important;
+
+                            .tabLabel {
+                                color: #0076DE !important;
+                            }
+
+                        }
+
+                        .tabLabel {
+                            color: #6B778C;
+                        }
+                    }
+                }
+
+                .recommended {
+
+                    .recommended__control {
+                        width: 180px;
+                        color: #4F5366;
+                    }
+
+                    .recommended__indicator-separator {
+                        display: none;
+                    }
+
+                    .recommended__indicator {
+                        color: #4F5366;
+                    }
+                }
+            }
+
+            .page-title {
+                height: 40px;
+                color: #091F42;
+                font-family: Roboto-Bold;
+                font-size: 32px;
+                font-weight: bold;
+                letter-spacing: 0;
+                line-height: 40px;
+            }
+        }
+
+        &-pills {
+            display: flex;
+            &>div{
+                margin-right:16px;
+            }
+        }
+
+        &-profile {
+            img {
+                width: 297px;
+            }
+        }
+    }
+
+    .heading {
+        font-size: 20px;
+        color: #0B102B;
+        font-family: Roboto-regular;
+
+        &-medium {
+            font-family: Roboto-medium;
+        }
+
+        &-bold {
+            font-family: Roboto-bold;
+        }
+
+        &-large {
+            font-size: 24px;
+        }
+    }
+
+    .sub-heading {
+        font-size: 16px;
+        color: #505F79;
+        font-family: Roboto-regular;
+
+        &-medium {
+            font-family: Roboto-medium;
+        }
+
+        &-bold {
+            font-family: Roboto-bold;
+        }
+
+        &-large {
+            font-size: 18px;
+        }
+    }
+
+    .text {
+        font-size: 12px;
+        font-family: Roboto-regular;
+
+        &-medium {
+            font-family: Roboto-medium;
+        }
+
+        &-bold {
+            font-family: Roboto-bold;
+        }
+
+        &-large {
+            font-size: 14px;
+        }
+    }
+
+    .account-avatar {
+        span {
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            font-family: Roboto-Bold;
+            font-size: 14px;
+            align-items: center;
+            background-color: #6B778C;
+            color: white;
+        }
+    }
+}

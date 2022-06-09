@@ -1,0 +1,221 @@
+.fresh-stories {
+  &-column-header {
+    font-family: Roboto-bold;
+    font-size: 12px;
+    color: #505f79;
+  }
+  .checkbox-header {
+    width: 50px !important;
+    min-width: 50px !important;
+    max-width: 50px !important;
+    padding:0px !important
+  }
+  .action-cell {
+    .MuiDataGrid-iconSeparator {
+      display: none;
+    }
+  }
+  .checkbox-cell {
+    width: 50px !important;
+    min-width: 50px !important;
+    max-width: 50px !important;
+    padding:0px;
+    padding-left: 5px;
+  }
+  .checkbox-remove-icon {
+    margin-left: 8px;
+    fill: #969FA8;
+    cursor: pointer;
+  }
+
+  .checkbox-checked {
+    fill: #969FA8;
+    svg {
+      fill: #969FA8;
+    }
+  }
+
+  // &-row{
+  //   &-cell{
+  //     &-industry{
+  //       display: flex;
+  //       justify-items: center;
+  //       align-items: center;
+  //       overflow: visible;
+  //     }
+  //   }
+  // }
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .filter {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .sort {
+        white-space: nowrap;
+      }
+
+      & > div {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 160px;
+        &:nth-child(1) {
+          width: 200px;
+        }
+        &:nth-child(2) {
+          width: 240px;
+        }
+        &:nth-child(3) {
+          width: 240px;
+        }
+      }
+
+      .goal-select-item {
+        &-wrapper {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+          .caret {
+            color: #5c6c73;
+            font-size: 16px;
+            margin-left: 5px;
+            font-weight: bold;
+          }
+        }
+
+        &-label {
+          font-weight: regular;
+          font-size: 20px;
+          color: #293940;
+        }
+
+        &-name {
+          //color: #5c6c73;
+          color: #293940;
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+
+      .persona {
+        .basic-single {
+          .select__control {
+            width: 167px;
+          }
+          .select__indicator {
+            color: #505f79;
+          }
+
+          margin: 0 10px 0 6px;
+        }
+      }
+
+      .sort {
+        .basic-single {
+          .select__control {
+            width: 80px;
+          }
+          .select__indicator {
+            color: #505f79;
+          }
+        }
+        &:nth-child(-n + 3) {
+          .basic-single {
+            .select__control {
+              width: 145px;
+            }
+            .select__indicator {
+              color: #505f79;
+            }
+          }
+        }
+      }
+
+      .button {
+        color: #0080ff;
+        border-color: #0080ff;
+        margin-left: 8px;
+        white-space: nowrap;
+      }
+    }
+
+    .competitor {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .basic-single {
+        .select__control {
+          width: 190px;
+        }
+
+        .select__indicator {
+          color: #505f79;
+        }
+      }
+    }
+  }
+
+  &-table {
+    margin-top: 24px;
+    width: 100%;
+    height: 630px;
+  }
+  .fresh-stories-grid {
+    .button {
+      height: 32px;
+      width: 96px;
+      border-radius: 4px;
+      background-color: #0080ff;
+      border: none;
+      color: white;
+      outline: none;
+    }
+  }
+  .industry {
+    min-width: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible !important;
+  }
+  .single-industry {
+    .select {
+      &__control {
+        width: 220px;
+        height: 23px;
+      }
+      &__value-container {
+        width: 220px;
+        height: 23px;
+      }
+      &__indicator {
+        color: #505f79;
+      }
+      &__option {
+        padding: 10px 10px;
+        line-height: 20px;
+        word-wrap: break-word;
+      }
+    }
+  }
+  .MuiDataGrid-root .MuiDataGrid-cell {
+    border-bottom: none !important;
+  }
+  
+  .MuiDataGrid-row {
+    border-bottom: 1px solid lightgray !important;
+    min-width: 100% !important;
+  }
+  
+  .MuiDataGrid-columnHeaderTitle {
+    overflow: visible !important;
+  }
+}

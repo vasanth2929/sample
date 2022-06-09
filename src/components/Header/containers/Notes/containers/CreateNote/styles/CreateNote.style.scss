@@ -1,0 +1,159 @@
+@import '../../../../../../../styles/base/variables';
+@import '../../../../../../../styles/base/variablesV2';
+
+.create-note-section {
+
+    .create-header {
+        margin: 0 1em;
+        padding-bottom: 1em;
+        border-bottom: thin solid $grey-light;
+        img.notes-logo {
+            margin-right: 1em;
+            width: 40px;
+            height: 60px;
+        }
+        .notes-info {
+            flex: 1;
+            p {
+                margin-bottom: 0;
+            }
+            input {
+                font-size: 14px;
+                font-family: Roboto-Bold;
+                margin-bottom: 2px;
+                padding: 2px 0.5em;
+            }
+            .note-name {
+                min-height: 24px;
+                font-size: 16px;
+                font-family: Roboto-Bold;
+                color: $grey-dark;
+            }
+            .author-name {
+                font-size: 12px;
+                font-family: Roboto-Bold;
+                color: $dark-grey-text;
+            }
+            .note-date {
+                font-size: 12px;
+                color: $grey-disabled;
+            }
+        }
+        .note-type-controls {
+            height: 100%;
+            i {
+                cursor: pointer;
+                border-radius: 5px;
+                background: transparent;
+                border: thin solid $dark-grey-text;
+                color: $dark-grey-text;
+            }
+        }
+    }
+    .create-note-body {
+        margin: 0 1em;
+        padding: 1em 0;
+        font-size: 14px;
+        // .note-editor {
+        //     height: 42em !important;
+        //     border: 1px solid #F1F1F1 !important;
+        //     padding: 5px !important;
+        //     border-radius: 2px !important;
+        //     a.rdw-mention-link {
+        //         margin-left: 0;
+        //     }
+        //     .rdw-suggestion-wrapper {
+        //         .rdw-suggestion-dropdown {
+        //             min-width: 200px;
+        //             max-height: 300px;
+        //             .rdw-suggestion-option {
+        //                 cursor: pointer;
+        //                 &:hover {
+        //                     background: #eaf3ff;
+        //                     color: $black;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+        .formatter-bar {
+            margin: 0 0 0.5em 0;
+            border-radius: 5px;
+            border: thin solid #5F6C72;
+            padding: 4px 0px;
+            .formatter-option {
+                margin: 0 2px;
+                i {
+                    margin: 0;
+                    background: none;
+                    color: #5F6C72;
+                    font-size: 22px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .note-input-field {
+            min-height: 41em;
+            max-height: 41em;
+            textarea {
+                height: 100%;
+                overflow: auto !important;
+                padding: 0.5em 1em;
+                border-radius: 5px;
+                color: #2C393F;
+                border-color: #5F6C72;
+                &:focus {
+                    outline: none;
+                }
+            }
+            div.note-input-field__suggestions {
+                top: auto !important;
+                border-radius: 5px;
+                max-height: 24em;
+                overflow-y: auto;
+                border: $common-border;
+                ul > li {
+                    i {
+                        background: none;
+                        padding: 0;
+                        margin-right: 0.25em;
+                        font-size: 16px;
+                        position: relative;
+                        top: 4px;
+                    }
+                    & > div {
+                        border-bottom: 0 !important;
+                    }
+                }
+                ul > li > div:hover {
+                    background-color: #ECEFF1 !important;
+                }
+            }
+        }
+    }
+    .create-note-footer {
+        border-top: thin solid $grey-light;
+        padding: 1em;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        button {
+            margin-left: 1em;
+            width: 25%;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: Roboto-Medium;
+            box-shadow: none;
+            &.save-btn {
+                background: $blue-default;
+                color: $white;
+                border: thin solid $blue-default;
+            }
+            &.cancel-btn {
+                background: transparent;
+                color: $dark-grey-text;
+                border: thin solid $dark-grey-text;
+            }
+        }
+    }
+}

@@ -1,0 +1,141 @@
+// variable codes for general colors
+$white: #FFF;
+$black: #000;
+$color-text: #2C3F50;
+$grey-dark: #2C393F;
+$dark-grey-text: #5F6C72;
+$dark-grey-shadow: #E5E5E5;
+$grey-lightest: #F7F7F7;
+$active-orange: #F27E4C;
+$green-dark: #27AE60;
+
+// buttons
+$blue-default: #0080FF;
+$blue-light: #3399FF;
+$blue-dark: #0066CC;
+$grey-disabled: #B0BEC5;
+$grey-dark: #344B62;
+$grey-depressed: #ECEFF1;
+
+// border values
+$grey-light: #B0BEC5;
+$border-blue: #DD3B3B;
+$border-grey: #969FA8;
+
+  
+//topics  
+$economic-drivers: #F3C14F;
+$use-cases: #F3A33A;
+$pain-points: #E68230;
+$personas: #4595EC;
+$value-proposition: #81C784;
+$objections: #F0906D;
+$content: #AF6EC3;
+$partners: #EC5281;
+$competition: #DE5E56;
+$activities: #775BBC;
+
+// icon colors based on account name
+$mapped-color-1: $use-cases;
+$mapped-color-2: $personas;
+$mapped-color-3: $content;
+$mapped-color-4: $value-proposition;
+
+
+//sizing
+$border-radius: 5px;
+
+//shadows
+$default-shadow: drop-shadow(0px 4px 8px #E5E5E5);
+$bottom-box-shadow: 0 4px 2px -2px #E5E5E5;
+$popout-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+$selected-shadow: 0px 24px 32px rgba(0, 0, 0, 0.24);;
+
+// mixins
+@mixin box() {
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    background: $white;
+    margin-bottom: 1em;
+}
+
+@mixin dropShadow() {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+}
+
+@mixin buttonStyle($bgcolor, $textcolor) {
+    background: $bgcolor;
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: 12px;
+    font-family: OpenSans-SemiBold;
+    color: $textcolor;
+    text-transform: uppercase;
+}
+
+@mixin blueButtonStyle() {
+    background: $blue-default;
+    height: 32px;
+    width: 142px;
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: 14x;
+    font-family: OpenSans-Bold;
+    color: $white;
+    text-transform: uppercase;
+    &:hover {
+        background: $blue-dark;
+    }
+    &:active {
+        background: $blue-default;   
+    }
+}
+
+@mixin capsule() {
+    background: #B0BEC5;
+    color: $white;
+    border-radius: 10px;
+    min-width: 160px;
+    font-size: 12px;
+    margin-right: 0.5em;
+    padding: 0em 1em;
+    text-align: left;
+    i {
+        float: right;
+        cursor: pointer;
+        margin-right: 0;
+        font-size: 15px;
+        position: relative;
+        top: 4px;
+    }
+}
+
+@mixin inputBox() {
+    background: #FFFFFF;
+    border: 1px solid #969FA8;
+    box-sizing: border-box;
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+@mixin formLabel() {
+    color: $grey-light;
+    font-size: 12px;
+    font-family: Roboto-Regular;
+    margin-bottom: 0;
+}
+
+@mixin dataGrid() {
+    .react-grid-Main {
+        outline: none;
+        font-family: Roboto-Regular;
+        .react-grid-Header {
+            .react-grid-HeaderCell {
+                background: $background-grey;
+                padding-left: 1em;
+                padding-top: 1em;
+            }
+        }
+    }
+}

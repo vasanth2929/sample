@@ -1,0 +1,408 @@
+@import '../../../styles/base/variablesV2';
+
+.card-v2 {
+    display: inline-block;
+    // max-width: 320px; 
+    width: 100%;
+    // height: calc(100% - 21px);
+    min-width: 320px;
+    border-radius: $border-radius;
+    margin-bottom: 16px;
+    overflow: hidden;
+    filter: $default-shadow;
+    // border: 1px solid rgba(0, 0, 0, 0.125);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+    &:hover {
+        cursor: pointer;
+    }
+    .added-persona-label {
+        color: #FFA43C;
+    }
+    .selected-card {
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+    }
+    .trailing-text {
+        display: contents;
+    }
+    .header {
+        min-height: 36px;
+        max-height: 36px;
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+        display: flex;
+        justify-content: space-between;
+        .headerLabel {
+            margin: auto 0 auto 16px;
+            font-family: OpenSans-Bold;
+            color: $white;
+            font-style: normal;
+            font-size: 14px;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+        .headerIcons {
+            margin: auto 10px;
+            display: flex;
+            .material-icons {
+                margin: auto 0 auto 8px;
+                font-size: 19px;
+                color: $white;
+            }
+            .machineGenIcon {
+                margin: auto 0 auto 8px;
+                font-size: 19px;
+                color: #343a40;;
+            }
+            p {
+                margin: auto 10px;
+                color: $white;
+            }
+        }
+        &.economic-drivers {
+            background-color: $economic-drivers;
+        }
+        &.use-cases {
+            background-color: $use-cases;
+        }
+        &.pain-points {
+            background-color: $pain-points;
+        }
+        &.personas, &.champion, &.economic-buyer, &.influencer, &.legal, &.procurement {
+            background-color: $personas;
+        }
+        &.value-proposition, &.functional, &.technical, &.strategic {
+            background-color: $value-proposition;
+        }
+        &.objections {
+            background-color: $objections;
+        }
+        &.content {
+            background-color: $content;
+        }
+        &.competition {
+            background-color: $competition;
+        }
+        &.partners {
+            background-color: $partners;
+        }
+        &.activities {
+            background-color: $activities;
+        }
+        .sub-header {
+            font-family: SFUI-Regular;
+            font-size: 16px;
+            margin-bottom: 0;
+            padding: 0 16px;
+        }
+    }
+    .front-body {
+        min-height: 150px;
+        .body {
+            max-height: 150px;
+            display: flex;
+            flex-direction: column;
+            .cardBodyTitle {
+                margin: 16px 14px 8px 15px;
+                font-family: Roboto-Regular;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: normal;
+            }
+            .cardBodyContent {
+                margin: 0 15px;
+                color: #989898;
+                min-height: 80px;
+                max-height: 80px;
+                font-family: Roboto-Regular;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: normal;
+                overflow: hidden;
+                
+            }
+            
+            .cardBodyContentDeal {
+                margin: 0 15px;
+                min-height: 80px;
+                max-height: 80px;
+                font-family: Roboto-Regular;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: normal;
+                overflow: hidden;
+                color: black;
+            }
+            .cardBodyContentDealAllTab {
+                min-height: 92px;
+            }
+            .cardBodySpacer {
+                min-height: 16px;
+                max-height: 16px;
+                margin: 0 16px;
+                // border-bottom: $grey-light solid 1.1px;
+            }
+        }
+    }
+    .body-all {
+        min-height: 153px;
+    }
+    .persona-card-body {
+        padding: 1em 0 1em 0;
+        margin: 0 1em 0 1em;
+        min-height: 150px;
+        // max-height: 150px;
+        display: flex;
+        flex-direction: column;
+        border-bottom: thin solid #B0BEC5;;
+        .add-contact-link {
+            font-size: 18px;
+            color: #B0BEC5;;
+            font-family: Roboto-Bold;
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+        .contact-job-title-hover {
+            display: none;
+        }
+        p.contact-job-title {
+            font-size: 18px;
+            line-height: 21px;
+            color: #2C393F;
+            font-family: Roboto-Bold;
+            min-height: 42px;
+            margin-bottom: 0.5em;
+            &:hover .contact-job-title-hover {
+                display: block;
+                position: absolute;
+                z-index: 3000;
+                background: #ececec;
+                padding: 5px 10px 5px 10px;
+                // border: $component-border;
+                border-radius: 5px;
+            }
+        }
+        
+        p.contact-job-title-personas {
+            min-height: 41px;
+        }
+        p.contact-job-title-all {
+            min-height: 0px;
+        }
+        img.contact-image {
+            margin-right: 1em;
+        }
+        .status {
+            text-align: center;
+            margin-top: 0.4em;
+            .status-wrapper {
+                font-family: Roboto-Regular;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 10px;
+                line-height: 12px;
+                text-align: center;
+                padding: 6px 9px;
+                margin-right: 1em;
+                border-radius: 100px;
+            }
+            .Positive {
+                background: #E4FFE6;
+                color: #27AE60;
+            }
+            .Negative {
+                background: #FFECEB;
+                color: #DE5E56
+            }
+            .Unknown {
+                background: #E3F2FD;
+                color: #0080FF
+            }
+            .Neutral {
+                color: #E68230;
+                background: #FFF3D8
+            }
+        }
+        .contact-info {
+            p {
+                margin-bottom: 0;
+                &.contact-name {
+                    color: #5F6C72;
+                    font-family: Roboto-Medium;
+                }
+                &.contact-conversations {
+                    font-size: 14px;
+                }
+                &.contact-email {
+                    font-size: 14px;
+                    color: $blue-default;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                &.contact-phone {
+                    font-family: Roboto-Regular;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 10px;
+                    color: #5F6C72;
+                }
+            }
+            .optyCardPersona {
+                color : #5F6C72;
+            }
+        }
+    }
+    .footer {
+        border-radius: 0 0 4px 4px;
+        min-height: 40px;
+        max-height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 1em 0em 1em;
+        border-top: $grey-light solid 1.1px;
+        &.persona-card-footer {
+            padding-top: 4px;
+        }
+        .footerLabelContainer {
+            display: flex;  
+            align-items: flex-end;
+            // width: 100%;
+            justify-content: flex-end;
+            .yellow {
+                color: #F3C14F !important;
+            }
+            p {
+                font-family: Roboto-Medium;
+                color: #5F6C72;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: normal;
+                text-align: right;
+                margin: 0 0.5em 0 0;
+            } 
+            .material-icons {
+                color: #5F6C72;
+                font-size: 17px;
+            }
+            img {
+                width: 14px;
+                height: 14px;
+                position: relative;
+                bottom: 2px;
+            }
+            &.active {
+                background-color: $grey-depressed;
+            }     
+        }
+    }
+}
+.popupContainer {
+    position: absolute;
+    box-shadow: $popout-shadow;
+    padding: 0 16px 16px 16px;
+    z-index: 2;
+    top: 70%;
+    left: 100%;
+    width: 372px;
+    box-sizing: border-box;
+    background-color: $white;
+    border: $blue-default solid 1.1px;
+    border-radius: $border-radius;
+    .headerSection {
+        padding: 16px; 
+        border-bottom: $grey-light solid 1.1px;
+        .headerLabel {
+            margin: auto 0;
+            font-family: Roboto-Regular;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .material-icons {
+            margin: auto 0;
+            color: $grey-light;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .white {
+            color: $white;
+        }
+    }
+    .add-card-insight-form-section {
+        .add-oppty-card-form {
+            // margin-top: 16px;
+        }
+        label {
+            font-family: Roboto-Regular;
+            font-size: 10px;
+            line-height: 12px;
+            color: $grey-disabled;
+        }
+        .saveButton {
+            @include buttonStyle($blue-default, $white);
+            height: 32px;
+            width: 92px;
+            margin: 16px 0 16px 16px;
+        }
+        .cancelButton {
+            @include buttonStyle($white, $grey-dark);
+            height: 32px;
+            width: 92px;
+            margin: 16px 0;
+        }
+    }
+}
+// .economic-drivers-border, .use-cases-border, .pain-points-border, 
+// .personas-border, .value-proposition-border, .objections-border, 
+// .content-border, .competition-border, .partners-border, .activities-border {
+//     height: calc(100% - 21px);
+// }
+.economic-drivers-border {
+    // border: 3px solid $economic-drivers;
+    box-shadow: 0 0 0 3px $economic-drivers;
+}
+.use-cases-border {
+    // border: 3px solid $use-cases;
+    box-shadow: 0 0 0 3px $use-cases;
+}
+.pain-points-border {
+    // border: 3px solid $pain-points;
+    box-shadow: 0 0 0 3px $pain-points;
+}
+.personas-border {
+    // border: 3px solid $personas;
+    box-shadow: 0 0 0 3px $personas;
+}
+.value-proposition-border {
+    // border: 3px solid $value-proposition;
+    box-shadow: 0 0 0 3px $value-proposition;
+}
+.objections-border {
+    // border: 3px solid $objections;
+    box-shadow: 0 0 0 3px $objections;
+}
+.content-border {
+    // border: 3px solid $content;
+    box-shadow: 0 0 0 3px $content;
+}
+.competition-border {
+    // border: 3px solid $partners;
+    box-shadow: 0 0 0 3px $partners;
+}
+.partners-border {
+    // border: 3px solid $partners;
+    box-shadow: 0 0 0 3px $partners;
+}
+.activities-border {
+    // border: 3px solid $activities;
+    box-shadow: 0 0 0 3px $activities;
+}
+

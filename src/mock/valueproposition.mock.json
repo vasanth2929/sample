@@ -1,0 +1,72 @@
+{
+	"details": [
+		{
+			"new": true,
+			"title": "Vodafone",
+			"winQuarter": "Win Q4'15",
+			"name": "Dylan Sullivan",
+			"context": "Our Reps are wasting time logging into 10 different Systems. We want to give them a single window.",
+			"metrics": 
+			{
+				"sharable": true,
+				"reviewStatus": "green"
+			}
+		},
+		{
+			"new": false,
+			"title": "Verizon",
+			"winQuarter": "Win Q4'15",
+			"name": "Gordon Nash",
+			"context": "We want each Rep to support customers in a multichannel environment, but via a single Console.",
+			"metrics": 
+			{
+				"sharable": true,
+				"reviewStatus": "orange"
+			}
+		},
+		{
+			"new": false,
+			"title": "State Farm",
+			"winQuarter": "Win Q2'15",
+			"name": "Mike Polanski",
+			"context": "",
+			"metrics": 
+			{
+				"sharable": false,
+				"reviewStatus": "blue"
+			}
+		},
+		{
+			"new": false,
+			"title": "Bank of America",
+			"winQuarter": "Win Q4'15",
+			"name": "Mike Polanski",
+			"context": "",
+			"metrics": 
+			{
+				"sharable": false,
+				"reviewStatus": "blue"
+			}
+		}
+	],
+	"agent": {
+		"author": "Lois Lane",
+		"createdOn": "1/1/15",
+		"description": "The Agent Console provides a 360 view to all Customer Data",
+		"fields": ["Functional", "Technical", "Economic", "Strategic"],
+		"resources": [
+			{
+				"title": "Service Whitepaper",
+				"status": "open"
+			},
+			{
+				"title": "Console Fact Sheet",
+				"status": "open"
+			},
+			{
+				"title": "Console FAQ",
+				"status": "locked"
+			}
+		]
+	}
+}

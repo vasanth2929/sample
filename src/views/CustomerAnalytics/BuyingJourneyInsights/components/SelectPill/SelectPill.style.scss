@@ -1,0 +1,66 @@
+.pill-select-container {
+    display: flex;
+    width: 280px;
+    justify-content: space-between;
+    align-items: baseline;
+
+    img{
+        margin-bottom: 10px;
+    }
+
+    .pill-dropdown {
+        &__control {
+            height: 55px;
+            width: 250px;
+            background-color: #FFF5E3;
+            border-radius: 68px;
+            padding: 10px;
+            border: none;
+
+        }
+
+        &__indicator-separator, &__indicators {
+            display: none;
+        }
+
+        svg {
+            color: #FF7C4C;
+
+        }
+
+        &-wrapper {
+            margin-right: 16px;
+        }
+
+        &__option {
+            background-color: #FFF5E3;
+        }
+
+
+    }
+
+    .pill-select-item {
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #FFF5E3;
+
+        }
+
+        &-label {
+            font-weight: bold;
+            color: #293940;
+
+        }
+
+        &-name {
+            font-weight: bold;
+            color: #5c6c73;
+            font-size: 12px;
+        }
+    }
+    .close-button{
+        cursor: pointer;
+    }
+}

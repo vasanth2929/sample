@@ -1,0 +1,57 @@
+.sidebar-card-container {
+    width: 300px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 4px rgba(9, 30, 66, 0.1);
+    border-radius: 5px;
+
+    .heading {
+        font-size: 20px;
+        height: 60px;
+        width: 190;
+        padding: 1rem;
+        background-color: #EDF6FF;
+    }
+
+    &>div {
+        margin-bottom: 16px;
+    }
+
+    .metrics {
+      
+        padding: 1rem;
+        .box {
+            padding: 16px;
+            background-color: #FFFFFF;
+            box-shadow: 0 0 4px rgba(9, 30, 66, 0.1);
+            border-radius: 5px;
+            display: flex;
+            align-items: start;
+            line-height: 24px;
+            position: relative;
+            margin-bottom: 4px;
+            p {
+                margin-bottom: 0;
+            }
+
+            img {
+                margin-right: 16px;
+                width: 40px;
+            }
+        }
+    }
+
+    .more-link {
+        position: absolute;
+        top: 14px;
+        right: 2px;
+
+        &>span {
+            color: #0080FF !important;
+        }
+
+        img {
+            width: 12px !important;
+            margin-left: 5px;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.expert-network-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 65px;
+    border: 1px solid #F4F4F4;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 2px 0 rgba(108, 72, 91, 0.11);
+
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1260px;
+
+        &-options {
+
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 40%;
+
+            &-avatar {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+
+            .ask-question {
+                background-color: #35B47E;
+                color: white;
+                border: none;
+            }
+
+            .poll {
+                background-color: #0076DE;
+                color: white;
+                border: none;
+
+            }
+        }
+
+        &-search {
+            width: 516px !important;
+        }
+    }
+
+}

@@ -1,0 +1,76 @@
+{
+    "SplashMenus": [
+        {
+            "title": "Stories",
+            "navigateTo": "my-stories",
+            "icon": "ion-images",
+            "roles": ["SELLER", "CSM", "ADMIN", "MANAGEMENT"]
+        },
+        {
+            "title": "My Stories",
+            "navigateTo": "my-stories",
+            "icon": "icon-sidebar_mystories",
+            "roles": ["SELLER", "CSM", "ADMIN", "MANAGEMENT"]
+        },
+        {
+            "title": "Browse Stories",
+            "navigateTo": "browse-stories",
+            "icon": "icon-sidebar_browsestories",
+            "roles": ["SELLER", "CSM", "ADMIN", "MANAGEMENT"]
+        },
+        {
+            "title": "Win/Loss Analysis",
+            "navigateTo": "win-loss",
+            "icon": "icon-sidebar_winloss",
+            "roles": ["CSM", "ADMIN", "MANAGEMENT"]
+        },
+        {
+            "title": "Playbooks",
+            "navigateTo": "playbook-board",
+            "icon": "ion-ios-bookmarks-outline",
+            "roles": ["CSM", "ADMIN", "MANAGEMENT"]
+        },
+        {
+            "title": "Browse Playbooks",
+            "navigateTo": "playbook-board",
+            "icon": "icon-sidebar_browseplaybooks",
+            "roles": ["SELLER", "CSM", "ADMIN", "MANAGEMENT"]
+        },
+        {
+            "title": "Manage Playbooks",
+            "navigateTo": "playbooks",
+            "icon": "icon-sidebar_manageplaybooks",
+            "roles": ["CSM","ADMIN", "MANAGEMENT"]
+        },
+        {
+            "title": "Administration",
+            "navigateTo": "administration",
+            "icon": "icon-sidebar_administration",
+            "roles": ["ADMIN"]
+        },
+        {
+            "title": "Dashboard",
+            "navigateTo": "dashboard",
+            "icon": "icon-sidebar_dashboard",
+            "roles": ["ADMIN"]
+        },
+        {
+            "title": "Opportunity Plan",
+            "navigateTo": "myOpptyPlans",
+            "icon": "ion-android-call",
+            "roles": ["ADMIN"]
+        },
+        {
+            "title": "Logout",
+            "navigateTo": "logout",
+            "icon": "icon-sidebar_logout",
+            "roles": ["SELLER", "CSM", "ADMIN", "MANAGEMENT"]
+        },
+        {
+            "title": "Executive Dashboard",
+            "navigateTo": "administration",
+            "icon": "icon-sidebar_administration",
+            "roles": ["ADMIN"]
+        }
+    ]
+}

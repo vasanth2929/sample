@@ -1,0 +1,39 @@
+@import '../../../../../../../styles/base/variablesV2';
+@import '../../../../../../../styles/base/variables';
+
+.stories-tearsheet-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    .stories-header {
+        font-family: Roboto-Bold;
+        font-style: normal;
+        font-size: 32px;
+        line-height: 37px;
+        color: #000000;
+    }
+    .primary {
+        display: flex;
+        align-items: center;
+        padding: 2px 20px 2px 20px;
+        background: #0080FF;
+        border: 2px solid #0080FF;
+        color: $white;
+        margin-left: 35px;
+        font-family: Roboto-Bold;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 5px;
+        
+        cursor: pointer;
+        i {
+            margin-right: 2px;
+        }
+    }
+}
+.tearsheet-modal-stories-tab {
+    .modal-body {
+        min-width: 1060px !important;
+    }
+}

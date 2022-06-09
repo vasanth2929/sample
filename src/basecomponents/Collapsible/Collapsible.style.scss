@@ -1,0 +1,39 @@
+.collapsible-panel-wrapper {
+  // margin-top: 30px;
+  .panel-header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    &.trigger {
+      // padding: 0 5px 0 5px;
+      // color: blue;
+      cursor: pointer;
+    }
+    .panel-title {
+      padding: 0 10px 0 5px;
+    }
+  }
+  .panel-collapse {
+    margin-left: 5px;
+    max-height: 100px;
+    overflow-y: auto;
+    transition: max-height 0.32s linear;
+  }
+  .nonCollapsible {
+    margin-left: 5px;
+    width: calc(100% - 10px);
+  }
+  .panel-close {
+    max-height: 0;
+  }
+  .material-icons {
+    &.collaps {
+      background: #c2c0c0;
+      border-radius: 50px;
+      color: white;
+      cursor: pointer;
+      font-size: 1.15rem;
+      margin-top: 3px;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.filter-section {
+    label {
+        font-size: 14px;
+        font-family: Roboto-Regular;
+        color: #293940;
+        margin-bottom: 0px;
+        margin-right: 8px;
+    }
+    .seperator {
+        height: 12px;
+        width: 1px;
+        margin: 0px 12px;
+        background-color: #D8D8D8;
+    }
+    .filter-dropdown {
+        height: 32px !important;
+        &.industry-field,&.segment-field,&.stage-field,&.oppty-field,&.close-field {
+            margin-right: 8px;
+        }        
+        width: 150px;
+        &.industry-field {
+            width:  145px;
+        }
+        &.segment-field {
+            width:  140px;
+        }
+        &.region-field {
+            width:  130px;
+        }
+        &.stage-field {
+            width:  145px;
+        }
+        &.oppty-field {
+            width:  116px;
+        }
+        &.competitor-field {
+            width: 160px;
+        }
+        &.close-field {
+            width: 145px;
+        }
+        .filter-dropdown__control,.filter-dropdown__value-container {
+            height: 32px !important;
+            min-height: 32px !important ;
+            max-height: 32px !important;
+        }
+        .filter-dropdown__indicator {
+            padding: 0px 8px 0px 0px!important;
+        }
+        .filter-dropdown__indicator-separator {
+            display: none;
+        }
+        .filter-dropdown__single-value  {
+            color: #5C6C73;
+            font-family: Roboto-Regular;
+    font-size: 14px;
+        }
+      
+    }
+    .apply-btn {
+        background-color: #00B257;
+        padding: 0px;
+        height: 32px !important;
+        font-size: 12px;
+        font-weight: bold;
+        box-shadow: none;
+        margin-left: 16px;
+        color: white;
+        &.disabled {
+            opacity: 0.3;
+        }
+    }
+}

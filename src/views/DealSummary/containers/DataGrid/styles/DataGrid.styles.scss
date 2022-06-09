@@ -1,0 +1,91 @@
+@import '../../../../../styles/base/variablesV2';
+@import '../../../../../styles/base/variables';
+
+.deal-summary-data-grid {
+
+    zoom: 0.85;
+    height: 100%;
+
+    .react-grid-Grid {
+
+        border: none !important;
+        height: 100%;
+        min-height: unset !important;
+    
+        .react-grid-Viewport {
+            // overflow-y: scroll !important;
+            overflow-y: hidden !important;
+        }
+    
+        .react-grid-Canvas {
+            overflow: unset !important;
+        }
+    
+        .grid-actions {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            // button {
+            //     flex-grow: 1;
+            // }
+            button.view-tearsheet-btn {
+                flex-grow: 1;
+                flex-basis: 50%;
+                max-width: 56px;
+            }
+            
+            button.view-story-btn {
+                max-width: 36px;
+            }
+    
+            .play-video-btn {
+                width: 40px;
+            }
+        }
+    }
+    .react-grid-Container {
+        height: 100%;
+
+        .react-grid-Main {
+            height: 100%;
+        }
+        .react-grid-HeaderCell {
+            background: #DBDBDB;
+            border: 1px solid #C3C3C3;
+            background: $light-blue;
+            border: 0;
+            font-family: SFUI-Medium;
+            color: rgba(0, 0, 0, 0.58);
+    
+            line-height: 46px;
+            padding-left: 17px;
+    
+            span {
+                font-size: 16px !important;
+            }
+        }
+        .react-grid-Cell {
+            padding-left: 16px;
+            padding-right: 16px;
+            border-right: 0;
+            .react-grid-Cell__value {
+                font-size: 15px !important;
+            }
+            img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+        .react-grid-Cell:focus {
+            outline: none;
+        }
+    }
+}
+.conversation-modal-deal-summary {
+    .modal-body {
+        max-width: 50vw;
+        .conversation-renderer-box {
+            padding: 1em 0;
+        }
+    }
+}

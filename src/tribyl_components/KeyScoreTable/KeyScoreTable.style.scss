@@ -1,0 +1,38 @@
+.key-score {
+  &-text {
+    margin: 10px 0;
+  }
+
+  &-table {
+    margin-top: 24px;
+    width: 100%;
+    height: 630px;
+  }
+  &-text {
+    display: flex;
+    .legends {
+      display: flex;
+      margin: 0 20px;
+      .legend {
+        margin: 0 20px;
+      }
+    }
+    .key-score-link{
+      color: rgb(101, 170, 226) !important;
+      cursor: pointer;
+      &.bright {
+        color:  #0080FF !important;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.disabled-btn {
+  color: lightgray;
+  pointer-events: none;
+}
+
+.enabled-btn {
+  cursor: pointer;
+}

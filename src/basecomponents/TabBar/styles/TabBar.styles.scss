@@ -1,0 +1,26 @@
+@import '../../../styles/base/variablesV2';
+.tabBarContainer {
+	.tabBarHeader {
+		margin-top: 8px;	
+		.titleText {
+			font-family: Roboto-Regular;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: normal;
+			text-align: center;
+		}
+		.topRightText {
+			color: $grey-light;
+			font-family: Roboto-Regular;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: normal;
+			text-align: right;
+		}
+	}
+	.tabRowContainer {
+		box-shadow: $bottom-box-shadow;
+	}
+}

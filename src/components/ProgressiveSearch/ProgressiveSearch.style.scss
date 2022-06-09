@@ -1,0 +1,47 @@
+.progressive-search-box {
+    position: relative;
+
+    ul {
+        list-style-type: none;
+    }
+
+    &-options {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #ffffff;
+        width: 100%;
+        font-family: Roboto-regular;
+        font-size: 16px;
+        box-shadow: 0px 1px 4px 0px;
+        top: 42px;
+        z-index: 10;
+        max-height: 300px;
+        overflow-y: auto;
+
+        i {
+            font-size: 14px;
+            color: #9ba9af;
+        }
+
+        .default {
+            background-color: rgb(177, 210, 248);
+        }
+
+        p {
+            padding: 10px;
+            margin: 0;
+
+            &:hover {
+                background-color: rgb(177, 210, 248);
+            }
+        }
+
+        &-suggestion {
+            display: flex;
+            flex-direction: column;
+
+
+        }
+    }
+}

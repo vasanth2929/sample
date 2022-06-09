@@ -1,0 +1,252 @@
+@import '../../../../styles/base/variables';
+@import '../../../../styles/base/variablesV2';
+
+.configuration-properties-view,
+.outreach-properties-view {
+  font-family: Roboto-Regular;
+  #main-content-section {
+    margin-top: 102px;
+  }
+  .title-label {
+    padding: 16px 0;
+    p {
+      font-size: 24px;
+      margin-top: 4px;
+      margin-bottom: 0px;
+      margin-left: -15px;
+      color: $text-color;
+    }
+    .add-propset-btn {
+      width: 175px;
+      box-shadow: $shadow;
+      border: 1px solid transparent;
+      height: 35px;
+      margin-right: -30px;
+      font-family: Roboto-Regular;
+      font-size: 14px;
+    }
+  }
+  .search-properties-section {
+    margin-bottom: 1em;
+    font-size: 14px;
+    label {
+      color: $grey-disabled;
+      margin-bottom: 0;
+    }
+    input {
+      font-size: 14px;
+      padding-right: 40px;
+    }
+    i.searchbar-icon {
+      position: absolute;
+      right: 15px;
+      top: 29px;
+      color: $grey-disabled;
+      &.close-icon {
+        cursor: pointer;
+        color: $text-color;
+      }
+    }
+    .add-property-btn {
+      background: $white;
+      margin-top: 1em;
+      border: 1px solid transparent;
+      box-shadow: none;
+      font-size: 14px;
+      font-family: Roboto-Medium;
+      i {
+        color: $green-dark;
+        position: relative;
+        top: 4px;
+        margin-right: 0;
+        font-size: 21px;
+      }
+    }
+  }
+  .propset-properties-data-grid {
+    margin-bottom: 2em;
+    .react-grid-Container {
+      .react-grid-Main {
+        .react-grid-Grid {
+          min-height: calc(100vh - 18em) !important;
+        }
+        .react-grid-Header .react-grid-HeaderCell {
+          background: #f7f7f7;
+          padding-left: 1em;
+          &:last-child {
+            text-align: center;
+          }
+        }
+      }
+    }
+    &.outreach-propset-properties-data-grid {
+      .react-grid-Container {
+        .react-grid-Main {
+          .react-grid-Grid {
+            min-height: calc(100vh - 42em) !important;
+          }
+        }
+      }
+    }
+  }
+  .grid-group {
+    label {
+      font-family: Roboto-Bold;
+      color: $dark-grey-text;
+    }
+  }
+  .propset-list {
+    border: 1px solid $grey-disabled;
+    padding: 15px;
+    font-size: 14px;
+    overflow: auto;
+    max-height: 77vh;
+    min-height: 77vh;
+    .searchbar-section {
+      margin-bottom: 1em;
+      input {
+        font-size: 14px;
+        padding-right: 40px;
+      }
+      i {
+        position: absolute;
+        right: 15px;
+        top: 23px;
+        color: $grey-disabled;
+        &.close-icon {
+          cursor: pointer;
+          color: $text-color;
+        }
+      }
+    }
+    .propset-section {
+      ul {
+        padding: 0;
+        margin: 0;
+        & > li {
+          border: 1px solid $grey-disabled;
+          margin-bottom: 0.5em;
+          cursor: pointer;
+          &.selected {
+            border-color: $green-dark;
+            color: $green-dark;
+            background: $green-background;
+            font-family: Roboto-Bold;
+            button {
+              background: $green-background !important;
+            }
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+          p {
+            margin-bottom: 0;
+            padding-top: 10px;
+            padding-left: 0.5em;
+            padding-bottom: 10px;
+          }
+          button {
+            box-shadow: none;
+            border-color: transparent;
+            i {
+              cursor: pointer;
+              margin: 0;
+              position: relative;
+              top: 9px;
+            }
+            &.delete-btn {
+              background: $white;
+              color: $btn-red;
+              padding: 0;
+              margin-right: 1em;
+            }
+            &.edit-btn {
+              background: $white;
+              color: $btn-blue;
+              padding: 0;
+              margin-right: 1em;
+              &:disabled {
+                pointer-events: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.add-propset-form-modal,
+.edit-propset-form-modal {
+  &.show {
+    z-index: 2002 !important;
+  }
+  #modal-content {
+    max-height: 25vh !important;
+  }
+  .header-section {
+    p {
+      margin-bottom: 0;
+      font-size: 22px;
+      font-family: Roboto-Bold;
+    }
+  }
+  .content-section {
+    height: auto !important;
+    overflow: hidden !important;
+    .add-propset-form {
+      padding: 2em 0;
+      label {
+        font-family: Roboto-Medium;
+        margin-bottom: 0.5em;
+      }
+      input {
+        margin-bottom: 1em;
+      }
+      input.save-btn {
+        width: 200px;
+        color: $white;
+        background: $blue-default;
+        box-shadow: $shadow;
+      }
+    }
+  }
+}
+.add-property-form-modal {
+  &.show {
+    z-index: 2002 !important;
+  }
+  #modal-content {
+    max-height: 40vh !important;
+  }
+  .header-section {
+    p {
+      margin-bottom: 0;
+      font-size: 22px;
+      font-family: Roboto-Bold;
+    }
+  }
+  .content-section {
+    height: auto !important;
+    overflow: hidden !important;
+    .add-property-form {
+      padding: 2em 0;
+      p.propset-name {
+        font-family: Roboto-Bold;
+      }
+      label {
+        font-family: Roboto-Medium;
+        margin-bottom: 0.5em;
+      }
+      input {
+        margin-bottom: 1em;
+      }
+      input.save-btn {
+        width: 200px;
+        color: $white;
+        background: $blue-default;
+        box-shadow: $shadow;
+      }
+    }
+  }
+}

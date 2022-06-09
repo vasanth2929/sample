@@ -1,0 +1,101 @@
+.filter-table {
+  .MuiDataGrid-columnHeaderWrapper {
+    background-color: #f7f7f7;
+    color: rgb(95, 108, 114);
+    font-family: SFUI-Medium;
+    font-size: 16px;
+    .MuiDataGrid-columnHeaderTitle {
+      font-weight: bold;
+    }
+  }
+
+  .MuiDataGrid-columnSeparator {
+    display: none !important;
+  }
+
+  .prop-cell {
+    color: rgb(95, 108, 114) !important;
+    padding-left: 16px;
+    font-family: Roboto-Regular !important;
+    font-size: 14px;
+  }
+}
+
+.basic-single {
+    height: 40px;
+  .select__control {
+    border: 1px solid #6b778c;
+    border-radius: 4px;
+    width: 165px;
+    height: 40px;
+  }
+
+  .select__control--is-disabled {
+    background-color: transparent;
+    color: black;
+    .select__single-value--is-disabled {
+      color: inherit;
+    }
+  }
+
+  .select__indicator-separator {
+    display: none;
+  }
+
+  .select_dropdownIndicator {
+    color: #505f79;
+  }
+
+  .select__indicator {
+    color: #505f79;
+  }
+
+  margin: 0 10px 0 6px;
+}
+
+.filter-menu {
+    max-width: 200px !important;
+    min-width: 200px !important;
+    width: 200px !important;
+    padding-right: 0px !important;
+    li {
+        white-space: normal !important;
+        padding-right: 0px !important;
+        font-size: 14px !important;
+        &.active-item {
+            background: #0080ff;
+            color: white;
+        }
+    }
+}
+
+.dropdown-btn {
+    text-transform: capitalize;
+    width: 200px !important;
+    max-width: 200px !important;
+    justify-content: space-between !important;
+    span {
+        text-align: left;
+        color: rgb(95, 108, 114);
+    }
+    .span {
+        max-width: 160px;
+        display: block;
+        width: 160px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    // .down-icon {
+
+    // }
+}
+
+.alert-msg {
+  color: white;
+  font-weight: bold;
+  svg {
+    fill: white !important;
+  }
+}

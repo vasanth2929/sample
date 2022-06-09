@@ -1,0 +1,168 @@
+.question-panel {
+    width: 725px;
+
+    &-sub-title {
+        font-size: 16px;
+        color: #52627A;
+        font-family: Roboto-regular;
+    }
+
+    &-title {
+        font-size: 32px;
+        color: #091F42;
+        font-family: Roboto-bold;
+    }
+
+    &-card {
+        width: 832px;
+        border: 1px solid #E1E6E8;
+        border-radius: 12px;
+        box-shadow: 0 2px 4px 0 rgba(108, 72, 91, 0.11);
+
+        &-header {
+            padding: 16px;
+            min-height: 180px;
+
+            .muted {
+                color: #748194;
+                font-size: 12px;
+                font-family: Roboto-medium;
+            }
+
+            .question-text {
+                color: #091F42;
+                font-size: 20px;
+                font-family: Roboto-medium;
+                margin-right: 10px;
+            }
+
+            .new-card-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &-save {
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: #F7F8F9;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+
+                    span {
+                        color: #35B47E;
+                    }
+                }
+
+                &-cancel {
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: #F7F8F9;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .new-card-input {
+                    width: 100%;
+                    border-radius: 12px;
+                    height: 48px;
+                    border: 1px solid #E1E6E8;
+                    border-radius: 12px;
+                    padding: 12px;
+                    font-family: Roboto-regular;
+                    font-size: 16px;
+                    outline-color: #017AFF;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    &.editable {
+                        width: 85%;
+                    }
+
+                    //this is to select the parent component when child is selected
+                    &:focus-within {
+                        border: 1px solid #017AFF;
+                    }
+
+                    .counter {
+                        font-size: 16px;
+                        color: #97A6B9;
+                        font-family: Roboto-Regular;
+                    }
+
+                    input {
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                    }
+                }
+            }
+
+        }
+
+        &-body {
+            padding: 0px 7px;
+
+            .question-container {
+                height: 372px;
+                overflow-y: auto;
+                width: 100%;
+            }
+
+            &>div {
+                margin-bottom: 16px;
+            }
+        }
+
+        &-footer {
+            height: 72px;
+            background-color: #FFFFFF;
+            box-shadow: 0 -2px 4px 0 rgba(108, 72, 91, 0.11);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            &>button {
+                margin-right: 16px;
+            }
+
+            .previous {
+                box-sizing: border-box;
+                height: 40px;
+                width: 112px;
+                border: 1px solid #E1E6E8;
+                border-radius: 20px;
+                background-color: #F7F8FA;
+                color: #017AFF;
+                font-size: 16px;
+                font-family: Roboto-bold;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .save {
+                height: 40px;
+                width: 177px;
+                border-radius: 20px;
+                background-color: #017AFF;
+                font-size: 16px;
+                font-family: Roboto-bold;
+                color: #FFFFFF;
+                border: none;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+    }
+}

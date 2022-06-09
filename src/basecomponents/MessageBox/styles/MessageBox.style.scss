@@ -1,0 +1,14 @@
+@import '../../../styles/base/variables';
+
+.message-box {
+    .alert-success {
+        border-color: $successColor;
+        width: 100%;
+    }
+    .alert-info {
+        border-color: $primaryColor;
+    }
+    .alert-warning {
+        border-color: $warningColor;
+    }
+}

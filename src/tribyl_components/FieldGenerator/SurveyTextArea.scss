@@ -1,0 +1,32 @@
+.dealTape_textbox {
+    overflow: auto;
+    height: fit-content !important;
+    .header-section {
+
+        border-bottom: none;
+    }
+
+    .modal-title {
+        color:#293940;
+        font-family: Roboto-bold;
+        font-size: 16px;
+        width:400px;
+    }
+
+    .modal-body {
+        width: 492px;
+        height: fit-content;
+        overflow: auto;
+
+        .content-section {
+            overflow: auto;
+            height: fit-content !important;
+        }
+    }
+    .survey-quill{
+        .ql-disabled{
+            background-color: rgb(238, 238, 238);
+        }
+    }
+   
+}

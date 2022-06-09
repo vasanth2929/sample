@@ -1,0 +1,34 @@
+@import '../../../styles/base/variables';
+
+.overlay {
+    display: none;
+    background: $overlay-black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    .modal-body {
+        background: $white;
+        max-width: 50vw;
+        border-radius: 4px;
+        box-shadow: $shadow;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        word-wrap: break-word;
+        #modal-content {
+			max-height: 70vh;
+			font-family: SFUI-regular;
+			font-size: 15px;
+			color: $text-color;
+			.close-modal {
+				cursor: pointer;
+			}
+        }
+    }
+    &.show {
+      display: block;
+    }
+}

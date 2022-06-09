@@ -1,0 +1,12 @@
+.react-rater-star {
+  &.is-active-half {
+      &:before {
+          color: #f1cc16 !important;
+      }
+  }
+
+  &.is-active {
+      color: #f1cc16 !important;
+  }
+
+}

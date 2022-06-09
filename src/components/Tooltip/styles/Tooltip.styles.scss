@@ -1,0 +1,39 @@
+@import '../../../styles/base/variables';
+@import '../../../styles/base/variablesV2';
+
+.tooltip-component {
+    display: block;
+    position: absolute;
+    z-index: 3000;
+    background: #ececec;
+    padding: 5px 10px 5px 10px;
+    border: $component-border;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+}
+
+// .fade {
+//     -webkit-animation: fade 500ms;
+//     animation: fade 500ms;
+//     -moz-animation: fade 500ms;
+//     -o-animation: fade 500ms;
+// }
+
+// @-webkit-keyframes fade {
+//     0% {opacity: .5} 
+//     100% {opacity: 1}
+// }
+
+// @-moz-keyframes fade{
+//     0% {opacity: .5} 
+//     100% {opacity: 1}
+// }
+
+// @keyframes fade {
+//     0% {opacity: .5} 
+//     100% {opacity: 1}
+// }
+// @-o-keyframes fade {
+//     0% {opacity: .5} 
+//     100% {opacity: 1}
+// }

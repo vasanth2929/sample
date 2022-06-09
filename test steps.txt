@@ -1,0 +1,6 @@
+Test:
+
+1. Count of emails 
+2. dashboard level summary stats
+3. Cards level metrics
+4. Deals returned in deals tab

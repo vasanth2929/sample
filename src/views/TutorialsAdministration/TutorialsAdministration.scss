@@ -1,0 +1,126 @@
+@import '../../styles/base/variables';
+@import '../../styles/base/variablesV2';
+
+.outreach-properties-view {
+    font-family: Roboto-Regular;
+    #main-content-section {
+        margin-top: 102px;
+    }
+    .title-label {
+        padding: 16px 0;
+        p {
+            font-size: 24px;
+            margin-top: 4px;
+            margin-bottom: 0px;
+            margin-left: -15px;
+            color: $text-color;
+        }
+    }
+    .tutorials-wrapper {
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        border: 1px solid #d7d7d7;
+        border-radius: 5px;
+        padding: 0px !important;
+    
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+            padding-left: 10px;
+            padding-top: 10px;
+            line-height: 28px;
+            color: #464646;
+            display: block;
+            border-bottom: 1px solid #c3c3c3;
+            height: 48px;
+            padding-bottom: 0px;
+            background: rgba(128, 128, 128, 0.07);
+            margin: 0px;
+        }
+    
+        .videos-list-wrapper {
+            flex-grow: 1;
+            border-right: 1px solid #c3c3c3;
+            ul {
+                list-style-type: none;
+                padding: 0px;
+                margin-bottom: 0px;
+                height: calc(100% - 48px);
+                overflow-y: auto;
+    
+                li {
+                    height: 48px;
+                    line-height: 48px;
+                    padding-left: 10px;
+                    cursor: pointer;
+                    // border-bottom: 1px solid #d8d8d8;
+    
+                    &.selected-video {
+                        font-weight: bold;
+                        background: rgba(216, 216, 216, 0.14);
+                    }
+                    &:not(.add-industry-option):hover {
+                        background: rgba(216, 216, 216, 0.14);
+                        .text-display {
+                            i {
+                                visibility: visible;
+                            }
+                        }
+                    }
+    
+                    &.add-industry-option {
+                        // margin-bottom: 5px;
+                        .add-industry-option-button {
+                            padding-bottom: 2px !important;
+                        }
+                    }
+    
+                    .add-industry-option-button {
+                        cursor: pointer;
+                        color: #0080ff;
+                        // border-bottom: 1px solid #c3c3c3;
+                        width: calc(100% + 10px);
+                        display: flex;
+                        align-items: center;
+                        margin-left: -10px;
+                        margin-right: -10px;
+                        padding-left: 10px;
+                        line-height: 50px;
+                        // margin-top: 12px;
+                        font-size: 15px;
+    
+                        i,
+                        .text-display {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .video-details-wrapper {
+            width: 600px;
+            .video-preview {
+                .preview-wrapper {
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: -webkit-grab;
+                    user-select: none;
+                    border-radius: 5px;
+                    outline: 0 !important;
+                    box-shadow: none !important;
+                    position: relative;
+                    top: 0px;
+    
+                    video {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}
+

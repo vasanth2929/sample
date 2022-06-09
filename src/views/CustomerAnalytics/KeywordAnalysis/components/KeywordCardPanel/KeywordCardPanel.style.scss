@@ -1,0 +1,28 @@
+.keyword-panel {
+  font-family: Roboto-regular;
+  background-color: #f6f8f9;
+  border: 1px solid #eef2f4;
+  border-radius: 5px;
+  &-row {
+    margin: 16px 0;
+    padding: 16px;
+  }
+  &-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    &-title {
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: capitalize;
+      border-bottom: 1px solid black;
+      line-height: 20px;
+    }
+  }
+  &-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

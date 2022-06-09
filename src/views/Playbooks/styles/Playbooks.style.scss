@@ -1,0 +1,713 @@
+@import '../../../styles/base/variables';
+
+.playbooks-view {
+    #main-content-section {
+        margin-top: 112px;
+    }
+    .data-header-filter {
+        box-shadow: $shadow;
+        padding: 16px 0;
+        .d-flex {
+            p {
+                flex: 1;
+                font-family: SFUI-Medium;
+                font-size: 21px;
+                margin-bottom: 0px;
+                font-weight: 500;
+                margin: auto;
+            }
+            i, img {
+                font-size: 1.7em;
+                margin: auto 0.2em auto 0;
+                &.is-active {
+                    color: $green;
+                }
+                &.is-inactive {
+                    color: $yellow;
+                }
+                &.action-icons {
+                    cursor: pointer;
+                    padding: 5px;
+                    margin-left: 8px;
+                    top: 2px;
+                    &.clone-icon {
+                        opacity: 0.7;
+                        top: 6px;
+                    }
+                    &:hover {
+                        color: $black;
+                    }
+                }
+            }
+            .headerIconContainer {
+                margin: auto;
+            }
+        }
+        .action-section {
+            .col-4 {
+                padding: 0;
+                .view-toggler {
+                    img {
+                        margin-top: 4px;
+                    }
+                }
+            }
+            button {
+                display: inline-flex;
+                // width: 13rem;
+                width: 10rem;
+                text-align: center;
+                font-size: 12px;
+                cursor: pointer;
+                border-radius: 6px;
+                font-family: SFUI-SemiBold;
+                color: #FFF;
+                background: #1A93F0;
+                border: 1px solid transparent;
+                box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+                padding: 0.25rem 0.75rem;
+                i {
+                    margin-right: 8px;
+                    // margin-left: 8px;
+                    font-size: 20px;
+                }
+                span {
+                    margin-bottom: 6px;
+                    margin-top: 6px;
+                    margin-left: 10px;
+                }
+                .elevator-pitch {
+                    margin-left: 20px;
+                    width: 100%;
+                    margin-left: 0px;
+                    margin-top: 0;
+                    text-align: center;
+                    i {
+                        position: relative;
+                        top: 5px;
+                        cursor: pointer;
+                        &.arrow-icon {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            .elevator-pitch-options {
+                position: absolute;
+                width: 150%;
+                background: white;
+                border: 1px solid grey;
+                border-radius: 5px;
+                margin-top: 4px;
+                padding: 0.5em 1em;
+                box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+                ul {
+                    list-style: none;
+                    padding-left: 0;
+                    margin-bottom: 0;
+                    font-size: 16px;
+                    li {
+                        margin-bottom: 0.5em;
+                        cursor: pointer;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        &:hover {
+                            text-decoration: underline;
+                            font-family: Roboto-Bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .data-header-info {
+        margin: 8px 0px;
+        p {
+            padding-left: 10px;
+            font-size: 15px;
+            font-family: SFUI-Medium;
+        }
+        .col-2:first-child {
+            padding-left: 0;
+        }
+        .col-2 {
+            display: inherit;
+            &.green-label p.block {
+                border-radius: 3px;
+                background: $green-background;
+                width: 25px;
+                border: $common-border;
+                box-shadow: -2px 2px 5px 2px rgba(0,0,0,0.25);
+            }
+            &.blue-label p.block {
+                border-radius: 3px;
+                background: $blue-background;
+                width: 25px;
+                border: $common-border;
+                box-shadow: -2px 2px 5px 2px rgba(0,0,0,0.25);
+            }
+            &.purple-label p.block {
+                border-radius: 3px;
+                background: $purple-background;
+                width: 25px;
+                border: $common-border;
+                box-shadow: -2px 2px 5px 2px rgba(0,0,0,0.25);
+            }
+            &.orange-label p.block {
+                border-radius: 3px;
+                background: $orange-background;
+                width: 25px;
+                border: $common-border;
+                box-shadow: -2px 2px 5px 2px rgba(0,0,0,0.25);
+            }
+        }
+    }
+    .searchContainer {
+        margin-top: 2rem;
+    }
+    .categories-section {
+		background: $white;
+		border-radius: 4px;
+		box-shadow: $shadow;
+		border: 1px solid $body-background;
+        margin-top: 16px;
+        .category-lists {
+            margin-top: 0;
+        }
+        .shine-me {
+          height: 12px;
+          margin: 20px;
+        }
+		.cards-searchbar {
+			height: 54px;
+			border-bottom: 1px solid $light-grey;
+			text-align: left;
+			.react-searchbar {
+				input {
+					margin: 12px 8px;
+					width: 95%;
+					padding: 4px 28px 4px 5px;
+					font-size: 13px;
+					font-family: SFUI-regular;
+					color: $btn-grey;
+				}
+				i {
+                    top: 33px;
+                    right: 30px;
+					font-size: 20px;
+					&.close-search-icon {
+						cursor: pointer;
+					}
+				}
+			}
+		}
+		.error-view {
+			text-align: center;
+			color: $red-highlight;
+			min-height: 200px;
+			p {
+				padding: 50% 0;
+			}
+
+		}
+		.categories {
+			ul {
+				list-style: none;
+				padding-left: 0;
+				li {
+					border-bottom: 1px solid $light-grey;
+					.flex-title {
+						cursor: pointer;
+						p {
+							color: $btn-grey;
+							font-size: 13px;
+							font-family: SFUI-Bold;
+							margin-bottom: 0;
+							margin: 16px;
+						}
+						i.expand-category {
+							float: right;
+							position: relative;
+							bottom: 40px;
+							right: 15px;
+							color: $grey;
+							transition: all 0.5s;
+						}
+						&.toggled {
+							border-bottom: 1px solid $light-grey;
+							p {
+								color: $link-blue;
+							}
+							i {
+								transition: all 0.5s;
+								transform: rotate(45deg);
+							}
+						}
+					}
+					&:last-child {
+						border-bottom: 0;
+					}
+				}
+				ul.category-choices-list {
+					overflow: auto;
+					max-height: 0;
+					padding-top: 0;
+					padding-bottom: 0;
+					margin-top: 0;
+					margin-bottom: 0;
+					-moz-transition-duration: 0.3s;
+					-webkit-transition-duration: 0.3s;
+					-o-transition-duration: 0.3s;
+					transition-duration: 0.3s;
+					-moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+					-webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+					-o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+					transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+					&.toggled {
+						-moz-transition-duration: 0.3s;
+						-webkit-transition-duration: 0.3s;
+						-o-transition-duration: 0.3s;
+						transition-duration: 0.3s;
+						-moz-transition-timing-function: ease-in;
+						-webkit-transition-timing-function: ease-in;
+						-o-transition-timing-function: ease-in;
+						transition-timing-function: ease-in;
+						max-height: 375px;
+						width: 100%;
+						padding: 0 8px;
+					}
+					li {
+						text-align: center;
+						font-size: 17px;
+						font-family: SFUI-SemiBold;
+						color: $text-color;
+						border: 1px dashed $light-grey;
+						border-radius: 4px;
+						padding: 8px;
+						cursor: pointer;
+						margin-bottom: 8px;
+						p {
+							margin-bottom: 0;
+							background: $background-grey;
+							border-radius: 4px;
+							border: 2px solid $light-grey;
+							box-shadow: $shadow;
+							padding: 5%;
+						}
+						&:hover p {
+							background: $blue-background;
+						}
+					}
+				}
+			}
+		}
+	}
+    .books-grid {
+        padding: 0.1em;
+        .view-option {
+            color: $text-color;
+            span {
+                font-family: SFUI-Medium;
+                cursor: pointer;
+                i {
+                    position: relative;
+                    top: 6px;
+                    margin-left: 5px;
+                }
+            }
+        }
+        .card {
+            cursor: pointer;
+            .card-content {
+                text-align: center;
+            }
+        }
+        .story-count-card {
+            border: $component-border;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            height: 17vh;
+            &:hover {
+                box-shadow: $hover-shadow;
+            }
+            .header-section {
+                min-height: 90px;
+                height: 65%;
+                background: #FAFAFA;
+                border-bottom: $component-border;
+                padding: 15px 16px;
+                border-radius: 4px 4px 0 0;
+                width: 100%;
+                p {
+                    font-family: SFUI-SemiBold;
+                    font-size: 1.4em;
+                    display: table-cell;
+                    vertical-align: middle;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    color: $text-color;
+                }
+            }
+            .footer-section {
+                min-height: 50px;
+                height: 35%;
+                padding: 15px 16px;
+                border-radius: 0 0 4px 4px;
+                p {
+                    color: $text-color;
+                    margin-bottom: 0;
+                    font-family: SFUI-Regular;
+                    font-weight: 600;
+                    i {
+                        color: #b7b6b6;
+                        position: relative;
+                        top: 4px;
+                    }
+                }
+            }
+        }
+    }
+    .books-list {
+        margin-top: 8px;
+        .Select-menu-outer {
+            max-height: 350px;
+            .Select-menu {
+              max-height: 350px;
+            }
+        }
+        .add-card-btn {
+            color: #4fa9eec4;
+            font-size: 24px;
+        }
+        span.count-label {
+            margin-right: 12px;
+            font-family: SFUI-Medium;
+            position: relative;
+            bottom: 4px;
+            font-size: 17px;
+        }
+        .shimmer-box {
+            min-height: 550px;
+            background: $white;
+            box-shadow: $shadow;
+            border-radius: 4px;
+            padding: 12px 0;
+            .text-block .text-row {
+                margin: 32px 0;
+            }
+        }
+        .view-option {
+            color: $text-color;
+            span {
+                font-family: SFUI-Medium;
+                cursor: pointer;
+                i {
+                    position: relative;
+                    top: 6px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    .list-items {
+        margin-top: 16px;
+        max-height: 600px;
+        .category-list {
+            box-shadow: $shadow;
+            border-radius: 4px;
+            padding: 16px 16px 8px 16px;
+            margin-bottom: 16px;
+            font-size: 16px;
+            color: $black;
+            background: $white;
+            p.category-name {
+                cursor: pointer;
+                font-family: SFUI-Medium;
+                margin-bottom: 0px;
+                margin-left: 30px;
+                .react-marker {
+                    left: 18px;
+                    &.green {
+                        background: $green-background;
+                        border: 1px solid #bfccc0;
+                    }
+                    &.purple {
+                        background: $purple-background;
+                        border: 1px solid #caaaca;
+                    }
+                    &.blue {
+                        background: $blue-background;
+                        border: 1px solid #babad4;
+                    }
+                }
+                i.toggle-icon {
+                    font-size: 16px;
+                }
+            }
+            p.card-count {
+                font-family: SFUI-Light;
+                i.add-card-btn {
+                    font-size: 20px;
+                    padding: 8px 8px 8px 16px;
+                    cursor: pointer;
+                    color: $grey;
+                }
+            }
+            .category-cards {
+                max-height: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+                margin-top: 0;
+                margin-bottom: 0;
+                overflow: hidden;
+                -moz-transition-duration: 0.3s;
+                -webkit-transition-duration: 0.3s;
+                -o-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+                -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+                -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+                -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+                transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+                &.toggled {
+                    max-height: 350px;
+                }
+              table {
+                font-size: 15px;
+                a {
+                    color: $black;
+                }
+              }
+            }
+        }
+    }
+    &.administration-view {
+        #modal-content {
+            form {
+                padding: 100px 250px;
+                .form-control {
+                    padding: 0;
+                    select {
+                        padding: 0.375rem;
+                        border-radius: 5px;
+                    }
+                }
+                input.playbook-name-input.form-control,
+                textarea.form-control {
+                    padding: 0.375rem 10px;
+                }
+                .dd-base,
+                .Select {
+                    width: 90%;
+                }
+                .playbook-name-input {
+                    width: 95%;
+                }
+                i.edit-playbook {
+                    font-size: 32px;
+                    color: green;
+                    cursor: pointer;
+                    position: relative;
+                    bottom: 6px;
+                    right: -20px;
+                }
+                i.clone-playbook {
+                    font-size: 32px;
+                    color: green;
+                    cursor: pointer;
+                    position: relative;
+                    bottom: 6px;
+                    right: -40px;
+                }
+            }
+        }
+        .advancedSearchContainer.hidden {
+            display: none;
+        }
+    }
+}
+.edit-playbook-modal {
+    label {
+        font-family: SFUI-SemiBold;
+    }
+    button {
+        margin-bottom: 8px;
+        margin-right: 4px;
+        float: right;
+        width: 25%;
+        border: 1px solid transparent;
+        box-shadow: $shadow;
+        height: 45px;
+    }
+}
+
+.clone-playbook-modal {
+    .modal-body {
+        max-width: 50vw;
+        .col-4 {
+            padding-left: 0;
+        }
+    }
+    .form-section {
+        width: 100%;
+        height: 100%;
+        form {
+            padding: 16px;
+            border: $component-border;
+            border-radius: 4px;
+            .form-group {
+                margin-bottom: 42px;
+            }
+            label {
+                font-family: SFUI-SemiBold;
+                &.checkbox-container {
+                    font-family: SFUI-Regular;
+                    padding-left: 24px;
+                    margin-left: 8px;
+                }
+            }
+            .label-message {
+                margin: 16px 0 0 0;
+                font-family: SFUI-SemiBold;
+                min-height: 21px;
+                font-size: 14px;
+                &.error-message {
+                    color: $red;
+                }
+                &.success-message {
+                    color: $green;
+                }
+            }
+            .checkbox-container {
+                .checkmark {
+                    left: -6px !important;
+                }
+            }
+            button {
+                margin-right: 16px;
+                border-color: transparent;
+                box-shadow: $shadow;
+                width: 25%;
+                &.reset-playbook {
+                    background: $btn-grey !important;
+                    float: right;
+                }
+            }
+        }
+    }
+    .list-section {
+        max-height: 320px;
+        .buying-centers-list {
+            margin-left: 0.5em;
+            background: #FFF;
+            border-radius: 4px;
+            border: $component-border;
+            margin-bottom: 8px;
+            .buyer-name-loading {
+                padding-top: 8px;
+                padding-bottom: 8px;
+                .text-block.shimmer-div {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
+            .buyer-label {
+                border-bottom: $common-border;
+                background: #E7F1F8;
+                box-shadow: 0 5px 3px -3px #e1dede;
+                line-height: 2.7em;
+                font-size: 1.1em;
+                font-family: SFUI-Bold;
+                color: #515151;
+                text-align: center;
+                margin-bottom: 0;
+            }
+            ul {
+                padding-left: 0;
+                list-style: none;
+                margin-bottom: 0;
+                li {
+                    border-bottom: $common-border;
+                    padding: 10px 10px 10px 15px;
+                    font-family: SFUI-Medium;
+                    &:last-child {
+                        border-bottom: 0;
+                    }
+                    &.selected {
+                        border-left: 5px solid $green;
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+.publish-playbook-modal {
+    p.text-center {
+        padding: 0.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+        color: #737373;
+        font-family: SFUI-Light;
+        font-weight: 600;
+        font-size: 16px;
+        &.not-found-label {
+            padding: 48px 0;
+            font-size: 22px;
+        }
+    }
+    .table-heading {
+        background: #EDF4F9;
+        border: $common-border;
+        margin-bottom: 0;
+        td {
+            font-family: SFUI-Medium;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.58);
+        }
+    }
+    .table-data {
+        max-height: 400px;
+        table {
+            border: $component-border;
+        }
+    }
+    table {
+        tr {
+            td {
+                padding: 8px;
+            }
+            td:nth-child(2) {
+                width: 50%;
+            }
+            td:nth-child(3) {
+                width: 15%;
+                i {
+                    margin-right: 0;
+                    color: $btn-blue;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .btn {
+        width: 10rem;
+        height: 45px;
+        margin-bottom: 8px;
+        border: 1px solid $btn-blue;
+        box-shadow: $shadow;
+        margin-top: 24px;
+        background: $white;
+        float: right;
+        margin-left: 16px;
+        &.publish-btn {
+            color: $white;
+            background: $btn-blue;
+        }
+    }
+}

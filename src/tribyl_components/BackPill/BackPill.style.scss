@@ -1,0 +1,45 @@
+.back-pill {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 215px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #FFF5E3;
+    height: 56px;
+    border-radius: 28px;
+    background-color: #FFF5E3;
+
+    &-chevron-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 1em;
+    }
+    &-text-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &-title {
+            // font-family: Roboto;
+            text-transform: uppercase;
+            // height: 12px;
+            color: #6B778C;
+            font-size: 10px;
+            letter-spacing: 0;
+            line-height: 12px;
+            margin-bottom: 4px;
+        }
+        &-subtitle {
+            color: #293940;
+            // font-family: Roboto;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 0;
+            line-height: 16px;
+        }
+    }
+    
+}

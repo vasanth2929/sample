@@ -1,0 +1,166 @@
+@import "../../../../../styles//base/variables";
+.buyer-insights {
+    width: 350px;
+    margin-left: 16px;
+
+
+    &.card {
+        border-radius: 12px;
+    }
+
+    &-card-header {
+        height: 76px;
+        border-radius: 12px 12px 0 0;
+        background-color: #F3FCF9;
+        padding: 16px;
+        position: relative;
+
+        .card-title {
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .status {
+            position: absolute;
+            right: 14px;
+            top: 12px;
+            &.test-c {
+                background-color: $test-bg;
+                color: black !important;
+              }
+        }
+
+        .small-text {
+            color: #96A5BA !important;
+        }
+
+    }
+
+    &-card-body {
+        background-color: #e1e6e8;
+        border-radius: inherit;
+
+        &-tabs {
+            overflow-y: auto;
+            height: 413px;
+        }
+
+        .options {
+            background-color: #FFFFFF;
+            padding: 16px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+            &>span {
+                margin-right: 12px;
+                color: #6B778C;
+                font-family: Roboto-regular;
+                font-size: 12px;
+            }
+
+            .selected {
+                font-family: Roboto-bold;
+                color: #35B47E;
+                border-bottom: 1px solid #35B47E;
+            }
+
+            border-bottom: 1px solid rgb(234, 235, 236);
+        }
+
+        .note-card {
+            //padding: 16px;
+            // border-top: 1px solid rgb(234, 235, 236);
+            border-bottom: 1px solid rgb(234, 235, 236);
+            background-color: #FFFFFF;
+
+            .note_details {
+                padding: 16px;
+                border: 1px solid #EEF2F4;
+
+                .header {
+                    margin-bottom: 10px;
+                    position: relative;
+
+                    .profile-info {
+
+                        p {
+                            margin-bottom: 0px;
+                        }
+
+                        .small-text {
+                            color: #96A5BA;
+                        }
+
+                        .sub-heading {
+                            color: #091F42;
+                        }
+                    }
+
+                    .card-option {
+                        .dropbtn {
+                            &>span {
+                                margin-bottom: 1px;
+                            }
+                        }
+
+                        position: absolute;
+                        top: 0px;
+                        right: 16px;
+                        color: rgb(177, 177, 177);
+                        font-size: 14px;
+                    }
+                }
+
+                .notes {
+                    font-size: 16px;
+                    font-family: Roboto-Regular;
+                    color: #091F42;
+                    letter-spacing: 0;
+                    line-height: 24px;
+                }
+
+                .footer {
+                    display: flex;
+                    margin-top: 5px;
+
+                    .pill {
+                        padding: 8px 12px;
+                        margin-right: 16px;
+                        font-size: 14px;
+
+                        img {
+                            margin-right: 5px;
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        .filter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            .switch-button-container-button {
+                padding: 8px 17px;
+                background-color: #ffffff;
+                color: black;
+                width: fit-content;
+
+                &.selected {
+                    background-color: #0080ff;
+                    color: white;
+                }
+            }
+
+            padding: 8px 16px;
+        }
+    }
+}

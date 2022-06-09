@@ -1,0 +1,16 @@
+.topic-panel {
+    flex:0 0 260px;
+    border: 1px solid rgb(219, 218, 218);
+    height: fit-content;
+    &-items {
+        padding: 16px 16px;
+        font-size: 14px;
+        color: #5C6C73;
+        cursor: pointer;
+        font-family: Roboto-Regular;
+        &.selected{
+            color: #0080FF;
+            background-color: #F3F9FF;
+        }
+    }
+}

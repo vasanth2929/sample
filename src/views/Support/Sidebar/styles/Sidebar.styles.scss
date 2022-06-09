@@ -1,0 +1,32 @@
+.support-sidebar-wrapper{
+    font-size: 20px;
+    font-family: Roboto-regular;
+    background: #f3f3f3;
+    height: 100%;
+    .sidebar-content{
+        padding: 15px;
+        .nav-link{
+            cursor: pointer;
+            
+            &:hover{
+                color:red;
+            }
+            .active{
+                background:red !important;
+            }
+
+            &.nav-link-disabled {
+                color: #979797;
+                cursor: not-allowed;
+
+                &:hover {
+                    color: #979797;
+                }
+
+                * {
+                    cursor: not-allowed;
+                }
+            }
+        }
+    }
+}

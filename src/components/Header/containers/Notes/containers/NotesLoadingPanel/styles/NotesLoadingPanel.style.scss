@@ -1,0 +1,35 @@
+@import '../../../../../../../styles/base/variables';
+@import '../../../../../../../styles/base/variablesV2';
+
+.notes-loading-panel {
+    border: 1px solid $grey-light;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 1em;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    .text-block {
+        margin-top: 0;
+        .text-row:first-child {
+            height: 35%;
+        }
+        .text-row:last-child {
+            height: 25%;
+        }
+    }
+    .profiles {
+        img {
+            position: relative;
+            &:nth-child(1) {
+                left: 8%;
+            }
+            &:nth-child(2) {
+                left: 4%;
+            }
+            &:last-child {
+                left: 0;
+            }
+        }
+    }
+}

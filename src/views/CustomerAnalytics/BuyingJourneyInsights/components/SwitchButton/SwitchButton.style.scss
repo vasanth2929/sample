@@ -1,0 +1,37 @@
+.switch-button-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    width: fit-content;
+    border-radius: 5px;
+
+    &-button {
+        text-align: center;
+        padding: 8px 0;
+        border-left: 1px solid rgb(238, 237, 237);
+        color: #6B778C;
+        font-family: Roboto-bold;
+        text-transform: uppercase;
+        font-size: 12px;
+        background-color: #E9EBEE;
+
+        &.selected {
+            color: #ffffff;
+            background-color: #0080FF;
+        }
+
+        &:first-child {
+            border-radius: 5px 0 0 5px;
+        }
+
+        &:last-child {
+            border-radius: 0 5px 5px 0;
+        }
+    }
+
+    &.disabled {
+        pointer-events: none;
+        opacity: .3;
+    }
+}

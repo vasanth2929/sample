@@ -1,0 +1,21 @@
+.share-modal{
+    .modal-body{
+      background-color: #373738;
+      #modal-content{
+        color: white;
+        .content-section{
+          height: 100px;
+          overflow: hidden;
+          .button{
+            color: white;
+          }
+        } 
+        .header-section{
+          .close-modal{
+            color: white;
+          }
+        } 
+      }
+      
+    }
+  }

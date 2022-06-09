@@ -1,0 +1,33 @@
+.metrics-box {
+  border: 1px solid #ebeff1;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 35px 16px 16px;
+  position: relative;
+
+  &-entry {
+    &-label {
+      color: #6b778c;
+      font-size: 10px;
+      letter-spacing: 0;
+      line-height: 12px;
+    }
+    &-value {
+      margin-top: 8px;
+      color: #293940;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 16px;
+    }
+  }
+  .tearout {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 18px;
+	cursor: pointer;
+  }
+}

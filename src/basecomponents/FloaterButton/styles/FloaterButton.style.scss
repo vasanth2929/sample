@@ -1,0 +1,41 @@
+@import '../../../styles/base/variablesV2';
+
+.floater-btn {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    border-color: transparent;
+    border-radius: 50%;
+    height: 56px;
+    width: 56px;
+    cursor: pointer;
+    i.material-icons {
+        cursor: pointer;
+    }
+    &.blue {
+        background: $blue-default
+    }
+    &.light-blue {
+        background: $blue-light;
+    }
+    &.dark-blue {
+        background: $blue-dark;
+    }
+    &.green {
+        background: $green-dark;
+    }
+    i {
+        color: $white;
+        margin-right: 0 !important;
+        position: relative;
+        top: 2px;
+        font-size: 27px;
+        cursor: pointer;
+    }
+    &:focus {
+        outline: none;
+    }
+    &:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+        cursor: auto;
+    }
+}

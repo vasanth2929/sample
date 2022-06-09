@@ -1,0 +1,114 @@
+.add-story-modal {
+  margin-top: 10px;
+  max-height: 345px;
+  &-form {
+    & > *:not(:first-child) {
+      margin-top: 24px;
+      &.no {
+          margin-top: 15px !important;
+      }
+    }
+
+    .element {
+      border: 1px solid #5c6c73;
+      background-color: #ffffff;
+      border-radius: 5px;
+      width: 100%;
+      height: 40px;
+      padding: 10px;
+
+      &:focus {
+        outline-color: #5c6c73;
+        outline-width: 1px;
+        border: none;
+      }
+      &.keywords {
+        color: green;
+      }
+    }
+
+    textarea {
+      resize: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+
+    .basic-single {
+      .select__control {
+        border: 1px solid #6b778c;
+        border-radius: 4px;
+        width: 100%;
+      }
+
+      .select__indicator-separator {
+        display: none;
+      }
+
+      .select__placeholder {
+        font-family: Roboto-Medium;
+        font-size: 14px;
+        color: #091e42;
+      }
+
+      .select_dropdownIndicator {
+        color: #505f79;
+      }
+
+      .select__indicator {
+        color: #505f79;
+      }
+    }
+    .link {
+      border-bottom: 1px solid #0080ff;
+      color: #0080ff;
+    }
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+    padding-bottom: 24px;
+
+    .create-btn {
+      height: 32px;
+      width: 77px;
+      border-radius: 4px;
+      background-color: #0080ff;
+      border: none;
+      color: #ffffff;
+      font-size: 12px;
+      font-family: Roboto-bold;
+      outline: none;
+
+      &[disabled] {
+        background-color: #bedfff;
+      }
+    }
+  }
+}
+
+.isApprovedToggle {
+  padding: 0;
+  margin: 0 10px;
+  .checkbox label::after {
+    width: 15px;
+    height: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: 0.4s;
+    background: rgb(51, 51, 51);
+    border: none;
+  }
+
+  .checkbox input:checked + label::after {
+    background: #419be9;
+    left: 15px;
+  }
+
+  .checkbox label {
+    background: #e7e7e7;
+    height: 5px;
+    width: 30px;
+  }
+}

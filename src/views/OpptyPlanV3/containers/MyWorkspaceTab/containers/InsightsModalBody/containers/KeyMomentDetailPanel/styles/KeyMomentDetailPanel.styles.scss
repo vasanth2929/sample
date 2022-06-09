@@ -1,0 +1,208 @@
+@import '../../../../../../../../../styles/base/variables';
+@import '../../../../../../../../../styles/base/variablesV2';
+
+.key-moment-content-opty {
+    margin-top: 20px;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        .title-section {
+            font-family: Roboto-Regular;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 21px;
+            color: black;
+            display: flex;
+            align-items: center;
+             i {
+                border: 1px solid $grey-disabled;
+                border-radius: 5px;
+                color: $grey-disabled;
+                padding: 5px;
+                cursor: pointer;
+             }
+        }
+        .actions {
+            color: $blue-default;
+            display: flex;
+            span {
+                display: flex;
+                align-items: center;
+                font-family: Roboto-Regular;
+                font-size: 14px;
+                line-height: 16px;
+                cursor: pointer;
+                i {
+                    margin: 0 5px;
+                }
+            }
+            .disabled {
+                color: $grey-disabled;
+                cursor: unset;
+            }
+            :first-child {
+                margin-right: 10px;
+            }
+        }
+    }
+    .content-container {
+        border: 1px solid #ACACAC;
+        box-sizing: border-box;
+        border-radius: 5px;
+        overflow: hidden;
+        .hide {
+            display: none;
+        }
+        .accordian-header {
+            font-family: Roboto-Regular;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;/* identical to box height */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #2C393F;
+            background: $background-grey;
+            height: 52px;
+            // padding: 0 34px;
+            padding: 0 16px;
+            border-radius: 5px;
+            p {
+                margin-bottom: 0;
+            }
+            .blue-text {
+                color: $blue-default;
+                cursor: pointer;
+            }
+            .col-4 {
+                align-items: center;
+            }
+            .header-icon {
+                height: 32px;
+                width: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                color: #B0BEC5;
+                background: #ECEFF1;
+            }
+            .col-8 {
+                color: $black;
+                justify-content: space-between;
+                display: flex;
+                .material-icons {
+                    margin:  0 10px;
+                }
+                :first-child {
+                    align-items: center;
+                }
+                .searchStringWrapper {
+                    margin: auto 0;
+                    height: 32px;
+                    width: 167px;
+                    background-color: #ffffff;
+                    border-color: #cccccc;
+                    display: flex;
+                    margin-right: 1em;
+                    justify-content: space-around;
+                    border-radius: $border-radius;
+                    border-style: solid;
+                    border-width: 1.1px;
+                }
+                .searchStringInput {
+                    height: 95%;
+                    width: 90%;
+                    background-color: $white;
+                    border: none;
+                    color: #B0BEC5;
+                    cursor: default;
+                    padding: 0.2em;
+                    transition: width 0.1s cubic-bezier(0.4, 0, 1, 1);
+                    margin: auto 0 auto 1em;
+                    &:focus {
+                        background-color: $white;
+                        color: #4d4d4d;
+                        outline: none;
+                        border: none;
+                    }
+                    &::placeholder {
+                        color: #4d4d4d;
+                    }
+                    &:disabled {
+                        color: #c3c3c3;
+                        &::placeholder {
+                            color: #c3c3c3;
+                            background-color: #ffffff;
+                        }
+                    }
+                    &:-webkit-autofill {
+                        background-color: #ffffff;              
+                    }
+                }
+                .searchButton{
+                    margin: auto;
+                    color: $grey-light;
+                    margin: auto 0.2em auto 0;
+                    padding: 0.2em;
+                    font-size: 1.2em;
+                    &.clear {
+                        transition: opacity 0.1s ease-in; 
+                        color: $grey-light;
+                        opacity: 1;
+                        &.disabled {
+                            opacity: 0;
+                            font-size: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .content {
+            overflow-y: scroll;
+            max-height: 460px;
+            padding: 10px 30px;
+            .data-section {
+                padding: 10px;
+                p {
+                    margin-bottom: 0;
+                }
+                .user {
+                    font-family: Roboto-Bold;
+                    font-style: normal;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: $black;
+                    text-align: right;
+                }
+                .time {
+                    font-family: Roboto-Regular;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #0080FF;
+                }
+                .talk {
+                    font-family: Roboto-Regular;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 16px;
+                    .highlight {
+                        background: #2C393F;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.highLighted-text {
+    background-color: #2C393F;
+    color: white;
+}

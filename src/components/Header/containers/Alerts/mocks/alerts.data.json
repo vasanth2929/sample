@@ -1,0 +1,30 @@
+{
+    "adminSellerData": [
+        {
+            "status": "active",
+            "icon": "recommended",
+            "topic": "Pain points",
+            "cardName": "Fragmented Applications & Data",
+            "subText": "Highly likely, based on similar deals",
+            "sensitivity": "average"
+        }
+    ],
+    "csmData": [
+        {
+            "status": "active",
+            "icon": "match",
+            "topic": "Competition",
+            "cardName": "Oracle",
+            "subText": "Found in 1 conversation",
+            "sensitivity": "low"
+        },
+        {
+            "status": "inactive",
+            "icon": "recommended",
+            "topic": "Pain points",
+            "cardName": "Fragmented Applications & Data",
+            "subText": "Highly likely, based on similar deals",
+            "sensitivity": "average"
+        }
+    ]
+}

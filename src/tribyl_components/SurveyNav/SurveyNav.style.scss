@@ -1,0 +1,116 @@
+.survey-nav {
+    width: 297px;
+    height: fit-content;
+    background-color: #F7F8FA;
+    border-radius: 12px;
+    padding: 16px;
+
+    &-status {
+        .progress {
+            height: 5px;
+        }
+        p {
+            font-family: Roboto-Medium;
+            color: #52627A;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+        margin-bottom: 10px;
+    }
+
+    &-options {
+        &-items {
+            display: flex;
+            justify-content: flex-start;
+            padding: 16px 0;
+            cursor: pointer;
+
+            &.pe-none {
+                cursor: default;
+            }
+
+            .timeline {
+                width: 100%;
+
+                .item {
+                    $itemSize: 52px;
+                    position: relative;
+                    display: flex;
+                    min-height: $itemSize;
+
+                    .indicator {
+                        $size: 32px;
+                        margin-right: 16px;
+                        width: $size;
+                        height: $size;
+                        background-color: rgb(231, 228, 228);
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #97A6B9;
+                        font-family: Roboto-Medium;
+                        font-size: 16px;
+
+                        &.done {
+                            position: relative;
+                            // background: green;
+                            // border: 5px solid green;
+                            // color: white;
+                            cursor: pointer;
+                            .material-icons {
+                                font-size: 16px;
+                            }
+                        }
+
+                        &.active {
+                            background-color: #016AC7;
+                            color: white;
+                            cursor:pointer;
+                        }
+
+                    }
+
+                    .progress {
+                        position: absolute;
+                        background-color: rgb(231, 228, 228);
+                        width: 3px;
+                        top: 32px;
+                        left: 14px;
+                        height: $itemSize;
+
+                        &.done {
+                            // background-color: green;
+                        }
+
+                    }
+
+                    .text {
+                        font-family: Roboto-Medium;
+                        font-size: 16px;
+                        margin-top: 5px;
+                        color: #97A6B9;
+
+                        &.done {
+                            // color: green;
+                            cursor: pointer;
+                        }
+
+                        &.active {
+                            color: #016AC7;
+                            cursor:pointer;
+                        }
+
+                    }
+
+                    &:last-child {
+                        .progress {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

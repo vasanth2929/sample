@@ -1,0 +1,142 @@
+{
+  "storyboardTitle": "Vodafone Customer Service $ 561,000 Won Q4'16",
+  "profile": {
+    "name": "Vodafone",
+    "industry": "Telecom",
+    "employees": "10,000",
+    "location": "U.K.",
+    "description": "Vodafone group Plc is one of the world's leading telecommunications groups, with a significant presence in Europe, the Middle East, Africa and Asia Pacific",
+    "quote": "I am thrilled to have partnered with FooBar on this exciting journey. Not only do they have a compelling vision for digital transformation, their tram understood our business challanges and earned my trust very quickly.",
+    "person": "Glen Thomas, VP Customer Care"
+  },
+  "why_us": "",
+  "challengeSheet": "Given competitive pressure, Vodafone was looking to <span class=\"active-highlighted\">reduce service cost</span> and <span class=\"active-highlighted\">improve NPS</span>. To achieve these economic goals, they wanted to re-imagine their <span class=\"active-highlighted\">customer self-service</span> process and address <span class=\"active-highlighted\">high call volumes</span>, a key pain point. 40% of Vodafone's inbound calls were status inquires and ripe for automation.",
+  "solutionSheet": "Vodafone decided to roll out 5000 seats of Service Cloud and 1,000,000 login of Customer Communities. <span class=\"active-highlighted\">Accenture</span> was the lead implementation partner.",
+  "impactSheet": "The solution will help improve 2 key metrices once fully rolled out. <span class=\"active-highlighted\">Improve Agent Productivity</span> by 20% and <span class=\"active-highlighted\">reduce call wait times</span> by 30%.",
+  "whyUsSheet": "Key differentiators that led to Vodafone's decision include:<br /><ul class=\"inline-list\"><li><span class=\"active-highlighted\">Time to Market:</span> The plot took just 3 months to implement</li><li><span class=\"active-highlighted\">Omnichannel support:</span> Customer can check status across online, mobile app, text and facebook messanger.</li><li><span class=\"active-highlighted\">Open APIs:</span> Pre-built integrations to call management and back office systems</li><li><span class=\"active-highlighted\">Partner Ecosystem:</span> Robust network of SI and ISV partners.</li></ul>",
+  "cardMenus": [
+    {
+      "name": "High Call Volumes",
+      "conversations": 5
+    },
+    {
+      "name": "High Wait Time",
+      "conversations": 4
+    },
+    {
+      "name": "Poor Customer Experience",
+      "conversations": 3
+    },
+    {
+      "name": "Reduce Service Cost",
+      "conversations": 3
+    }
+  ],
+  "cardCategories": [
+    {
+      "text": "Economic Drivers",
+      "value": "economic_drivers",
+      "cardMenus": [
+        {
+          "name": "Reduce Service Cost"
+        },
+        {
+          "name": "Drive Customer Loyalty"
+        },
+        {
+          "name": "Improve CLTV"
+        },
+        {
+          "name": "Reduce Churn"
+        }
+      ]
+    },
+    {
+      "text": "Use Cases",
+      "value": "use_cases",
+      "cardMenus": [
+        {
+          "name": "Customer Self-Service"
+        }
+      ]
+    },
+    {
+      "text": "Pain Points",
+      "value": "pain_points",
+      "cardMenus": [
+        {
+          "name": "High Call Volume"
+        },
+        {
+          "name": "High Wait Time"
+        },
+        {
+          "name": "Poor Customer Experience"
+        },
+        {
+          "name": "High Re-open Rate"
+        }
+      ]
+    },
+    {
+      "text": "Personas",
+      "value": "personas",
+      "cardMenus": [
+        {
+          "name": "Economic Buyer"
+        },
+        {
+          "name": "Champion"
+        },
+        {
+          "name": "Influencer"
+        }
+      ]
+    },
+    {
+      "text": "Value Prop",
+      "value": "value_prop",
+      "cardMenus": [
+        {
+          "name": "Agent Console"
+        }
+      ]
+    },
+    {
+      "text": "Objections",
+      "value": "objections",
+      "cardMenus": [
+        {
+          "name": "Cloud Security"
+        }
+      ]
+    },
+    {
+      "text": "Content",
+      "value": "content",
+      "cardMenus": [
+        {
+          "name": "Telco Whitepaper"
+        }
+      ]
+    },
+    {
+      "text": "Competition",
+      "value": "competition",
+      "cardMenus": [
+        {
+          "name": "IBM"
+        }
+      ]
+    },
+    {
+      "text": "Partners",
+      "value": "partners",
+      "cardMenus": [
+        {
+          "name": "Accenture"
+        }
+      ]
+    }
+  ]
+}

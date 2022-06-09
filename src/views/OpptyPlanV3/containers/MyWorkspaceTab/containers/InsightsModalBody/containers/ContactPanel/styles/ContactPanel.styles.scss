@@ -1,0 +1,205 @@
+@import '../../../../../../../../../styles/base/variablesV2';
+
+.contact-panel-container {
+    .contact-section {
+        min-height: 333px;
+        border: 1px solid #B0BEC5;
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding: 21px 28px;
+        &>.col-5 {
+            padding: 0;
+        }
+        .contact-view {
+            .status {
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                width: 64px;
+                .status-wrapper {
+                    font-family: Roboto-Regular;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 10px;
+                    line-height: 12px;
+                    text-align: center;
+                    padding: 6px 9px;
+                    // margin-right: 1em;
+                    border-radius: 100px;
+                }
+                .Positive {
+                    background: #E4FFE6;
+                    color: #27AE60;
+                }
+                .Negative {
+                    background: #FFECEB;
+                    color: #DE5E56
+                }
+                .Unknown {
+                    background: #E3F2FD;
+                    color: #0080FF
+                }
+                .Neutral {
+                    color: #E68230;
+                    background: #FFF3D8
+                }
+            }
+            
+            display: flex;
+            p {
+                margin-bottom: 2px;
+            }
+            .user-image {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                margin-right: 20px;
+            }
+            .name {
+                font-size: 32px;
+                line-height: 37px;
+                color: $dark-grey-text;
+                font-weight: bold;
+            }
+            .job-title, .role {
+                font-family: Roboto-Bold;
+                font-size: 14px;
+            }
+            .role, .email {
+                color: $blue-default;
+            }
+            .conversations, .email {
+                font-size: 16px;
+            }
+        }
+        .change-contact-button {
+            border: 1px solid $dark-grey-text;
+            border-radius: 5px;
+            background: $white;
+            margin-top: 45px;
+            font-size: 14px;
+            line-height: 19px;
+            padding: 8px 20px;
+            cursor: pointer;
+        }
+        .edit-button-container {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border-top: 1px solid #979797;
+            .floater-btn {
+                float: right;
+                box-shadow: 0 0 0 0;
+                margin-top: 12px;
+            }
+        }
+        .detail-section {
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 2px;
+            width: 100%;
+            .key {
+                font-family: Roboto-Regular;
+                color: $grey-disabled;
+                margin: 0;
+                text-align: right;
+                padding: 0;
+            }
+            .value {
+                font-family: Roboto-Bold;
+                color: $dark-grey-text;
+                margin: 0;
+                padding-right: 0;
+            }
+            .link {
+                font-family: Roboto-Regular;
+                text-decoration-line: underline;
+                color: #0080FF;
+            }
+        }
+        .contact-header {
+            font-family: Roboto-Bold;
+            line-height: 16px;
+            font-size: 14px;
+            color: #5F6C72;
+            margin-bottom: 7px;
+            width: 100%;
+            .col-5 {
+                padding: 0;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+            .col-7 {
+                padding: 0;
+            }
+            img {
+                height: 64px;
+                width: 64px;
+                border-radius: 50%;
+                float: right;
+                margin-right: 14px;
+            }
+            .details {
+                p {
+                    margin: 0 0 2px 0;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+            .name {
+                line-height: 21px;
+                font-size: 18px;
+            }
+            .topic-name {
+                color: #3B90E3;
+            }
+        }
+        .greyed-section  {
+            background: #F7F7F7;
+            border-radius: 5px;
+            padding: 24px 26px;
+        }
+    }
+    .contact-form {
+        margin: 0 26px;
+        .contact-form-wrapper {
+            margin-bottom: 100px;
+        .profile-pic-container {
+            width: 100%;
+            margin-bottom: 2px;
+            text-align: center;
+            img {
+                margin: 28px auto;
+            }
+        }
+        label {
+            font-family: Roboto-Regular;
+            line-height: 12px;
+            color: #2C393F;
+        }
+        input, select {
+            height: 32px !important;
+            border: 1px solid #5F6C72;
+            box-sizing: border-box;
+            border-radius: 5px;
+            font-family: Roboto-Regular;
+            font-size: 14px;
+            line-height: 19px;
+            color: #5F6C72;
+        }
+
+        .form-actions {
+            .btn {
+                width: 20%;
+            }
+            .submit-btn {
+                background: $blue-default;
+                margin-left: 1em;
+            }
+        }
+    }
+}
+}

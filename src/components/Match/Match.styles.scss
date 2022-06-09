@@ -1,0 +1,35 @@
+.match {
+    position: relative;
+    width: fit-content;
+    margin: 0;
+    cursor: pointer;
+    .material-icons {
+        font-size: 20px !important;
+    }
+
+
+    .match {
+        color: #6b778c;
+        z-index: 1;
+        font-size: 20px;
+    }
+
+    .count {
+        position: absolute;
+        background-color: #c36868;
+        color: white;
+        text-align: center;
+        border-radius: 50px;
+        height: 18px;
+        width: 18px;
+        top: -5px;
+        right: -4px;
+        z-index: 0;
+        padding: 0;
+        font-size: 12px;
+    }
+
+    .pe-none {
+        cursor: default;
+    }
+}

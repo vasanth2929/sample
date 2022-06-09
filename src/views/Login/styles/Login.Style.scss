@@ -1,0 +1,118 @@
+@import '../../../styles/base/variables';
+
+.login-screen {
+    width: 410px;
+    padding: 8% 0 0;
+    margin: auto;
+    .login-form {
+        position: relative;
+        z-index: 1;
+        background: $white;
+        border-radius: 4px;
+        max-width: 410px;
+        margin: 0 auto 100px;
+        padding: 32px;
+        text-align: center;
+        box-shadow: $shadow;
+        border: $common-border;
+
+
+        .btn-linkedin {
+            background-color: rgb(77, 77, 255);
+            &:hover {
+                background-color: rgb(84, 84, 255);
+            }
+            &:active {
+                background-color: rgb(33, 33, 255);
+            }
+            &:focus {
+                background-color: rgb(77, 77, 255);
+            }
+        }
+        .username{
+            padding: 12px 35px 12px 12px;
+        }
+        .back{
+            float: left;
+            cursor: pointer;
+        }
+        i.prompt-icon {
+            position: absolute;
+            float: right;
+            color: $grey;
+            font-size: 20px;
+            &.ion-person {    
+                right: 42px;
+                top: 140px;
+            }
+            &.ion-locked {
+                right: 42px;
+                top: 200px;
+            }
+        }
+        .error-message {
+            text-align: left;
+            border: 2px solid $red;
+            border-radius: 4px;
+            background: $red-background;
+            padding: 8px;
+            font-size: 14px;
+            color: $text-color;
+            font-family: SFUI-Medium;
+            i {
+                margin-right: 8px;
+                font-size: 18px;
+                position: relative;
+                top: 2px;
+            }
+        }
+        img {
+            width: 35%;
+            margin-bottom: 26px;
+        }
+        input {
+            outline: 0;
+            background: $body-background;
+            width: 100%;
+            border: 0;
+            margin: 0 0 16px;
+            padding: 12px 35px 12px 12px;
+            box-sizing: border-box;
+            font-size: 14px;
+            border-radius: 4px;
+            &.error {
+                border: 2px solid $red;
+            }
+        }
+        button {
+            border-radius: 4px;
+            text-transform: uppercase;
+            outline: 0;
+            background: $green;
+            font-family: SFUI-SemiBold;
+            width: 100%;
+            border: 0;
+            padding: 12px;
+            color: $white;
+            font-size: 14px;
+            -webkit-transition: all 0.3 ease;
+            transition: all 0.3 ease;
+            cursor: pointer;
+            margin-top: 12px;
+            margin-bottom: 16px;
+            &:hover,
+            &:active,
+            &:focus {
+                background: $green;
+            }
+        }
+        .forgot-password-link {
+            cursor: pointer;
+            font-size: 14px;
+            color: $active-blue;
+            &:hover {
+                color: $link-blue;
+            }
+        }
+    }
+}

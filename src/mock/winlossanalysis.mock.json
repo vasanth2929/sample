@@ -1,0 +1,243 @@
+{
+	"status": "Wins",
+	"submittedCount": 75,
+	"draftCount": 30,
+	"filters":[
+		"Product contains Service Cloud",
+		"Amount greater than $500,000",
+		"Segment equals ENTR",
+		"Close Period between FY 16-17",
+		"Oppty Status = Closed-Won"
+	],
+	"economicDrivers": [
+		{
+			"title": "Reduce Service Costs",
+			"dollar": "65%",
+			"rank": "75%"
+		},
+		{
+			"title": "Drive Customer Loyalty",
+			"dollar": "25%",
+			"rank": "25%"
+		},
+		{
+			"title": "Improve CLTV",
+			"dollar": "15%",
+			"rank": "20%"
+		},
+		{
+			"sortOptions": [
+				{"text": "$", "value": "$"},
+				{"text": "#", "value": "#"}
+			]
+		}
+	],
+	"useCases":[
+		{
+			"title": "Customer Self-Service",
+			"dollar": "45%",
+			"rank": "30%"
+		},
+		{
+			"title": "Omnichannel Service",
+			"dollar": "25%",
+			"rank": "20%"
+		},
+		{
+			"title": "Multichannel Support",
+			"dollar": "20%",
+			"rank": "25%"
+		}
+	],
+	"painPoints":[
+		{
+			"title": "High Call Volumes",
+			"dollar": "40%",
+			"rank": "50%"
+		},
+		{
+			"title": "High Wait Times",
+			"dollar": "20%",
+			"rank": "40%"
+		},
+		{
+			"title": "Poor Experience",
+			"dollar": "15%",
+			"rank": "25%"
+		}
+	],
+	"valueProposition":[
+		{
+			"title": "Agent Console",
+			"dollar": "55%",
+			"rank": "30%"
+		},
+		{
+			"title": "Flexible Platform",
+			"dollar": "25%",
+			"rank": "20%"
+		},
+		{
+			"title": "Partner Ecosystem",
+			"dollar": "15%",
+			"rank": "10%"
+		}
+	],
+	"objections":[
+		{
+			"title": "Cloud Security",
+			"dollar": "35%",
+			"rank": "45%"
+		},
+		{
+			"title": "No Offline Mobile UX",
+			"dollar": "30%",
+			"rank": "35%"
+		},
+		{
+			"title": "Proprietary Language",
+			"dollar": "25%",
+			"rank": "25%"
+		},
+		{
+			"title": "No Offline Mobile UX",
+			"dollar": "30%",
+			"rank": "35%"
+		},
+		{
+			"title": "Proprietary Language",
+			"dollar": "25%",
+			"rank": "25%"
+		}
+	],
+	"content":[
+		{
+			"title": "Telco Whitepaper",
+			"dollar": "45%",
+			"rank": "55%"
+		},
+		{
+			"title": "Self-Service ROI",
+			"dollar": "35%",
+			"rank": "25%"
+		},
+		{
+			"title": "Vodafone Testimonial",
+			"dollar": "15%",
+			"rank": "25%"
+		},
+		{
+			"title": "Telco Whitepaper",
+			"dollar": "45%",
+			"rank": "55%"
+		},
+		{
+			"title": "Self-Service ROI",
+			"dollar": "35%",
+			"rank": "25%"
+		},
+		{
+			"title": "Vodafone Testimonial",
+			"dollar": "15%",
+			"rank": "25%"
+		}
+	],
+	"dealProfile":[
+		{
+			"title": "Buyers",
+			"number": "11"
+		},
+		{
+			"title": "Economic Drivers",
+			"number": "4"
+		},
+		{
+			"title": "Use Cases",
+			"number": "3"
+		},
+		{
+			"title": "Pain Points",
+			"number": "5"
+		},
+		{
+			"title": "Value Proposition",
+			"number": "5"
+		},
+		{
+			"title": "Objections",
+			"number": "5"
+		},
+		{
+			"title": "Competition",
+			"number": "3"
+		},
+		{
+			"title": "Partners",
+			"number": "1"
+		},
+		{
+			"title": "Content Shared",
+			"number": "8"
+		}
+	],
+	"popularStories":[
+		{
+			"title": "Telefonica",
+			"views": "87"
+		},
+		{
+			"title": "Verizon",
+			"views": "76"
+		},
+		{
+			"title": "Vodafone",
+			"views": "45"
+		}
+	],
+	"buyerTitle": [
+		{
+			"title": "CEO",
+			"font": "bold"
+		},
+		{
+			"title": "Digital Managing",
+			"font": "semi-bold"
+		},
+		{
+			"title": "Senior SVP",
+			"font": "medium"
+		},
+		{
+			"title": "Marketing",
+			"font": "medium"
+		},
+		{
+			"title": "Head Of Development",
+			"font": "semi-bold"
+		},
+		{
+			"title": "Innovation",
+			"font": "light"
+		},
+		{
+			"title": "Development",
+			"font": "bold"
+		},
+		{
+			"title": "President",
+			"font": "semi-bold"
+		},
+		{
+			"title": "Technology Head",
+			"font": "light"
+		},
+		{
+			"title": "Product Design",
+			"font": "medium"
+		},
+		{
+			"title": "Business Strategy",
+			"font": "semi-bold"
+		}
+	]
+}

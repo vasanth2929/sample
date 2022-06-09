@@ -1,0 +1,42 @@
+.insight-messaging-container {
+    padding: 16px;
+    background-color: #ffffff;
+
+    .summary-card-modal-body-text {
+        height: inherit;
+    }
+
+    &-filter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .messaging-insight {
+                padding: 0;
+                margin: 0 10px 5px 10px;
+                .checkbox label::after {
+                    width: 15px;
+                    height: 15px;
+                    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+                    transition: 0.4s;
+                    background: rgb(51, 51, 51);
+                    border: none;
+                }
+                
+                .checkbox input:checked+label::after {
+                    background: #419be9;
+                    left: 15px;
+                }
+                
+                .checkbox label {
+                    background: #e7e7e7;
+                    height: 5px;
+                    width: 30px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.expert-network-cards {
+    margin-bottom: 16px;
+    .card-header {
+        background-color: #FFFFFF;
+        padding: 16px;
+
+        .card-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 180px;
+            line-height: 20px;
+            .date {
+                color: #6B778C;
+            }
+        }
+    }
+
+    .card-body {
+        .sub-text {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            .text {
+                color: #6B778C;
+                &.link{
+                    border-bottom: 1px solid #6B778C;
+                    line-height: 17px;
+                }
+            }
+        }
+    }
+
+    .card-footer {
+        background-color: #FFFFFF;
+    }
+
+}

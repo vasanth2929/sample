@@ -1,0 +1,17 @@
+.story-stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 440px;
+    float: right;
+    &-items{
+        font-size: 17px;
+        font-weight: 600;
+        color: #0080ff;
+    }
+    .text{
+        font-size: 15px;
+        font-weight: 500;
+        color: rgb(88, 88, 88);
+    }
+}

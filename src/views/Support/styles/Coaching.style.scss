@@ -1,0 +1,44 @@
+.support-wrapper {
+  // height: 100%;
+  // margin-right: -10px;
+  .support-banner {
+    height: 250px;
+    background: #344b62;
+    .banner-content {
+      padding-left: 200px;
+      padding-top: 50px;
+      line-height: 1;
+      .support-title {
+        color: #d30607;
+        font-family: Roboto-bold;
+        font-size: 50px;
+      }
+      .support-sub-title {
+        color: rgb(248, 248, 248);
+        font-family: Roboto-regular;
+        font-size: 30px;
+      }
+      
+    }
+  }
+  .support-content{
+      margin: 30px 10px;
+      .video-section{
+        border-left: 1px solid rgb(175, 169, 169);
+      }
+      .support-header{
+        font-family: Roboto-bold;
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: grey;
+      }
+  }
+}
+// body,
+// html {
+//   height: 100%;
+//   width: 100%;
+// }
+.coaching-wrapper {
+  margin-left: 30px;
+}

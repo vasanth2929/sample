@@ -1,0 +1,189 @@
+@import '../../../../../styles/base/variables';
+@import '../../../../../styles/base/variablesV2';
+
+.alerts-icon-section {
+    font-family: Roboto-Regular;
+    .alert-count-container {
+        display: flex;
+        height: 17px;
+        width: 17px;
+        left: -10px;
+        top: 8%;
+        left: 75%;
+        position: absolute;
+        background-color: #DE5E56;
+        border: #FFF solid 1.1px;
+        border-radius: 50%;
+        p {
+            margin: auto;
+            font-size: 10px;
+            color: #FFF;
+        }
+    }
+    .alert-box {
+        background: $white;
+        border: 1px solid $grey-depressed;
+        color: $dark-grey-text;
+        -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        outline: none;
+        overflow: hidden;
+        border-radius: 4px;
+        -webkit-user-select: text;
+        z-index: 1;
+        position: absolute;
+        right: 20%;
+        top: 95%;
+        width: 75%;
+        text-align: left;
+        padding: 1em;
+        h5 {
+            font-family: OpenSans-Bold;
+            color: $black;
+            border-bottom: thin solid $grey-depressed;
+            padding-bottom: 0.5em;
+            margin-bottom: 0;
+        }
+        .alert-panel {
+            border-bottom: 1.5px solid $grey-depressed;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            &:first-child {
+                padding-top: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+                border-bottom: 0;
+                padding-bottom: 0;
+            }
+            &.inactive-alert {
+                filter: grayscale(100%);
+                p, label {
+                    opacity: 0.5;
+                }
+            }
+            .icon-wrapper {
+                border-radius: 50%;
+                padding: 4px;
+                width: 32px;
+                height: 32px;
+                margin-right: 0.5em;
+                img {
+                    position: relative;
+                    left: 2px;
+                }
+                i {
+                    background-color: transparent;
+                    padding: 0;
+                    margin: 0;
+                    position: relative;
+                    top: 3px;
+                    left: 4px;
+                    font-size: 16px;
+                }
+                &.economic-drivers {
+                    background-color: $economic-drivers;
+                }
+                &.use-cases {
+                    background-color: $use-cases;
+                }
+                &.pain-points {
+                    background-color: $pain-points;
+                }
+                &.personas {
+                    background-color: $personas;
+                }
+                &.value-proposition {
+                    background-color: $value-proposition;
+                }
+                &.objections {
+                    background-color: $objections;
+                }
+                &.content {
+                    background-color: $content;
+                }
+                &.partners {
+                    background-color: $partners;
+                }
+                &.competition {
+                    background-color: $competition;
+                }
+                &.activities {
+                    background-color: $activities;
+                }
+            }
+            .name-section {
+                flex: 1;
+                label {
+                    @include formLabel();
+                    display: flex;
+                    span {
+                        border-radius: 50%;
+                        padding: 4px;
+                        width: 5px;
+                        height: 5px;
+                        display: block;
+                        margin-right: 5px;
+                        position: relative;
+                        top: 4px;
+                        &.economic-drivers {
+                            background-color: $economic-drivers;
+                        }
+                        &.use-cases {
+                            background-color: $use-cases;
+                        }
+                        &.pain-points {
+                            background-color: $pain-points;
+                        }
+                        &.personas {
+                            background-color: $personas;
+                        }
+                        &.value-proposition {
+                            background-color: $value-proposition;
+                        }
+                        &.objections {
+                            background-color: $objections;
+                        }
+                        &.content {
+                            background-color: $content;
+                        }
+                        &.partners {
+                            background-color: $partners;
+                        }
+                        &.competition {
+                            background-color: $competition;
+                        }
+                        &.activities {
+                            background-color: $activities;
+                        }
+                    }
+                }
+                p.card-name {
+                    color: $black;
+                    font-family: Roboto-Bold;
+                    margin-bottom: 0;
+                }
+                p.card-subtext {
+                    font-size: 12px;
+                    margin-bottom: 0;
+                }
+            }
+            .alert-panel-footer {
+                font-family: Regular;
+                font-weight: 800;
+                p {
+                    color: $dark-grey-text;
+                    cursor: pointer;
+                    font-size: 14px;
+                    margin-bottom: 0;
+                    i {
+                        background: transparent;
+                        color: $dark-grey-text;
+                        position: relative;
+                        top: 4px;
+                    }
+                }
+            }
+        }
+    }
+}

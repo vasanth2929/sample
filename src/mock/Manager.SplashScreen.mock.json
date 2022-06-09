@@ -1,0 +1,53 @@
+{
+    "SplashProfile": {
+        "profilePic": "../../../assets/images/dummy.png",
+        "firstName": "Chris",
+        "lastName": "Pierce",
+        "state": "Management",
+        "points": "Admin"
+    },
+    "SplashMenus": [
+        {
+            "title": "Deal Management",
+            "content": "Get just-in-time alerts and 360º visibility on all deals.",
+            "navigateTo": "mobile-alert",
+            "headerColor": "green"
+        },
+        {
+            "title": "Account Planning",
+            "content": "Replicate proven 'land and expand' patterns to build your own pipeline.",
+            "navigateTo": "/manager-splash",
+            "headerColor": "red"
+        },
+        {
+            "title": "Team Coaching",
+            "content": "24x7 data-driven coaching and reinforcement.",
+            "navigateTo": "/manager-splash",
+            "headerColor": "musk"
+        },
+        {
+            "title": "Win/Loss Analysis",
+            "content": "Align GTM Teams to data-driven Customer Journeys.",
+            "navigateTo": "win-loss",
+            "headerColor": "green"
+        },
+        {
+            "title": "Manage Playbooks",
+            "content": "Tap into fresh and actionable Buyer insights to move deals forward.",
+            "navigateTo": "/manager-splash",
+            "headerColor": "orange"
+        },
+        {
+            "title": "Impact Analysis",
+            "content": "Real time scorecard of Ask Joe's impact on productivity.",
+            "navigateTo": "/manager-splash",
+            "headerColor": "purple"
+        },
+        {
+            "title": "Browse Stories",
+            "content": "Access fresh and relevant peer stories, with play-by-play detail.",
+            "navigateTo": "/manager-splash",
+            "headerColor": "blue"
+        }
+    ]
+}

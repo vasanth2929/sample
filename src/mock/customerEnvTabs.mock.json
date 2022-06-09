@@ -1,0 +1,149 @@
+{
+    "menus" : {
+        "productLines": [
+            {
+                "name": "Sales Cloud",
+                "isActive": true
+            },
+            {
+                "name": "Service Cloud",
+                "isActive": true
+            },
+            {
+                "name": "Marketing Cloud",
+                "isActive": false
+            },
+            {
+                "name": "Community Cloud",
+                "isActive": true
+            },
+            {
+                "name": "Commerce Cloud",
+                "isActive": false
+            },
+            {
+                "name": "Integration Cloud",
+                "isActive": true
+            }
+        ],
+        "environments": [
+            {
+                "title": "Applications",
+                "options": [
+                    {
+                        "name": "Salesforce CRM",
+                        "isActive": true
+                    },
+                    {
+                        "name": "Gainsight",
+                        "isActive": false
+                    },
+                    {
+                        "name": "Marketo",
+                        "isActive": false
+                    },
+                    {
+                        "name": "Workday",
+                        "isActive": true
+                    }
+                ]
+            },
+            {
+                "title": "Collaboration",
+                "options": [
+                    {
+                        "name": "Atlassian",
+                        "isActive": true
+                    },
+                    {
+                        "name": "Box",
+                        "isActive": true
+                    }
+                ]
+            },
+            {
+                "title": "Business Intelligence",
+                "options": [
+                    {
+                        "name": "SAP BusinessObjects",
+                        "isActive": true
+                    },
+                    {
+                        "name": "Tableau",
+                        "isActive": true
+                    },
+                    {
+                        "name": "Apache Hadoop",
+                        "isActive": false
+                    }
+                ]
+            },
+            {
+                "title": "Virtualization",
+                "options": [
+                    {
+                        "name": "Citrix",
+                        "isActive": true
+                    },
+                    {
+                        "name": "VMware Server",
+                        "isActive": true
+                    }
+                ]
+            },
+            {
+                "title": "Security",
+                "options": [
+                    {
+                        "name": "CipherCloud",
+                        "isActive": false
+                    },
+                    {
+                        "name": "Verisign SSL",
+                        "isActive": true
+                    }
+                ]
+            }
+        ],
+        "accounts": [
+            {
+                "name": "SDR --> Ramsay, Gordon",
+                "isActive": true
+            },
+            {
+                "name": "AE --> Oliver, James",
+                "isActive": false
+            },
+            {
+                "name": "AE --> Khanna, Vikas",
+                "isActive": true
+            },
+            {
+                "name": "SE --> Barton, Kate",
+                "isActive": true
+            },
+            {
+                "name": "SE --> Keller, Thomas",
+                "isActive": true
+            },
+            {
+                "name": "CSM --> White, Marco",
+                "isActive": false
+            },
+            {
+                "name": "CSM --> Bourdan, Anthony",
+                "isActive": false
+            }
+        ],
+        "opportunities": [
+            {
+                "name": "116445 AT&T Digital Experience Deal, $335000, Q4 2018",
+                "isActive": true
+            },
+            {
+                "name": "1164458 AT&T Billing Accuracy Deal, $538000, Q3 2018",
+                "isActive": true
+            }
+        ]
+    }
+}

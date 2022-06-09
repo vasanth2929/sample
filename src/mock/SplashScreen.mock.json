@@ -1,0 +1,111 @@
+{
+  "SplashProfile": {
+    "profilePic": "../../../assets/images/dummy.png",
+    "firstName": "Dylan",
+    "lastName": "Sullivan",
+    "state": "Management",
+    "points": "7000"
+  },
+  "SplashMenus": [
+    {
+      "title": "Show me the Money",
+      "content": "Show me the Money description",
+      "navigateTo": {
+        "path": "show-me-the-money"
+      },
+      "headerColor": "aliceblue",
+      "splashScreenEnabled": true,
+      "permissions": ["PERM_STORY_ALL"],
+      "roles": ["SELLER", "CSM", "ADMIN", "MANAGEMENT"]
+    },
+    {
+      "title": "Performance Dashboard",
+      "navigateTo": {
+        "path": "market-performance/0",
+        "action": {
+          "type": "SWITCH_TABS",
+          "payload": {
+            "tabId": 0
+          }
+        }
+      },
+      "content": "Messaging heat map",
+      "headerColor": "blue",
+      "image": "playbookImage.jpg",
+      "splashScreenEnabled": true,
+      "permissions": ["PERM_PLAYBOOK_ALL"],
+      "roles": ["CSM", "ADMIN", "SELLER", "MANAGEMENT"]
+    },
+    {
+      "title": "Buying Journey Insights",
+      "navigateTo": {
+        "path": "market-performance/1",
+        "action": {
+          "type": "SWITCH_TABS",
+          "payload": {
+            "tabId": 1
+          }
+        }
+      },
+      "content": "Why are we winning or losing?",
+      "headerColor": "orange",
+      "image": "stories.jpg",
+      "splashScreenEnabled": true,
+      "permissions": ["PERM_STORY_ALL"],
+      "roles": ["SELLER", "CSM", "ADMIN", "MANAGEMENT"]
+    },
+    {
+      "title": "Deal Game Tapes",
+      "navigateTo": {
+        "path": "market-performance/2",
+        "action": {
+          "type": "SWITCH_TABS",
+          "payload": {
+            "tabId": 2
+          }
+        }
+      },
+      "content": "Review and share learnings",
+      "headerColor": "purple",
+      "splashScreenEnabled": true,
+      "image": "Conversation.png",
+      "permissions": ["PERM_SIMPLE_CP_ALL"],
+      "roles": ["SELLER", "CSM", "ADMIN", "MANAGEMENT"]
+    },
+    {
+      "navigateTo": {
+        "path": "smart-survey"
+      },
+      "title": "Tribyl Product Analytics",
+      "content": "Data processing",
+      "headerColor": "musk",
+      "image": "administration.png",
+      "splashScreenEnabled": true,
+      "permissions": ["PERM_STORY_ALL"],
+      "roles": ["SELLER", "CSM", "ADMIN", "MANAGEMENT"]
+    },
+    {
+      "title": "Messaging",
+      "content": "Hypotheses you are going to market with",
+      "navigateTo": {
+        "path": "messaging"
+      },
+      "headerColor": "musk",
+      "image": "administration.png",
+      "splashScreenEnabled": true,
+      "permissions": ["PERM_STORY_ALL"],
+      "roles": ["SELLER", "CSM", "ADMIN", "MANAGEMENT"]
+    },
+    {
+      "title": "Administration",
+      "content": "Platform and User Management.",
+      "navigateTo": {
+        "path": "user-administration"
+      },
+      "headerColor": "aliceblue",
+      "splashScreenEnabled": false,
+      "permissions": ["PERM_STORY_ALL"],
+      "roles": ["ADMIN"]
+    }
+  ]
+}

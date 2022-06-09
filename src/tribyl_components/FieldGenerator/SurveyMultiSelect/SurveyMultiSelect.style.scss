@@ -1,0 +1,32 @@
+.survey_multiselect {
+    .card-select {
+        .multi-select__control {
+            padding: 5px;
+            border-radius: 12px;
+        }
+
+        .multi-select__indicator-separator {
+            display: none;
+        }
+
+        .multi-select__single-value{
+            color: #0080FF;
+            font-family: Roboto-bold; 
+            font-size: 14px;
+        }
+
+        .multi-select__multi-value {
+            height: 32px;
+            border: 1px solid #017AFF;
+            border-radius: 16px;
+            background-color: #F2FAFF;
+            padding: 2px 7px;
+
+            .multi-select__multi-value__label {
+                color: #52627A;
+                font-family: Roboto-Regular;
+                font-size: 14px;
+            }
+        }
+    }
+}

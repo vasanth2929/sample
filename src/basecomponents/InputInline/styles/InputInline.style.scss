@@ -1,0 +1,87 @@
+@import '../../../styles/base/variables';
+.input-outer-container {
+    &.fill-card-area {
+        height: 100%;
+    }
+    .input-container {
+        display: flex;
+        textarea {
+            resize: none;
+            height: auto;
+        }
+        p:empty:not(:focus)::before {
+            content: attr(data-placeholder);
+        }
+        p {
+            font-family: SFUI-Regular;
+        }
+        &.fill-card-area {
+            height: 100%;
+            padding: 0.5em 1em;
+        }
+        .input {
+            flex-basis: 90%;
+            height: auto;
+            border: none;
+            background-color: inherit;
+            word-break: break-word;
+            margin-bottom: 8px;
+            padding-bottom: 5px;
+            overflow-wrap: break-word;
+            &.full-width {
+                flex-basis: 100%;
+            }
+            &:focus {
+                outline: none;
+                border-bottom: 1px solid $light-grey;
+                &.fill-card-area {
+                    border: none;
+                }
+            }
+            &:active {
+                outline: none;
+            }
+            &::placeholder {
+                font: 0.8rem italic;
+                font-family: SFUI-Regular;
+                font-size: 14px;
+                color: #9F9F9F;
+            }
+            &::-webkit-input-placeholder { /* Chrome/Opera/  Safari */
+                font: 0.8rem italic;
+                font-family: SFUI-Regular;
+                font-size: 14px;
+                color: #9F9F9F;
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+                font: 0.8rem italic;
+                font-family: SFUI-Regular;
+                font-size: 14px;
+                color: #9F9F9F;
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+                font: 0.8rem italic;
+                font-family: SFUI-Regular;
+                font-size: 14px;
+                color: #9F9F9F;
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+                font: 0.8rem italic;
+                font-family: SFUI-Regular;
+                font-size: 14px;
+                color: #9F9F9F;
+            }
+        }
+        .active {
+            border-bottom: 1px solid $light-grey;
+        }
+        i {
+            margin: .5em;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        .edit-buttons {
+            display: none;
+        }    
+    }
+}

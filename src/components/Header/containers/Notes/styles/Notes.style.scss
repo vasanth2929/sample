@@ -1,0 +1,136 @@
+@import '../../../../../styles/base/variables';
+@import '../../../../../styles/base/variablesV2';
+
+a.notes-icon-section {
+    font-family: Roboto-Regular;
+    i {
+        margin-top: 0 !important;
+    }
+    img.header-note-icon {
+        padding: 8px;
+        border-radius: 50%;
+        background: #293C53;
+        cursor: pointer;
+    }
+    .notes-box {
+        background: $white;
+        border: 1px solid $grey-light;
+        color: $dark-grey-text;
+        -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        outline: none;
+        overflow: hidden;
+        border-radius: 4px;
+        -webkit-user-select: text;
+        z-index: 5000;
+        position: fixed;
+        right: 20%;
+        top: 95%;
+        width: 32em;
+        min-height: 52em;
+        text-align: left;
+        padding: 1.2em 0;
+        button.add-note-btn {
+            color: $white;
+            background: $blue-default;
+            text-transform: uppercase;
+            font-family: Roboto-Bold;
+            font-size: 14px;
+            border-radius: 5px;
+            width: 93%;
+            box-shadow: none;
+            border-color: transparent;
+            min-height: 32px;
+            cursor: pointer;
+            margin: 0 1.2em;
+            img {
+                margin-right: 1em;
+            }
+        }
+        hr {
+            border-color: $grey-disabled;
+            margin: 0.6rem 1.2em 0.6rem 1.2em;
+        }
+        .notes-filter-section {
+            padding: 0.5em;
+            background: $grey-lightest;
+            border-radius: 5px;
+            margin: 0 1.2em 1em 1.2em;
+            .search-bar {
+                width: 100%;
+                margin-bottom: 0.5em;
+                input {
+                    flex: 1;
+                    width: 94%;
+                    border: thin solid $grey-light;
+                    border-right: 0;
+                    border-radius: 5px 0 0 5px;
+                    min-height: 32px;
+                    font-size: 14px;
+                    padding-left: 8px;
+                    background: #ECEFF1;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                i.search-icon {
+                    background: #ECEFF1;
+                    color: #B0BEC5;
+                    border: thin solid #B0BEC5;
+                    border-left: 0;
+                    border-radius: 0 5px 5px 0;
+                    padding-top: 5px;
+                    position: absolute;
+                }
+                i.clear-search-btn {
+                    background: transparent;
+                    color: #B0BEC5;
+                    border-radius: 0 5px 5px 0;
+                    padding-top: 5px;
+                    position: absolute;
+                    right: 48px;
+                }
+            }
+            .filter-dropdowns {
+                .section-dd {
+                    width: 49%;
+                    &.author-dd {
+                        margin-right: 3%;
+                    }
+                    label {
+                        font-size: 12px;
+                        color: $grey-light;
+                        margin-bottom: 0;
+                    }
+                    .Select {
+                        font-size: 14px;
+                    }
+                }
+            }
+            p.notes-counter {
+                font-size: 12px;
+                color: $dark-grey-text;
+                margin-bottom: 0;
+                margin-top: 0.5em;
+            }
+        }
+        .notes-list-section {
+            min-height: 62vh;
+            max-height: 62vh;
+            padding: 0 1.2em;
+            .no-notes-placeholder {
+                width: 100%;
+                filter: grayscale(100%);
+                img {
+                    opacity: 0.7;
+                    margin-bottom: 0.5em;
+                }
+                p {
+                    font-size: 14px;
+                    width: 45%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

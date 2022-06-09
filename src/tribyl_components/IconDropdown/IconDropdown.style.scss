@@ -1,0 +1,36 @@
+@import '../../styles/base/variablesV2';
+
+.icon-dropdown {
+    &-select {
+        &-option {
+            display: flex;
+            align-items: center;
+
+            &-icon {
+                margin-right: 16px;
+                background-color: $use-cases;
+                height: 30px;
+                width: 30px;
+                border-radius: 15px;
+                font-weight: bold;
+                color: white;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                
+                &.color-class-1 {
+                    background-color: $mapped-color-1;
+                }
+                &.color-class-2 {
+                    background-color: $mapped-color-2;
+                }
+                &.color-class-3 {
+                    background-color: $mapped-color-3;
+                }
+                &.color-class-4 {
+                    background-color: $mapped-color-4;
+                }
+            }
+        }
+    }
+}

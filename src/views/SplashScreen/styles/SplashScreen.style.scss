@@ -1,0 +1,156 @@
+@import "../../../styles/base/variables";
+@import "../../../styles/base/variablesV2";
+
+.splash-screen {
+	#main-content-section {
+		padding-top: 6em;
+		height: 100%;
+		.splash-container {
+			max-width: 70%;
+			padding-right: 30px;
+			padding-left: 30px;
+			margin-right: auto;
+			margin-left: auto;
+
+			.splash-profile {
+				&-greeting {
+					color: #091e42;
+					font-size: 32px;
+					letter-spacing: 0;
+					line-height: 38px;
+				}
+
+				&-welcome {
+					color: #6b778c;
+					font-size: 18px;
+					letter-spacing: 0;
+					line-height: 21px;
+				}
+			}
+
+			.card-container {
+				margin-bottom: 32px;
+				margin-top: 20px;
+
+				.next-button-button-content {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+
+					.right-side {
+						margin-left: 25px;
+					}
+				}
+				.col-4 {
+					padding: 0;
+				}
+				.splash-card {
+					position: relative;
+					margin: 0 8px 28px 8px;
+					height: 15em;
+					border-radius: 5px;
+					//background: #f8fdfd;
+					background: $white;
+					border-width: 1px 1px 1px 0;
+					border-style: solid;
+					border-color: rgba(176, 190, 197, 0.3);
+					cursor: pointer;
+					display: flex;
+					justify-content: inherit;
+					align-items: center;
+					height: 289px;
+					width: calc(64vw / 3);
+					border: 1px solid #e1e6e8;
+					border-radius: 5px;
+					background-color: #ffffff;
+					box-shadow: 0 6px 13px 0 rgba(195, 205, 222, 0.26);
+					transition: box-shadow 0.3s ease-in-out;
+
+          .tribyl-button-splash {
+            transition: background-color 0.3s ease-in-out;
+          }
+					&:hover {
+            box-shadow: 0 6px 13px 0 rgba(136, 141, 149, 0.46);
+
+
+						.tribyl-button-splash {
+              background-color: #0088ff;
+              transition: background-color 0.3s ease-in-out;
+							color: white;
+						}
+					}
+					.card-content {
+						padding: 50px 40px;
+					}
+					.horizontal-line {
+						background: rgb(129, 199, 132);
+						position: absolute;
+						top: 0;
+						width: 20px;
+						height: 6px;
+					}
+					.vertical-image {
+						height: 20px;
+						position: absolute;
+						width: 6px;
+						top: 0;
+					}
+					.header-image {
+						height: 100%;
+						width: 6px;
+						border-radius: 5px 0px 0px 5px;
+					}
+					.image-section {
+						height: 64px;
+						width: 64px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border-radius: 50%;
+						background-color: rgb(196, 212, 219);
+						img {
+							width: 65px;
+							&.magnifying_glass {
+								width: 50px;
+							}
+						}
+					}
+					.header-section {
+						margin-top: 16px;
+						p {
+							font-family: Roboto-Bold;
+							font-style: normal;
+							font-size: 18px;
+							line-height: 21px;
+							color: $grey-dark;
+						}
+					}
+
+					.footer-section {
+						margin-top: 16px;
+						p {
+							font-family: Roboto-Regular;
+							font-style: normal;
+							font-size: 14px;
+							line-height: 16px;
+							color: $dark-grey-text;
+						}
+					}
+				}
+			}
+		}
+	}
+	.menu-label {
+		font-family: SFUI-SemiBold;
+		font-size: 16px;
+		color: #333333;
+		// margin-bottom: 32px;
+		margin-bottom: 64px;
+		margin-right: 16px;
+	}
+	hr {
+		border: 1px solid #e2e6ee;
+		width: 95%;
+		margin-top: 0.7em;
+	}
+}

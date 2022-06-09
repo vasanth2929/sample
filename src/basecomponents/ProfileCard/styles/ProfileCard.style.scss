@@ -1,0 +1,50 @@
+@import '../../../styles/base/variables';
+@import '../../../styles/base/variablesV2';
+
+.profile-card-v2 {
+    border: thin solid $grey-light;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 1em;
+    font-family: Roboto-Regular;
+    cursor: pointer;
+    margin-bottom: 2em;
+    i.material-icons {
+        position: absolute;
+        left: 1.5em;
+        color: $grey-light;
+        cursor: pointer;
+        &.selected {
+            color: $green-dark;
+        }
+    }
+    img {
+        border-radius: 50%;
+    }
+    p.status-label {
+        margin: 1em 0 0.5em 0;
+        color: $blue-default;
+        font-size: 14px;
+    }
+    p.username-label {
+        color: $grey-dark;
+        font-size: 18px;
+        font-family: Roboto-Bold;
+        margin-bottom: 0.25em;
+    }
+    p.role-email-label {
+        color: $grey-light;
+        font-size: 14px;
+        margin-bottom: 0.25em;
+        min-height: 1.5em;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &.selected {
+        border-color: $green-dark;
+        // box-shadow: 0px 12px 24px 0px #4f5254;
+        box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.24);
+
+    }
+}

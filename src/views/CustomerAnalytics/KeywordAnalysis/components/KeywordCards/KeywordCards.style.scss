@@ -1,0 +1,55 @@
+.keyword-card {
+  .MuiCard-root {
+    box-shadow: 0px 0px 3px 1px #cfcfcf;
+  }
+  &-header {
+    padding: 8px;
+    background: #0080FF;
+  }
+  .title {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: white;
+  }
+  .keyword-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 12px 0;
+    padding: 0 0 5px 0;
+    .pushpin {
+      font-size: 20px;
+      background-color: rgb(240, 240, 240);
+      padding: 7px;
+      border-radius: 50%;
+      margin-right: 16px;
+      cursor: pointer;
+      color: rgb(151, 151, 151);
+
+      &.selected {
+        color: #0080ff;
+      }
+    }
+    .keyword {
+      font-size: 14px;
+      width: 100%;
+    }
+  }
+  .MuiCard-root {
+    width: 330px;
+    margin: 10px 10px;
+    .MuiCardContent-root {
+      max-height: 400px;
+      overflow-y: auto;
+    }
+  }
+  .MuiLinearProgress-colorSecondary {
+    background-color: white;
+    height: 10px;
+    border-radius: 2px;
+  }
+  .MuiLinearProgress-barColorSecondary {
+    background-color: #00b257;
+  }
+}

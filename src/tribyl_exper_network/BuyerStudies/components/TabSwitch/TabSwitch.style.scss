@@ -1,0 +1,22 @@
+.expert-network-tabSwitch {
+    width: 296px;
+    height: 48px;
+    background-color: #F7F8FA;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    font-family: Roboto-regular;
+    padding: 4px;
+    text-align: center;
+    cursor: pointer;
+    
+    &.selected {
+        height: 40px;
+        font-family: Roboto-bold;
+        border-radius: 24px;
+        background-color: #FFFFFF;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1)
+    }
+}

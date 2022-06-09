@@ -1,0 +1,23 @@
+{
+	"specificContactEngDetails": {
+		"contactId": 22,
+		"countByStages": {
+			"Pre-oppty": 5,
+			"Prospecting": 8,
+			"Evaluation": 11,
+			"Negotiation": 12,
+			"Discovery": 9,
+			"Solution": 4
+		}
+	},
+	"totalEngDetailsForStory": {
+		"totalCountByStages": {
+			"Pre-oppty": 7,
+			"Prospecting": 10,
+			"Evaluation": 12,
+			"Negotiation": 14,
+			"Discovery": 10,
+			"Solution": 6
+		}
+	}
+}

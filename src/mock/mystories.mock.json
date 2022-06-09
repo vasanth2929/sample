@@ -1,0 +1,165 @@
+{
+    "financialYears": [
+        {
+            "value": "17",
+            "text": "FY17"
+        },
+        {
+            "value": "16",
+            "text": "FY16"
+        },
+        {
+            "value": "15",
+            "text": "FY15"
+        }
+    ],
+    "financialQuarters": [
+        {
+            "value": "1",
+            "text": "Q1"
+        },
+        {
+            "value": "2",
+            "text": "Q2"
+        },
+        {
+            "value": "3",
+            "text": "Q3"
+        },
+        {
+            "value": "4",
+            "text": "Q4"
+        }
+    ],
+    "wins": [
+        {
+            "accountName": "HSBC",
+            "storyTitle": "Story Title",
+            "oppCloseDate": "Q2'16",
+            "metrics": 
+                {
+                    "influencedAmt": "$ 3,000,000",
+                    "votes": null,
+                    "sharable": true,
+                    "reviewStatus": "orange"
+                }
+            
+        },
+        {
+            "accountName": "Virgin",
+            "storyTitle": "Story Title",
+            "oppCloseDate": "Q3'16",
+            "label": "win",
+            "metrics": 
+                {
+                    "influencedAmt": "$ 2,250,000",
+                    "votes": null,
+                    "sharable": true,
+                    "reviewStatus": "green"
+                }
+            
+        },
+        {
+            "accountName": "Vodafone",
+            "storyTitle": "Story Title",
+            "oppCloseDate": "Q4'16",
+            "label": "win",
+            "metrics":
+                {
+                    "influencedAmt": null,
+                    "votes": 32,
+                    "sharable": false,
+                    "reviewStatus": "blue"
+                }
+
+        }
+    ],
+    "losses": [
+        {
+            "accountName": "BP",
+            "storyTitle": "Story Title",
+            "oppCloseDate": "Q1'16",
+            "label": "lose",
+            "metrics": 
+                {
+                    "influencedAmt": "$ 7,500,000",
+                    "votes": null,
+                    "sharable": false,
+                    "reviewStatus": "red"
+                }
+            
+        },
+        {
+            "accountName": "Sainsbury's",
+            "storyTitle": "Story Title",
+            "oppCloseDate": "Q3'16",
+            "label": "lose",
+            "metrics": 
+                {
+                    "influencedAmt": null,
+                    "votes": 15,
+                    "sharable": false,
+                    "reviewStatus": "blue"
+                }
+            
+        },
+        {
+            "accountName": "BT",
+            "storyTitle": "Story Title",
+            "oppCloseDate": "Q4'16",
+            "label": "lose",
+            "metrics": 
+                {
+                    "influencedAmt": null,
+                    "votes": 21,
+                    "sharable": false,
+                    "reviewStatus": "blue"
+                }
+            
+        }
+    ],
+    "noDecisions": [
+        {
+            "accountName": "Unilever",
+            "storyTitle": "Story Title",
+            "oppCloseDate": "Q1'16",
+            "label": "no-decision",
+            "metrics": 
+                {
+                    "influencedAmt": "$ 7,500,000",
+                    "votes": null,
+                    "sharable": false,
+                    "reviewStatus": "red"
+                }
+            
+        },
+        {
+            "accountName": "Barclays",
+            "storyTitle": "Story Title",
+            "oppCloseDate": "Q2'16",
+            "label": "no-decision",
+            "metrics": 
+                {
+                    "influencedAmt": null,
+                    "votes": 15,
+                    "sharable": false,
+                    "reviewStatus": "blue"
+                }
+            
+        },
+        {
+            "accountName": "Ryan Air",
+            "storyTitle": "Story Title",
+            "oppCloseDate": "Q3'16",
+            "label": "no-decision",
+            "metrics": 
+                {
+                    "influencedAmt": null,
+                    "votes": 0,
+                    "sharable": false,
+                    "reviewStatus": "blue"
+                }
+            
+        }
+    ]
+}

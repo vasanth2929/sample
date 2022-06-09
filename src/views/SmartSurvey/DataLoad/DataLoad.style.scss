@@ -1,0 +1,26 @@
+.load-data {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 60px;
+  place-items: center;
+  margin-top: 65px;
+  .data-card {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid black;
+    width: 250px;
+    height: 120px;
+    background-color: rgb(227, 235, 245);
+    .heading {
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .count {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+}

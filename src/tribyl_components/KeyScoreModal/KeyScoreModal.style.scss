@@ -1,0 +1,21 @@
+.keyword-score {
+  &-modal {
+    .modal-body {
+      max-width: 50vw !important;
+    }
+  }
+  &-score-link {
+    font-size: 12px;
+    border-bottom: 1px solid gray;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+#keyword-score-button {
+  border-radius: 35px;
+  text-transform: none;
+  text-overflow: inherit;
+  white-space: nowrap;
+}

@@ -1,0 +1,68 @@
+.survey-metrics-box {
+
+    height: 92px;
+    box-shadow: 0 6px 12px 0 rgba(0, 128, 255, 0.1);
+    border: 3px solid #EBEFF1;
+    padding: 16px;
+    min-width: 123px;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &.selected {
+        border-color: #0080FF;
+    }
+
+    &-info {
+        display: flex;
+        align-items: center;
+
+        .heading {
+            color: #293940;
+            font-family: Roboto-bold;
+            font-size: 24px;
+            margin-right: 5px;
+        }
+
+        color: #5C6C73;
+        font-family: Roboto-regular;
+        font-size: 12px;
+    }
+
+    &-status {
+        font-family: Roboto-bold;
+        font-size: 12px;
+        width: fit-content;
+        padding: 4px 12px;
+        border-radius: 12px;
+
+        &.total {
+            background: #dfe7f6;
+            color: #63372c;
+        }
+
+        &.sent {
+            background: #EEE9FF;
+            color: #6620FF;
+        }
+
+        &.inprogress {
+            background: #F2FAFF;
+            color: #0080FF;
+        }
+
+        &.completed {
+            background: #E9F8F0;
+            color: #00B257;
+        }
+
+        &.deactive {
+            background: #EBEFF1;
+            color: #97A6B9;
+        }
+
+        &.not-sent {
+            background: #E9FDFF;
+            color: #3476B6;
+        }
+    }
+}

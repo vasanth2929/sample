@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>9626F812-A3BD-4EB5-9319-2C00FFD6ADC0</title>
+    <g id="Customer-analytics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-126.000000, -206.000000)">
+            <g id="done-24px-(1)" transform="translate(126.000000, 206.000000)">
+                <polygon id="Path" points="0 0 12 0 12 12 0 12"></polygon>
+                <path d="M4.5,8.1 L2.75,6.35 C2.555,6.155 2.245,6.155 2.05,6.35 C1.855,6.545 1.855,6.855 2.05,7.05 L4.145,9.145 C4.34,9.34 4.655,9.34 4.85,9.145 L10.15,3.85 C10.345,3.655 10.345,3.345 10.15,3.15 C9.955,2.955 9.645,2.955 9.45,3.15 L4.5,8.1 Z" id="Path" stroke="#27AE60" stroke-width="0.5" fill="#27AE60" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

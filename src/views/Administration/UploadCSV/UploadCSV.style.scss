@@ -1,0 +1,38 @@
+.csv-upload-view {
+  display: flex;
+  justify-content: center;
+  .title-label {
+    p {
+      font-family: SFUI-Medium;
+      font-size: 24px;
+      margin-top: 4px;
+      margin-bottom: 0px;
+      margin-left: -15px;
+    }
+  }
+  .upload-csv-container {
+    margin: 100px 100px;
+    width: fit-content;
+
+    input[type='file'] {
+      display: none;
+      z-index: 100;
+    }
+
+    .sub-label {
+      border: 1px solid #ccc;
+      display: inline-block;
+      padding: 10px;
+      cursor: pointer;
+
+      &-button {
+        background-color: lightgray;
+        border-radius: 5px;
+        padding: 5px;
+        &:hover {
+          background-color: silver;
+        }
+      }
+    }
+  }
+}

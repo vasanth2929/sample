@@ -1,0 +1,24 @@
+.revscorepill {
+	display: flex;
+	flex-direction: row;
+	border-radius: 16px;
+	padding: 4px 8px;
+	flex: 0;
+	font-size: 15px;
+	font-weight: bold;
+	align-items: center;
+
+	img {
+		margin-right: 5px;
+	}
+
+	&-up {
+		color: #00b257;
+		background-color: #e4f7ed;
+	}
+
+	&-down {
+		color: #ef534f;
+		background-color: #fdeded;
+	}
+}

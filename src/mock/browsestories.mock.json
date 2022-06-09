@@ -1,0 +1,60 @@
+{
+    "story": {
+        "type": "",
+        "stories": [
+            {
+                "accountName": "Vodafone",
+                "criteria": "Telecom",
+                "storyTitle": "Account Title",
+                "dealCloseDate": "Win Q4'15",
+                "label": "recent",
+                "bookmarked": false,
+                "metrics": [
+                    {
+                        "askVote": false,
+                        "views": 45,
+                        "storyStatus": "sharable",
+                        "reviewStatus": "green"
+                    }
+                ]
+            },
+            {
+                "accountName": "Sprint",
+                "criteria": "Telecom",
+                "storyTitle": "Account Title",
+                "dealCloseDate": "Win Q2'15",
+                "label": "most-popular",
+                "bookmarked": true,
+                "metrics": [
+                    {
+                        "askVote": false,
+                        "views": 35,
+                        "storyStatus": "sharable",
+                        "reviewStatus": "orange"
+                    }
+                ]
+            },
+            {
+                "accountName": "Telstra",
+                "criteria": "Telecom",
+                "storyTitle": "Account Title",
+                "dealCloseDate": "Win Q3'15",
+                "label": "most-popular",
+                "bookmarked": false,
+                "metrics": [
+                    {
+                        "askVote": false,
+                        "views": 22,
+                        "storyStatus": "sharable",
+                        "reviewStatus": "green"
+                    }
+                ]
+            }
+        ]
+    },
+    "searchParameters" : [
+        "Employee Self Service",
+        "Customer Self Service",
+        "HR Self-Service"
+    ]
+}

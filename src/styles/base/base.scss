@@ -1,0 +1,262 @@
+/*
+**
+** Global level CSS
+** 
+*/
+@import 'typography';
+@import 'variables';
+@import './bootstrap/bootstrap.scss';
+@import 'pretty-checkbox/src/pretty-checkbox.scss';
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    box-sizing:         border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+html {
+    height: 105%;
+}
+
+html {
+    overflow-y: auto !important;
+  }
+body {
+    height: 100%;
+    background: $white;
+    font-family: SFUI-Regular;
+    .content.container-fluid {
+        padding-left: 0px;
+        padding-right: 0px;
+        height: 100%;
+    }
+    // @media screen and (max-width: 1600px) {
+    //     zoom: 0.8;
+    // }
+}
+.grey-root-container {
+    background: #E5E5E5;
+}
+.role-disabled {
+    opacity: 0.4;
+    pointer-events: none;
+    &:hover {
+        box-shadow: none;
+        text-decoration: none;
+    }
+}
+.material-icons-new {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icon-white {
+    -webkit-filter: contrast(4) invert(1);
+    -moz-filter: contrast(4) invert(1);
+    -o-filter: contrast(4) invert(1);
+    -ms-filter: contrast(4) invert(1);
+    filter: contrast(4) invert(1);
+}
+.container {
+    max-width: 85% !important;
+    &.splash-screen {
+        max-width: 1200px !important;
+    }
+    @media only screen  and (min-width : 1824px) {
+        max-width: 80% !important;
+    }
+}
+a:hover {
+    text-decoration: none;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.lowercase {
+    text-transform: lowercase;
+}
+button.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+.dd-base {
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+        padding-right: 30px;
+        cursor: pointer;
+        border: none;
+        background: $white;
+        width: 100%;
+    }
+    select::-ms-expand {
+        display: none;
+    }
+    i {
+        float: right;
+        color: $grey;
+        position: relative;
+        bottom: 30px;
+        right: 5px;
+        cursor: pointer;
+        pointer-events: none;
+    }
+}
+// .wrapper {
+//     #sidebar-section {
+//         width: 75px;
+//         display: inline-block;
+//         position: fixed;
+//         @media (max-width: 768px) {
+//             width: 0px;
+//         }
+//     }
+//     #main-content-section {
+//         // margin: 0 0 0 75px;
+//         transition: all 0.5s;
+//         // width: calc(100% - 75px);
+//         width: 100%;
+//         display: inline-block;
+//         vertical-align: top;
+//         &.active {
+//             margin-left: 260px;
+//             @media (max-width: 768px) {
+//                 margin-left: 300px;
+//                 margin-right: -300px;
+//             }
+//         }
+//     }
+// }
+.section-label {
+    margin-bottom: 16px;
+    color: $grey;
+    font-family: SFUI-Bold;
+    font-size: 18px;
+}
+.react-loader {
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -64px;
+        margin-left: -64px;
+    }
+}
+.btn {
+    border: 1px solid $light-grey;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.8);
+}
+.form-control:focus {
+    border-color: #CED4DA;
+    box-shadow: none;
+    border-width: 2px;
+}
+.submit-btn {
+    color: $white;
+    background: $active-blue;
+}
+.scrollbar-wrapper {
+    padding-left: 1px;
+}
+.react-searchbar {
+    text-align: center;
+    input {
+        width: 100%;
+        margin: 16px 10px;
+        padding: 8px;
+        border: 1px solid #CCC;
+        border-radius: 4px;
+    }
+    i.material-icons {
+        position: absolute;
+        bottom: 48px;
+        right: 28px;
+        float: right;
+        color: $grey;
+    }
+}
+.not-found-label {
+    font-size: 27px;
+    font-family: SFUI-SemiBold;
+    color: grey;
+    text-align: center;
+}
+.react-grid-Container {
+    .react-grid-HeaderCell {
+        background: #DBDBDB;
+        border: 1px solid #C3C3C3;
+        background: $light-blue;
+        border: 0;
+        font-family: SFUI-Medium;
+        color: rgba(0, 0, 0, 0.58);
+        span {
+            font-size: 16px !important;
+        }
+    }
+    .react-grid-Cell {
+        padding-left: 16px;
+        padding-right: 16px;
+        border-right: 0;
+        .react-grid-Cell__value {
+            font-size: 14px !important;
+        }
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .react-grid-Cell:focus {
+        outline: none;
+    }
+}
+.react-data-grid-style-wrapper {
+    .react-grid-HeaderCell {
+        background-color: white !important;
+        border-bottom: $grey solid 1.1px !important;
+        text-align: left !important;
+        span {
+            font-size: 1.2em !important;
+            font-weight: bold !important;
+            margin-top: 0.4em !important;
+        }
+    }
+    .react-grid-Row--even {
+        .react-grid-Cell {
+            background-color: $white !important;
+        }
+    }
+    .react-grid-Row--odd {
+        .react-grid-Cell {
+            background-color: $very-light-grey !important;
+        }
+    }
+    .react-grid-Cell__value {
+        text-align: left !important;
+        .gridText {
+            font-family: Proxima-Nova-Regular;
+            font-size: 1.2em !important;
+        }
+    }
+}
+.Select-menu-outer {
+    z-index: 99;
+}
+.react-rater {
+    display: flex !important;
+    &.is-disabled {
+        cursor: default;
+    }
+}
+.react-rater-star {
+    cursor: pointer;
+    color: #ccc;
+    position: relative;
+}

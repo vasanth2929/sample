@@ -1,0 +1,73 @@
+.pills-row {
+	background: #fafbfc;
+	border-radius: 3em;
+	display: flex;
+	flex-direction: row;
+	height: 56px;
+	padding: 14px 16px;
+
+	&-show-more {
+		align-items: center;
+		color: #5c6c73;
+		display: flex;
+		font-size: 12px;
+		letter-spacing: 0;
+		line-height: 16px;
+		text-decoration: underline;
+		&:active {
+			color: #5c6c73;
+			font-size: 12px;
+			letter-spacing: 0;
+			line-height: 16px;
+		}
+		&:focus {
+			color: #5c6c73;
+			font-size: 12px;
+			letter-spacing: 0;
+			line-height: 16px;
+		}
+		&:hover {
+			color: #5c6c73;
+			font-size: 12px;
+			letter-spacing: 0;
+			line-height: 16px;
+		}
+	}
+
+	&-pill {
+		background-color: white;
+		border-radius: 21.5px;
+		border: 1px solid #adbec6;
+		color: #5c6c73;
+		font-size: 12px;
+		font-weight: 500;
+		height: 32px;
+		letter-spacing: 0;
+		line-height: 16px;
+		margin-bottom: -1px;
+		margin-right: 16px;
+		margin-top: -1px;
+		padding: 8px 12.5px;
+		text-align: center;
+
+		&.selected {
+			border: 2px solid #02b258;
+			color: #02b258;
+			font-weight: bold;
+			margin-bottom: -2px;
+			margin-top: -2px;
+			i {
+				background-color: #02b258;
+				border-radius: 50%;
+				color: white;
+				font-size: 15px;
+				margin-top: -15px;
+				position: absolute;
+			}
+		}
+		&.disabled {
+			cursor: not-allowed;
+			opacity: 0.56;
+		}
+	}
+}

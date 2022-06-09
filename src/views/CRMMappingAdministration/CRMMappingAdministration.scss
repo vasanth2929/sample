@@ -1,0 +1,98 @@
+.crm-mapping-administration-wrapper {
+    display: flex;
+    height: 500px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    padding: 0px !important;
+    margin-top: 100px;
+    margin-left: 100px;
+
+    > div {
+        width: 100%;
+    }
+
+    .tribyl-industries-list-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .crm-message {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 60px;
+            font-size: 15px;
+            font-family: Roboto-Regular;
+            color: rgba(11, 11, 11, .45);
+        }
+        
+        &.tribyl-entities {
+            ul {
+                border-right: 1px solid #c8c8c8;
+            }
+        }
+        &.disable {
+
+            ul {
+                pointer-events: none;
+                // background: #f8f8f8;
+
+                li {
+                    &.selected {
+                        background: rgba(49, 184, 72, 0.14);
+                    }
+                    .text-display {
+                        color: #d1d1d1;
+                    }
+                }
+            }
+        }
+
+        .current-mapped-field {
+            font-family: Roboto-Bold;
+            background: rgba(85, 172, 223, 0.14) !important;
+        }
+        .selected-mapped-field {
+            background: rgba(49, 184, 72, 0.14) !important;
+        }
+        .unavailable-mapped-field {
+            pointer-events: none;
+            .text-display {
+                color: #d1d1d1 !important;
+            }
+        }
+    }
+}
+
+.crm-mapping-footer {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 80%;
+
+    .actions-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        // width: 160px;    
+        float: right;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        button {
+            width: 80px;
+            height: 35px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+            margin-left: 20px;
+
+            &.save-btn {
+                color: white;
+                background: rgb(0, 128, 255);
+            }
+        }
+    }
+}

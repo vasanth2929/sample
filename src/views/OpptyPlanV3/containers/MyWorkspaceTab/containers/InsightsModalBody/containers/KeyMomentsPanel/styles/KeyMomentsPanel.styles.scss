@@ -1,0 +1,89 @@
+@import '../../../../../../../../../styles/base/variablesV2';
+
+.keymoments-filters-wrapper {
+    
+    .keymoments-filters {
+        padding-left: 16px;
+        padding-bottom: 16px;
+        margin-bottom: 10px;
+        margin-top: -5px;     
+        box-shadow: $bottom-box-shadow;
+        .selectLabel {
+            font-family: Roboto-Regular;
+            font-style: normal;
+            font-size: 12px;
+            line-height: 12px;            
+            color: #B0BEC5;
+        }
+        .closed-period-label {
+            font-family: Roboto-Bold;
+            font-style: normal;
+            font-size: 14px;
+            line-height: 16px;
+            margin-right: 8px;
+        }
+        .filter-select {
+            display: flex;
+            align-items: center;
+            
+            .selectGroup{
+                width: 175px;
+            }
+        }
+        
+        .margin-space {
+            padding-right: 18.5em;
+        }
+        .margin-space-view {
+            margin-right: 16px;
+        }
+        .margin-space-year {
+            margin-right: 16px;
+        }
+    
+        .close-period {
+            display: flex;
+            margin-left: 40px;
+            .fiscal-year {
+                margin-right: 16px;
+                width: 128px
+            }
+            .fiscal-quarter {
+                width: 128px;
+            }
+        }
+        .show-hidden-wrapper {
+            display: flex;
+            align-items: center;
+            background: #F7F7F7;
+            border-radius: 5px;
+            padding: 5px;
+            margin-left: 5em;
+            cursor: pointer;
+            i {
+                color: #5F6C72;
+                font-size: 16px;
+            }
+            .show-hidden-label {
+                font-family: Roboto-Bold;
+                font-style: normal;
+                font-size: 14px;
+                line-height: 16px;
+                display: flex;
+                align-items: center;
+                text-transform: capitalize;
+                color: #5F6C72;
+            }
+        }
+        .Select-control {
+            border: 1px solid #5F6C72;
+        }
+    }
+    
+}
+.key-moments-timeline-panel {
+    .not-found-label {
+        font-size: 20px;
+        padding: 3em 0;
+    }
+}

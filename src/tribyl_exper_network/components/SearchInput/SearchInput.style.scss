@@ -1,0 +1,28 @@
+.expert-network-search-container {
+    position: relative;
+    .expert-network-search {
+        padding: 9px 0 9px 50px ;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        border: 1px solid #DDDDDD;
+        font-size: 14px;
+        font-family: Roboto-regular;
+        color: #6B6E7E;
+        border-radius: 20px;
+        width: 100%;
+        height: 40px;
+        &:focus{
+            border-radius: 20px;
+            outline: none;
+            // border: 1px solid #6B6E7E;
+        }
+    }
+
+    span {
+        position: absolute;
+        color: gray;
+        top:10px;
+        left: 20px;
+    }
+
+}

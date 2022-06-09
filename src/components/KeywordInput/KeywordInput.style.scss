@@ -1,0 +1,28 @@
+.keyword-input-form {
+    .pill {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        padding: 4px 8px;
+        cursor: default;
+        margin: 7px 7px;
+        background-color: #dbf3da;
+
+        .close {
+            font-size: 14px;
+            margin-left: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(139, 183, 224);
+            }
+        }
+    }
+
+    &-keywords {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+}

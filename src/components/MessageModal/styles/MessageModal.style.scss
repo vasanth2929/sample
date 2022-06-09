@@ -1,0 +1,84 @@
+@import '../../../styles/base/variables';
+
+.message-modal {
+    display: none;
+    background: $overlay-black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    .modal-body {
+        background: $white;
+        max-width: 25vw;
+        border-radius: 8px;
+        box-shadow: $shadow;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        word-wrap: break-word;
+        padding: 0;
+        .scrollbar-wrapper {
+            padding-left: 0px;
+        }
+        #modal-content {
+			max-height: 70vh;
+			font-family: SFUI-Regular;
+			font-size: 16px;
+            color: $text-color;
+            .header-section {
+                min-height: 150px;
+                color: $white;
+                border-radius: 8px 8px 0 0;
+                .close-icon-section {
+                    padding: 16px;
+                    .close-modal {
+                        cursor: pointer;
+                    }
+                }
+                .message-indicator {
+                    i {
+                        font-size: 30px;
+                        margin-right: 0;
+                    }
+                    p {
+                        font-size: 28px;
+                        font-family: SFUI-Bold;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .footer-section {
+                min-height: 96px;
+                display: table;
+                width: 100%;
+                text-align: center;
+                p {
+                    display: table-cell;
+                    vertical-align: middle;
+                    font-family: SFUI-Regular;
+                    font-weight: 600;
+                    padding: 0 24px;
+                }
+            }
+        }
+    }
+    &.show {
+      display: block;
+    }
+    &.success {
+        #modal-content {
+            .header-section {
+                background: $cyan;
+            }
+        }
+    }
+    &.error {
+        #modal-content {
+            .header-section {
+                background: $salmon;
+            }
+        }
+    }
+}

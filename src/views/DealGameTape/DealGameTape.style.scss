@@ -1,0 +1,174 @@
+.DealGameTape {
+    width: 100%;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+
+    &-container {
+        width: 1440px;
+
+        &-header {}
+
+        &-body {
+            margin-top: 36px;
+            display: flex;
+           
+            &-nav {}
+
+            &-card {
+                margin-left: 24px;
+                width: 100%;
+            }
+        }
+    }
+
+    .heading {
+        font-family: Roboto-regular;
+        font-size: 18px;
+        color: #293940;
+
+        &.large {
+            font-size: 24px;
+        }
+
+        &.medium {
+            font-family: Roboto-medium;
+        }
+
+        &.bold {
+            font-family: Roboto-bold;
+        }
+
+        &.link {
+            cursor: pointer;
+            color: #0080FF;
+            border-bottom: 1px solid #0080FF;
+            width: fit-content;
+        }
+    }
+
+    .sub-heading {
+        font-family: Roboto-regular;
+        font-size: 14px;
+        color: #293940;
+
+        &.bold {
+            font-family: Roboto-bold;
+        }
+
+        &.medium {
+            font-family: Roboto-medium;
+        }
+
+        &.large {
+            font-size: 16px;
+        }
+
+        &.link {
+            cursor: pointer;
+            color: #0080FF;
+            border-bottom: 1px solid #0080FF;
+            width: fit-content;
+        }
+    }
+
+    .text {
+        font-family: Roboto-regular;
+        font-size: 10px;
+        color: #293940;
+
+        &.bold {
+            font-family: Roboto-bold;
+        }
+
+        &.medium {
+            font-family: Roboto-medium;
+        }
+
+        &.large {
+            font-size: 12px;
+        }
+
+        &.link {
+            cursor: pointer;
+            color: #0080FF;
+            border-bottom: 1px solid #0080FF;
+            width: fit-content;
+        }
+    }
+    .footer {
+        height: 72px;
+        background-color: #FFFFFF;
+        box-shadow: 0 -2px 4px 0 rgba(108, 72, 91, 0.11);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        &>button {
+            margin-right: 16px;
+        }
+
+        .previous {
+            box-sizing: border-box;
+            height: 40px;
+            width: 112px;
+            border: 1px solid #E1E6E8;
+            border-radius: 20px;
+            background-color: #F7F8FA;
+            color: #017AFF;
+            font-size: 16px;
+            font-family: Roboto-bold;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .save {
+            height: 40px;
+            width: 177px;
+            border-radius: 20px;
+            background-color: #017AFF;
+            font-size: 16px;
+            font-family: Roboto-bold;
+            color: #FFFFFF;
+            border: none;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+}
+
+.card-select {
+    .multi-select__control {
+        padding: 5px;
+        border-radius: 12px;
+    }
+
+    .multi-select__indicator-separator {
+        display: none;
+    }
+
+    .multi-select__single-value{
+        color: #0080FF;
+        font-family: Roboto-bold; 
+        font-size: 14px;
+    }
+
+    .multi-select__multi-value {
+        height: 32px;
+        border: 1px solid #017AFF;
+        border-radius: 16px;
+        background-color: #F2FAFF;
+        padding: 2px 7px;
+
+        .multi-select__multi-value__label {
+            color: #52627A;
+            font-family: Roboto-Regular;
+            font-size: 14px;
+        }
+    }
+}

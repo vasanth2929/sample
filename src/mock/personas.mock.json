@@ -1,0 +1,82 @@
+{
+  "storyboardTitle": "Vodafone Customer Service $ 561,000 Won Q4'16",
+  "storyboardSharable": false,
+  "storyboardReviewStatus": "blue",
+  "personaName": "Glen Thomas",
+  "conversations": 27,
+  "title": "SVP - Customer Care",
+  "email": "glen@vodafone.com",
+  "role": "Economic Buyer",
+  "seniority": "Sr. Management",
+  "personaRating": "Strong (8/10)",
+  "multiThreadingRating": "Excellent (10/10)",
+  "tabs": [
+    {
+      "name": "Call Plan",
+      "slug": "call_plan"
+    },
+    {
+      "name": "Buyer Engagement",
+      "slug": "buyer_engagement"
+    },
+    {
+      "name": "Influence Map",
+      "slug": "influence_map"
+    },
+    {
+      "name": "Key Content",
+      "slug": "key_content"
+    },
+    {
+      "name": "Discussion",
+      "slug": "discussion"
+    }
+  ],
+  "keyContent": [
+    {
+      "name": "Stage 1",
+      "data": "Process Flow.jpg",
+      "icon": "image"
+    },
+    {
+      "name": "Stage 2",
+      "data": "ROI_vFinal.doc",
+      "icon": "content_paste"
+    },
+    {
+      "name": "Stage 3",
+      "data": "Telco_Whitepaper.pdf",
+      "icon": "content_paste"
+    }
+  ],
+  "comments": [
+      {
+          "name": "Lucy Water",
+          "date": "Yesterday",
+          "comment": "<span class=\"tag-name\">@Dylan Sullivan<\/span>, We should get Glen to attend our Customer Experience Round Table in NYC next month."
+      },
+      {
+          "name": "Dylan Sullivan",
+          "date": "2nd August, 2017",
+          "comment": "Glen is new to Vodafone and eager to prove himself."
+      }
+  ],
+  "cardMenus": [
+    {
+      "name": "Ben Rhodes",
+      "title": "VP - Loyalty",
+      "conversations": 25
+    },
+    {
+      "name": "Kristina Dixon",
+      "title": "VP - IT",
+      "conversations": 31
+    },
+    {
+      "name": "Lowell McAdam",
+      "title": "CEO",
+      "conversations": 24
+    }
+  ],
+  "proTip": "Glen joined vodafone recently and was eager to make an impact. We won him over by offering Professional Services to baseline his current-state. We helped him build a business case and highlight urgency. As a result, we won even though we weren't the cheapest option."
+}

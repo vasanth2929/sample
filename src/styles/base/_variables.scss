@@ -1,0 +1,119 @@
+// variable codes for colors
+$white: #FFF;
+$black: #000;
+$grey: #737373;
+$orange: #FFA43C;
+$green: #4CAF50;
+$blue: #458AFF;
+$red: #E42D2D;
+$purple: purple;
+$yellow: rgb(255, 215, 106);
+$offwhite: #FFFFF6;
+$cyan: #4AC7CD;
+$salmon: #FA8072;
+
+$bluish-black: #252C37;
+$bluish-green: #334760;
+$light-grey: #CCC;
+$very-light-grey: #f7f6f6;
+$midgreen-apple: #7ec237;
+$green-apple: #56B650;
+$body-background: #F1F3F7;
+$body-background-soft: #eff1f6;
+$black-background: #171717;
+$active-blue: #4AC7CD;
+$link-blue: #0066FF;
+$header-blue: #1574CF;
+$loading-blue: #7484a0;
+
+$btn-blue: #3b99fc;
+$btn-red: #ff7878;
+$btn-green: #6ece74;
+
+$cancel-grey: #F4F4F4;
+$highlight-grey: #a5a5a5;
+$highlight-blue: rgb(183, 244, 250);
+$link-grey: #939393;
+$btn-grey: #9F9F9F;
+$background-grey: #fafafa;
+$text-color: rgba(0, 0, 0, 0.87);
+$text-profile: #323232;
+$title-color: #BABABA;
+$seeall-color: #565656;
+$red-highlight: #F55555;
+$disabled-grey: #F8F9Fa;
+$foreground-grey: #fbfcfb;
+$default-info: #FAFAFA;
+$default-header: #FAFDFF;
+$action-color: #607AAD;
+$header-background: #F4F6FA;
+$page-header-background: #F1F4F8;
+$shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.08);
+$hover-shadow: 0 1px 5px 3px rgba(0, 0, 0, 0.20);
+$subtle-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.35);
+$common-border: thin solid #CCC;
+$component-border: thin solid #C0C0C0;
+$light-blue: #EDF4F9;
+$maroon: rgba(185, 65, 65, 0.82);
+
+// warning message colors
+$primaryColor: #31708F;
+$warningColor: #8A6d3B;
+$dangerColor: #f44336;
+$successColor: #3C763D;
+$blue-background: #E7F1F8;
+$red-background: #FCECEE;
+$green-background: #EEF8ED;
+$orange-background : #FFF6EB;
+$purple-background: #F1EDF6;
+$musk-background: #FCF5ED;
+
+// for marker
+$economic-drivers: rgba(253, 161, 64, 0.87);
+$use-cases: #7ac47d;
+$pain-points: #5ab1f6;
+$personas: rgba(92, 107, 192, 0.87);
+$value-proposition: #8f6dca;
+$objections: #b65fc5;
+$content: rgba(189, 189, 189, 0.87);
+$competition: #f16967;
+$partners: rgba(38, 166, 154, 0.87);
+$activities: rgba(38, 198, 218, 0.87);
+
+// for graph
+$bright-blue-background: #42B4D6;
+$yellow-background: #FAd666;
+$pink-background: #F18798;
+
+//overlay
+$overlay-black: rgba(0, 0, 0, 0.7);
+
+
+
+// new codes as per figma designs
+
+$color-text: #2C3F50;
+$greyed-text: #A2A2A2;
+$background-grey: #F7F7F7;
+
+$font-regular: Roboto-Regular;
+$font-bold: Roboto-Bold;
+$font-medium: Roboto-Medium;
+$font-italic: Roboto-Italic;
+$font-thin: Roboto-Thin;
+$font-light: Roboto-Light;
+
+$eco-driver-color: #F2C94C;
+$use-cases-color: #81C784;
+$pain-points-color: #4DD0E1;
+
+@mixin box() {
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    background: $white;
+    margin-bottom: 1em;
+}
+
+$approved-bg:#00b257;
+$test-bg:#fff3d7;
+$archived-bg:#ffebea;

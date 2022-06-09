@@ -1,0 +1,116 @@
+{
+  "playbooks": [
+    {
+      "name": "Economic Drivers",
+      "category": "green",
+      "color": "#FFAA48"
+    },
+    {
+      "name": "Use Cases",
+      "category": "green",
+      "color": "#FF7EA8"
+    },
+    {
+      "name": "Pain Points",
+      "category": "green",
+      "color": "#00FFFF"
+    },
+    {
+      "name": "Personas",
+      "category": "green",
+      "color": "#4BAE57"
+    },
+    {
+      "name": "Value Propositions",
+      "category": "green",
+      "color": "#4BAE57"
+    },
+    {
+      "name": "Objections",
+      "category": "green",
+      "color": "#6D4D43"
+    },
+    {
+      "name": "Competition",
+      "category": "green",
+      "color": "#FFFF38"
+    },
+    {
+      "name": "Content",
+      "category": "green",
+      "color": "#FF5351"
+    },
+    {
+      "name": "Partners",
+      "category": "green",
+      "color": "#8EA2AC"
+    },
+    {
+      "name": "Activities",
+      "category": "green",
+      "color": "#e1e9ed"
+    },
+    {
+      "name": "Stories",
+      "category": "green",
+      "color": "#4BAE57"
+    }
+  ],
+  "storyboard": [
+    {
+      "name": "Economic Drivers",
+      "category": "green",
+      "color": "#FFAA48"
+    },
+    {
+      "name": "Use Cases",
+      "category": "green",
+      "color": "#FF7EA8"
+    },
+    {
+      "name": "Pain Points",
+      "category": "green",
+      "color": "#00FFFF"
+    },
+    {
+      "name": "Personas",
+      "category": "green",
+      "color": "#6D4D43"
+    },
+    {
+      "name": "Value Propositions",
+      "category": "green",
+      "color": "#FFFF38"
+    },
+    {
+      "name": "Objections",
+      "category": "green",
+      "color": "#FFFF38"
+    },
+    {
+      "name": "Competition",
+      "category": "green",
+      "color": "#4BAE57"
+    },
+    {
+      "name": "Content",
+      "category": "green",
+      "color": "#e1e9ed"
+    },
+    {
+      "name": "Partners",
+      "category": "green",
+      "color": "#8EA2AC"
+    },
+    {
+      "name": "Activities",
+      "category": "green",
+      "color": "#4BAE57"
+    },
+    {
+      "name": "Stories",
+      "category": "green",
+      "color": "#4BAE57"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+@import '../../../../../styles/base/variables';
+
+.pitch-player-modal {
+    font-family: Roboto-Regular;
+    .video-container {
+        position: relative;
+    }
+    button {
+        font-family: Roboto-Regular;
+        font-size: 14px;
+        border-radius: 4px;
+        margin: 16px;
+        width: 70%;
+        height: 35px;
+        &.update-video {
+            background: #009dff40;
+            border: 1px solid #009dff;
+            color: #0062ff;
+        }
+        &.delete-video {
+            background: $red-background;
+            border: 1px solid #ff5440;
+            color: #e42d2d;
+        }
+    }
+    // .delete-video {
+    //     font-family: Roboto-Regular;
+    //     background: $red-background;
+    //     border: 1px solid #ff5440;
+    //     color: #e42d2d;
+    //     border-radius: 4px;
+    //     margin: 16px;
+    //     width: 25%;
+    //     height: 35px;
+    // }
+}

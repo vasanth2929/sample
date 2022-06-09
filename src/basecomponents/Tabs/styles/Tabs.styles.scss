@@ -1,0 +1,71 @@
+@import '../../../styles/base/variablesV2';
+
+.tabsV2 {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	
+	.tabRowContainer {
+		display: flex;
+		justify-content: space-between;
+		box-shadow: $bottom-box-shadow;
+		margin-bottom: 8px;
+		margin-top: 0px;
+		.tabRow {
+			margin-top: 0px;
+			margin-bottom: 0;
+			padding: 0;
+			.tab {
+				font-family: OpenSans-Bold;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 14px;
+				line-height: normal;
+				text-align: center;
+				text-transform: uppercase;
+				color: $grey-disabled;
+				background-color: inherit;
+				float: left;
+				border: none;
+				outline: none;
+				cursor: pointer;
+				padding: 14px 16px;
+				transition: 0.3s;
+				padding-bottom: 4px;
+			
+				.tabLabel {
+					margin: auto;
+					i.not-in-license-marker {
+						font-size: 15px;
+						margin-left: 4px;
+						position: relative;
+						top: 2px;
+						&:hover {
+							color: $black;;
+						}
+					}
+				}
+				&:hover {
+					cursor: pointer;
+				}
+				&.active {
+					color: $blue-default;
+					border-bottom: $blue-default 3px solid;
+				}
+				&.not-in-license {
+					opacity: 0.5;
+					cursor: default;
+				}
+			}
+		}
+		.tabButtonContainer {
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+	.tabContent {
+		> div {
+			width: 100%;
+		}
+	}
+}

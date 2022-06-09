@@ -1,0 +1,11 @@
+node_modules/
+.vscode/
+.idea/
+npm-debug.log
+dist/
+.scannerwork/
+node_modules_prod/
+src/views/CustomerAnalytics/BuyingJourneyInsights/BuyingJourneyInsights.js
+OPA.ppk
+OPA.pem
+iaasmarket.pdf

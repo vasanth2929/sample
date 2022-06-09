@@ -1,0 +1,453 @@
+@import "../../../../styles/base/variables";
+@import "../../../../styles/base/variablesV2";
+
+.user-administrationv2-view {
+    #main-content-section {
+        padding-top: 50px;
+        background: #e5e5e5;
+    }
+    .title-label {
+        padding: 16px 0;
+        p {
+            font-family: SFUI-Medium;
+            font-size: 24px;
+            margin-top: 4px;
+            margin-bottom: 0px;
+            margin-left: -15px;
+            color: $text-color;
+        }
+        .add-user-btn {
+            width: 175px;
+            margin-left: 16px;
+            box-shadow: $shadow;
+            border: 1px solid transparent;
+            height: 45px;
+            font-family: SFUI-Medium;
+            margin-right: -15px;
+        }
+    }
+    .user-detail-form {
+        .image-box {
+            position: relative;
+            .overlay {
+                display: none;
+                justify-content: center;
+                opacity: 0.65;
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                &.add-form {
+                    img {
+                        bottom: 0.85em;
+                    }
+                }
+            }
+        }
+        .image-box:hover .overlay {
+            display: flex;
+        }
+    }
+
+    .user-detail-form {
+        background: $white;
+        padding: 32px 16px;
+        box-shadow: $shadow;
+        border-radius: 4px;
+        border: $common-border;
+        margin-bottom: 1em;
+        form {
+            width: 100%;
+            .form-header {
+                font-family: Roboto-Bold;
+                color: #000;
+                opacity: 0.87;
+                text-align: left;
+                border-bottom: 1px solid $btn-grey;
+                padding-bottom: 10px;
+                margin-bottom: 45px;
+                line-height: 37px;
+                font-size: 32px;
+                h3 {
+                    margin-left: 16px;
+                }
+            }
+            .close-form-icon {
+                margin-right: 0;
+                margin-top: 0.2em;
+                font-size: 22px;
+                cursor: pointer;
+            }
+            .title-section {
+                padding-bottom: 20px;
+                border-bottom: 1px solid #b0bec5;
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .form-group {
+                margin-bottom: 24px;
+                margin-left: 0;
+                margin-right: 0;
+                label {
+                    font-family: Roboto-Regular;
+                    font-weight: normal;
+                    font-size: 10px;
+                    line-height: 12px;
+                    color: #b0bec5;
+                }
+                h5.user-name-label {
+                    margin-top: 8px;
+                    font-family: Roboto-Bold;
+                    font-style: normal;
+                    font-size: 18px;
+                    line-height: 21px;
+                    margin-left: 12px;
+                }
+                input,
+                select {
+                    border: 1px solid #5f6c72;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    color: #2c393f;
+                }
+                .profile-image,
+                .overlay {
+                    border-radius: 50%;
+                    width: 5.625em;
+                    height: 5.625em;
+                    border: thin solid #4d3e3e;
+                    padding: 2px;
+                }
+                .small {
+                    margin-top: 8px;
+                    font-family: SFUI-Medium;
+                }
+                #user-login-name {
+                    font-family: Roboto-Regular;
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: #b0bec5;
+                }
+                .user-status-toggle {
+                    padding-top: 32px;
+                    .switch-label {
+                        font-family: SFUI-Medium;
+                    }
+                }
+            }
+            .custome-button{
+                display:flex;
+                align-items: center;
+                .btn {
+                    width: 150px;
+                    margin-left: 16px;
+                    box-shadow: $shadow;
+                    border: 1px solid transparent;
+                    height: 32px;
+                    // font-family: SFUI-Medium;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    line-height: 19px;
+                    font-family: OpenSans-Bold;
+                    font-style: normal;
+                    &.btn-submit {
+                        background: $blue-default;
+                    }
+                    &.btn-password-update {
+                        background: $blue-default;
+                        margin-left: 0px;
+                        width: 200px;
+                    }
+                    &.btn-reset {
+                        background: $white;
+                        color: $grey-dark;
+                        border: 1px solid $dark-grey-text;
+                    }
+                }
+            }
+            .form-footer {
+                margin: 0;
+                .btn {
+                    width: 150px;
+                    margin-left: 16px;
+                    box-shadow: $shadow;
+                    border: 1px solid transparent;
+                    height: 32px;
+                    // font-family: SFUI-Medium;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    line-height: 19px;
+                    font-family: OpenSans-Bold;
+                    font-style: normal;
+                    &.btn-submit {
+                        background: $blue-default;
+                    }
+                    &.btn-password-update {
+                        background: $blue-default;
+                        margin-left: 0px;
+                        width: 200px;
+                    }
+                    &.btn-reset {
+                        background: $white;
+                        color: $grey-dark;
+                        border: 1px solid $dark-grey-text;
+                    }
+                }
+            }
+            .tribyl-roles {
+                margin-left: 16px;
+                margin-right: 16px;
+                background: rgba(233, 236, 239, .19);
+                > div {
+                    padding: 30px 30px;
+                }
+            }
+            legend {
+                font-size: 16px;
+                width: 20%;
+                font-family: SFUI-Medium;
+            }
+            fieldset {
+                border: 1px solid #b0bec5;
+                box-sizing: border-box;
+                border-radius: 5px;
+                .radio-container {
+                    display: block;
+                    position: relative;
+                    padding-left: 30px;
+                    margin-bottom: 12px;
+                    cursor: pointer;
+                    background: $white;
+                    font-size: 14px;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    font-family: Roboto-Regular;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #2c393f;
+                    background: transparent;
+
+                    input {
+                        cursor: pointer;
+                        margin: 5px 0px 0 10px;
+                        opacity: 1;
+                    }
+
+                    &.disabled {
+                        .checkmark {
+                            position: absolute;
+                            top: 0px;
+                            left: 6px;
+                            height: 16px;
+                            width: 16px;
+                            background-color: #e9ecef;
+                            border: 1px solid #73737326;
+                            border-radius: 50%;
+                            pointer-events: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .users-list-section {
+        border: $component-border;
+        border-radius: 4px;
+        box-shadow: $shadow;
+        ul {
+            list-style: none;
+            border-radius: 4px;
+            padding: 8px;
+            background: $white;
+            max-height: 72vh;
+            li {
+                border: $common-border;
+                margin-bottom: 8px;
+                padding: 10px;
+                cursor: pointer;
+                font-size: 17px;
+                &.selected-user,
+                &.selected-account {
+                    border: 2px solid $green;
+                    background: $green-background;
+                }
+                &.in-active {
+                    background: $light-grey !important;
+                }
+                .login-name-label {
+                    font-family: SFUI-Medium;
+                }
+                .user-name-label,
+                .account-name-label {
+                    font-family: SFUI-Light;
+                }
+                i.material-icons {
+                    float: right;
+                    margin-top: 3px;
+                    &.green {
+                        color: $green;
+                    }
+                    &.yellow {
+                        color: $orange;
+                    }
+                }
+                div.shimmer-div {
+                    margin: 8px 10px;
+                }
+            }
+        }
+    }
+}
+.update-password-form {
+    form {
+        width: 100%;
+        padding: 0;
+        .form-header {
+            font-family: SFUI-Semibold;
+            color: #000;
+            opacity: 0.87;
+            text-align: left;
+            border-bottom: 1px solid $btn-grey;
+            padding-bottom: 8px;
+            margin-bottom: 32px;
+        }
+        .form-group {
+            label {
+                font-family: SFUI-Medium;
+            }
+            .small {
+                margin-top: 8px;
+                font-family: SFUI-Medium;
+            }
+        }
+        .form-footer {
+            .btn {
+                width: 150px;
+                margin-left: 16px;
+                box-shadow: $shadow;
+                border: 1px solid transparent;
+                height: 45px;
+                font-family: SFUI-Medium;
+                margin-top: 12px;
+                &.btn-submit {
+                    background: $btn-blue;
+                }
+            }
+        }
+    }
+}
+.gmailAuthPill {
+    margin: 1em 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #b0bec5;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: Roboto-Regular;
+    font-size: 1.2em;
+    text-align: center;
+    justify-content:space-between;
+    .status-text {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .gmailLink {
+        color: $blue;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .authPillRow {
+        display: flex;
+        input {
+            flex-basis: 70%;
+        }
+        p {
+            margin: auto 0;
+            flex: 5;
+            margin-left: 11em;
+        }
+        .gmailSubmitButton {
+            display: flex;
+            color: $black;
+            padding: 0 1em;
+            flex: 1;
+            margin: 0 1em;
+            border: 1px solid #5f6c72;
+            border-radius: 5px;
+            background: inherit;
+            padding: 2px 26px;
+            cursor: pointer;
+            p {
+                margin: auto;
+            }
+        }
+        .custome-button{
+            display:flex;
+            align-items: center;
+            .btn {
+                width: 150px;
+                margin-left: 16px;
+                box-shadow: $shadow;
+                border: 1px solid transparent;
+                height: 32px;
+                // font-family: SFUI-Medium;
+                border-radius: 5px;
+                font-size: 14px;
+                line-height: 19px;
+                font-family: OpenSans-Bold;
+                font-style: normal;
+                &.btn-submit {
+                    background: $blue-default;
+                }
+                &.btn-password-update {
+                    background: $blue-default;
+                    margin-left: 0px;
+                    width: 200px;
+                }
+                &.btn-reset {
+                    background: $white;
+                    color: $grey-dark;
+                    border: 1px solid $dark-grey-text;
+                }
+            }
+        }   
+    }
+    &.authorized {
+        border-color: $green;
+    }
+    .material-icons{
+        font-size: 22px;
+        padding-top: 10px;
+    &.verified {
+        color: $green;
+    }&.unverified{
+        color: $grey-light;
+    }
+    }
+}
+.image-selector-modal {
+    .modal-body {
+        max-width: 50vw;
+    }
+
+    
+}
+
+.update {
+    width: 150px;
+    margin-left: 16px;
+    box-shadow: $shadow;
+    border: 1px solid transparent;
+    height: 45px;
+    font-family: SFUI-Medium;
+    margin-top: 12px;
+    &.btn-submit {
+        background: $btn-blue;
+    }
+}
+

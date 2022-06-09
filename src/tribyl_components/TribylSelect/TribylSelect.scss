@@ -1,0 +1,27 @@
+.tribyl-select {
+  .tribyl-select {
+    &__control {
+      height: 55px;
+      width: 170px;
+      border: 1px solid #0080ff;
+      background-color: #e1f0ff;
+    }
+
+    &__indicator-separator {
+      display: none;
+    }
+
+    &__menu {
+      z-index: 1200;
+      .tribyl-select__option--is-selected {
+        span {
+          color: white !important;
+        }
+      }
+    }
+  }
+
+  svg {
+    color: black;
+  }
+}

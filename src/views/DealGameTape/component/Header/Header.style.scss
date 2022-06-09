@@ -1,0 +1,148 @@
+.header-container {
+  & > div {
+    margin-top: 16px;
+  }
+
+  &-nav {
+    margin: 16px 0 32px 0;
+    display: flex;
+    justify-content: space-between;
+    .metrics-box {
+      border-radius: 12px;
+    }
+    &-options {
+      display: flex;
+      .button.alt-button {
+        margin-left: 8px;
+        background-color: #0080ff;
+        border: none;
+        color: white;
+      }
+      #transcript-btn {
+        display: none;
+      }
+      .tribyl-button-secondary {
+        padding: 10px 24px;
+        height: fit-content;
+      }
+      .button {
+        &.upload-transcript {
+          background-color: transparent;
+          padding: 10px 24px;
+          width: fit-content;
+          font-family: Roboto-Medium;
+          border: 1px solid #6b778c;
+          border-radius: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 16px;
+          white-space: nowrap;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        color: #293940;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 16px;
+        text-align: center;
+        height: unset;
+      }
+    }
+
+    &-back-button {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 250px;
+
+      a {
+        display: flex;
+        flex-direction: row;
+      }
+
+      &-icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        width: 32px;
+        height: 32px;
+        background-color: rgb(197, 197, 197);
+        color: black;
+        margin-right: 0.5em;
+
+        i {
+          margin-right: 0;
+        }
+
+        &-text {
+          padding-top: 8px;
+          color: #293940;
+          font-size: 14px;
+          letter-spacing: 0;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+
+  &-story {
+    display: flex;
+    justify-content: space-between;
+
+    &-info {
+      display: flex;
+      align-items: center;
+
+      & > span {
+        margin: 0 4px;
+      }
+    }
+
+    &-filter {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin: 0 5px;
+      }
+
+      & > span {
+        margin: 0 4px;
+      }
+
+      .reload {
+        margin-left: 10px;
+        padding: 10px 3px;
+      }
+    }
+  }
+  .container {
+    &.container-secondary {
+      margin-top: 24px;
+    }
+  }
+}
+
+.share-status {
+  margin-right: 16px;
+  .tribyl-select {
+    &__control {
+      height: 25px !important;
+    }
+    &__menu {
+      margin-top: 0px !important;
+    }
+  }
+  &.share-status-w {
+    .tribyl-select {
+      &__control {
+        width: 190px !important;
+      }
+    }
+  }
+}

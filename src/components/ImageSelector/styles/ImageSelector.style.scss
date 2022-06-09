@@ -1,0 +1,65 @@
+@import '../../../styles/base/variables';
+
+.image-selector-modal-section {
+    .uploader-mask {
+        display: table;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        label {
+            cursor: pointer;
+            display: table-cell;
+            vertical-align: middle;
+            height: 38em;
+            i {
+                font-size: 4em;
+            }
+            span {
+                font-size: 2em;
+            }
+        }
+        input {
+            display: none;
+        }
+    }
+    .img-cropper {
+        text-align: center;
+        max-height: 38em;
+        min-height: 38em;
+        .ReactCrop--fixed-aspect {
+            background: transparent;
+        }
+        &.empty-cropper {
+            border: 2px dashed $grey;
+            border-radius: 4px;
+        }
+    }
+    .actioners {
+        p {
+            margin-top: 0.5em;
+            font-family: SFUI-SemiBold;
+            color: #334760;
+        }
+        .btn {
+            width: 20%;
+            margin-bottom: 0.5em;
+            box-shadow: $shadow;
+            height: 2.5em;
+            margin-top: 1em;
+            &.clear-btn {
+                margin-right: 0.5em;
+                background: $white;
+                color: $btn-blue;
+                border: thin solid $btn-blue;
+            }
+            &.save-btn {
+                margin-left: 0.5em;
+                background: $btn-blue;
+                color: $white;
+                border: thin solid $btn-blue;
+            }
+        }
+    }
+}

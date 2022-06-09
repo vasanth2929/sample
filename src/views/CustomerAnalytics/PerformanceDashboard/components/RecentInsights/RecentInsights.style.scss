@@ -1,0 +1,56 @@
+.recent-insights-container {
+    margin-left: 65px;
+    &-title {
+        font-family: Roboto-Bold;
+        font-size: 22px;
+        color: #4F5366;
+        margin: 24px 0;
+
+    }
+
+    &-slider {
+        width: 100%;
+        height: 200px;
+
+        .custome_carousels {
+            box-shadow: 0px 1px 4px 2px rgba(0, 0, 0, 0.1);
+
+            .custome_carousels-indicator {
+                left: 44.7%;
+                bottom: 16px;
+            }
+        }
+
+        .insights {
+            text-align: center;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            height: 95%;
+
+            &-content {
+                height: 60%;
+                &>div {
+                    margin-bottom: 16px;
+                }
+            }
+
+            &-info {
+                &>div {
+                    margin-bottom: 4px;
+                }
+            }
+
+
+
+            .description {
+                color: #6B778C;
+                font-size: 16px;
+                font-family: Roboto-regular;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import '../../../styles/base/variablesV2';
+
+.react-marker {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    &.economic-drivers {
+        background: $economic-drivers;
+    }
+    &.use-cases {
+        background: $use-cases;
+    }
+    &.pain-points {
+        background: $pain-points;
+    }
+    &.personas {
+        background: $personas;
+    }
+    &.value-proposition {
+        background: $value-proposition;
+    }
+    &.objections {
+        background: $objections;
+    }
+    &.content {
+        background: $content;
+    }
+    &.competition {
+        background: $competition;
+    }
+    &.partners {
+        background: $partners;
+    }
+    &.activities {
+        background: $activities;
+    }
+}

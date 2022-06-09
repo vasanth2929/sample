@@ -1,0 +1,127 @@
+.splash-chicklet {
+    position: absolute;
+    z-index: 2000;
+    background: white;
+    border: 1px solid #dedede;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    top: 64px;
+    right: 70px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+
+    .card-container {
+        margin: 0px;
+        flex-direction: column;
+        .col-6 {
+            padding: 0px;
+        }
+    }
+
+    .splash-container {
+        width: 270px;
+    }
+    .splash-card {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        padding: 20px;
+        cursor: pointer;
+        height: 50px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 15px;
+
+        &:hover {
+            background: rgba(132, 152, 171, 0.1);
+        }
+
+        &.disabled {
+            pointer-events: none;
+            .image-section {
+                background: #cecece;
+            }
+            .header-section {
+                p {
+                    color: #cecece;
+                }
+            }
+        }
+
+    }
+
+    .image-section {
+        border-radius: 100px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 32px;
+            height: 32px;
+            &.administration-icon {
+                background-color:  rgb(196, 212, 219);
+                border-radius: 100%;
+                padding: 5px;
+            }
+
+            &.playbook-icon {
+                background-color:rgb(255, 178, 178);
+                border-radius: 100%;
+                padding: 5px;
+            }
+
+            &.stories-icon {
+                background-color: #0080FF;
+                border-radius: 100%;
+                padding: 5px;;
+            }
+
+            &.customer-intelligence-icon {
+                background-color: #5aa000;
+                border-radius: 100%;
+                padding: 5px;
+            }
+
+            &.guided-prospecting-icon {
+                background-color: #8f32db;
+                border-radius: 100%;
+                padding: 5px;
+            }
+
+            &.conversation-planner-icon {
+                background-color: #1a886c;
+                border-radius: 100%;
+                padding: 2px;
+            }
+
+            &.usage-and-impact-metrics-icon {
+                background-color: #e2ec55;
+                border-radius: 100%;
+                padding: 5px;
+            }
+
+            &.magnifying_glass {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+
+    .header-section {
+        text-align: left;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+        margin-top: 10px;
+        p {
+            margin-top: 10px;
+            // margin-bottom: 0px;
+            font-family: Roboto-Bold;
+            font-size: 14px;
+            color: #344b62;
+        }
+    }
+}
